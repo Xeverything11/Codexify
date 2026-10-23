@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Buttons - Codexify</title>
+        <link rel="stylesheet" href="codexify.css" />
+    </head>
+    <body>
+        <a href="#main" class="skip-link">Skip to main content</a>
+        <header class="navbar">
+            <nav class="container">
+                <a class="navbar-brand" href="index.html">Codexify</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="quickstart.html">Documentation</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container container-grid align-items-start">
+            <aside class="col-fill tablet-col-4 desktop-col-3 tablet-position-sticky top-6">
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Getting started</summary>
+                        <div class="accordion-body">
+                            <div class="list-group">
+                                <a class="list-group-item" href="quickstart.html">Quickstart</a>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Content</summary>
+                        <div class="accordion-body">
+                            <div class="list-group">
+                                <a class="list-group-item" href="reboot.html">Reboot</a>
+                                <a class="list-group-item" href="typography.html">Typography</a>
+                                <a class="list-group-item" href="colors.html">Colors</a>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="accordion-item" open>
+                        <summary class="accordion-header">Components</summary>
+                        <div class="accordion-body">
+                            <div class="list-group">
+                                <a class="list-group-item active" href="buttons.html">Buttons</a>
+                                <a class="list-group-item" href="navbar.html">Navbar</a>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </aside>
+            <main class="col-fill tablet-col-8 desktop-col-9" id="main">
+                <h1 id="buttons">Buttons</h1>
+                <p class="text-lg">Use buttons to allow users to take actions or make choices.</p>
+                <h2 id="baseclass">Base class</h2>
+                <p>Buttons have a base class of <code class="language-css">btn</code> that can be used to style them.</p>
+                <button type="button" class="btn">Button</button>
+                <pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Button&lt;/button&gt;</code></pre>
+                <h2 id="variants">Variants</h2>
+                <p>Buttons can have different variants by adding additional classes.</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Normal</th>
+                            <th>Primary (<code class="language-css">btn-primary</code>)</th>
+                            <th>Quiet (<code class="language-css">btn-quiet</code>)</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th>Default</th>
+                            <td><button type="button" class="btn">Button</button></td>
+                            <td><button type="button" class="btn btn-primary">Button</button></td>
+                            <td><button type="button" class="btn btn-quiet">Button</button></td>
+                        </tr>
+                        <tr>
+                            <th>Progressive</th>
+                            <td><button type="button" class="btn btn-progressive">Button</button></td>
+                            <td><button type="button" class="btn btn-primary btn-progressive">Button</button></td>
+                            <td><button type="button" class="btn btn-quiet btn-progressive">Button</button></td>
+                        </tr>
+                        <tr>
+                            <th>Destructive</th>
+                            <td><button type="button" class="btn btn-destructive">Button</button></td>
+                            <td><button type="button" class="btn btn-primary btn-destructive">Button</button></td>
+                            <td><button type="button" class="btn btn-quiet btn-destructive">Button</button></td>
+                        </tr>
+                        <tr>
+                            <th>Disabled</th>
+                            <td><button type="button" class="btn" disabled>Button</button></td>
+                            <td><button type="button" class="btn btn-primary" disabled>Button</button></td>
+                            <td><button type="button" class="btn btn-quiet" disabled>Button</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2 id="buttonsizes">Button sizes</h2>
+                <p>Buttons can come in different sizes: small, medium and large, with medium being the default. Use <code class="language-css">btn-lg</code> for large buttons, or <code class="language-css">btn-sm</code> for small buttons.</p>
+                <button type="button" class="btn btn-large">Large button</button>
+                <button type="button" class="btn">Medium button</button>
+                <button type="button" class="btn btn-small">Small button</button>
+                <pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-large&quot;&gt;Large button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Medium button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-small&quot;&gt;Small button&lt;/button&gt;</code></pre>
+            </main>
+        </div>
+        <footer class="footer border-t">
+            <div class="container">
+                <image src="images/CC_BY-SA_icon.svg" alt="CC-BY-SA 4.0" width="88" height="31" class="float-end ms-4 mb-4" />
+                <p>&copy; 2026 Codexify. Code licensed under MIT. Documentation licensed under CC-BY-SA 4.0.</p>
+                <p>Icons &copy; 2026 Wikimedia Foundation; licensed under CC BY 4.0.</p>
+                <p>Contributors: Xeverything11</p>
+                <p>Last updated: 2026-10-22</p>
+            </div>
+        </footer>
+    </body>
+</html>
