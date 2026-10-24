@@ -34,6 +34,7 @@
                                 <a class="list-group-item" href="reboot.html">Reboot</a>
                                 <a class="list-group-item" href="typography.html">Typography</a>
                                 <a class="list-group-item" href="colors.html">Colors</a>
+                                <a class="list-group-item" href="tables.html">Tables</a>
                             </div>
                         </div>
                     </details>
@@ -83,14 +84,62 @@
                 <p class="text-lg">Codexify is the open-source design framework, based on Wikimedia's Codex design system.</p>
                 <h2 id="browsersupport">Browser support</h2>
                 <p>Codexify is supported in the following browsers:</p>
-                <ul>
-                    <li>Google Chrome and Chromium-derived browsers (current and previous versions released in the past year)</li>
-                    <li>Mozilla Firefox (current stable and all supported ESR versions)</li>
-                    <li>Microsoft Edge (current and previous versions released in the past year)</li>
-                    <li>Apple Safari (current and previous 3 versions)</li>
-                </ul>
-                <p>That means Chrome 141+, Firefox 115+, Edge 141+, Safari 17+, and Chromium-derived browsers such as Opera and Samsung Internet. Internet Explorer is not supported.</p>
-                <p>Browser support is subject to change as newer alpha versions are released. It will be frozen at the time of the next beta release.</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Browser</th>
+                            <th>Chrome / Edge / Chromium</th>
+                            <th>Firefox</th>
+                            <th>Safari</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Windows</td>
+                            <td class="table-success"><i class="icon icon-check"></i> Yes</td>
+                            <td class="table-success"><i class="icon icon-check"></i> Yes</td>
+                            <td class="table-error"><i class="icon icon-close"></i> No</td>
+                        </tr>
+                        <tr>
+                            <td>macOS</td>
+                            <td class="table-success"><i class="icon icon-check"></i> Yes</td>
+                            <td class="table-success"><i class="icon icon-check"></i> Yes</td>
+                            <td class="table-success"><i class="icon icon-check"></i> Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Linux</td>
+                            <td class="table-success"><i class="icon icon-check"></i> Yes</td>
+                            <td class="table-success"><i class="icon icon-check"></i> Yes</td>
+                            <td class="table-error"><i class="icon icon-close"></i> No</td>
+                        </tr>
+                        <tr>
+                            <td>Android</td>
+                            <td class="table-success"><i class="icon icon-check"></i> Yes</td>
+                            <td class="table-success"><i class="icon icon-check"></i> Yes</td>
+                            <td class="table-error"><i class="icon icon-close"></i> No</td>
+                        </tr>
+                        <tr>
+                            <td>iOS & iPadOS</td>
+                            <td class="table-warning"><i class="icon icon-check"></i> Yes, but WebKit</td>
+                            <td class="table-warning"><i class="icon icon-check"></i> Yes, but WebKit</td>
+                            <td class="table-success"><i class="icon icon-check"></i> Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Version scope</td>
+                            <td>Current & previous versions in the past year</td>
+                            <td>Current & ESR versions officially supported by Mozilla</td>
+                            <td>Current & previous 3 versions</td>
+                        </tr>
+                        <tr>
+                            <td>Version range</td>
+                            <td>141+</td>
+                            <td>115+</td>
+                            <td>17+</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>For Chrome, Edge & Firefox on iOS, it uses WebKit engine like Safari due to Apple's restrictions.</p>
+                <p>Browser support is subject to change as newer alpha versions are released. It will be frozen and lowered to the minimum bound at the time of the next beta releases.</p>
                 <h2 id="gettingstarted">Getting started</h2>
                 <p>To get started with Codexify, copy the following code into your HTML file:</p>
                 <pre><code class="language-html">&lt;!DOCTYPE html&gt;
@@ -114,7 +163,7 @@
                 <p>&copy; 2026 Codexify. Code licensed under MIT. Documentation licensed under CC-BY-SA 4.0.</p>
                 <p>Icons &copy; 2026 Wikimedia Foundation; licensed under CC BY 4.0.</p>
                 <p>Contributors: Xeverything11</p>
-                <p>Last updated: 2026-10-22</p>
+                <p>Last updated: 2026-10-24</p>
             </div>
         </footer>
     </body>
