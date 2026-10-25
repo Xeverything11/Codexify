@@ -1,7 +1,7 @@
 /*
  * Codexify
- * Version 0.2.0
- * Last updated 2026-10-24
+ * Version 0.2.1
+ * Last updated 2026-10-25
  * Repository: https://github.com/Xeverything11/Codexify
  * MIT License
  * Copyright (c) 2026 Xeverything11
@@ -1272,6 +1272,7 @@ table.table.table-notice th, table.table.table-notice td {
     padding: 0.5rem 1rem;
     color: inherit;
     text-decoration: none;
+    text-align: inherit;
     background-color: var(--background-color-base);
     border: 1px solid var(--border-color-base);
     border-bottom-width: 0;
@@ -1289,17 +1290,26 @@ table.table.table-notice th, table.table.table-notice td {
     border-end-end-radius: 0.125rem;
 }
 
-.list-group-item:hover {
+a.list-group-item:hover:not(.disabled), button.list-group-item:hover:not(:disabled) {
     background-color: var(--background-color-interactive-subtle--hover);
 }
 
-.list-group-item:active {
+a.list-group-item:active:not(.disabled), button.list-group-item:active:not(:disabled) {
     background-color: var(--background-color-interactive-subtle--active);
     box-shadow: none;
 }
 
-.list-group-item:focus:not(:active) {
+.list-group-item:focus:not(:active, .disabled) {
     box-shadow: inset 0 0 0 2px var(--background-color-progressive--focus);
+}
+
+a.list-group-item.disabled, button.list-group-item:disabled {
+    background-color: var(--background-color-disabled-subtle);
+    color: var(--color-disabled);
+}
+
+a.list-group-item.disabled {
+    pointer-events: none;
 }
 
 .list-group-item.active {
@@ -1308,11 +1318,11 @@ table.table.table-notice th, table.table.table-notice td {
     border-color: transparent;
 }
 
-.list-group-item.active:hover {
+a.list-group-item.active:hover, button.list-group-item.active:hover {
     background-color: var(--background-color-progressive--hover);
 }
 
-.list-group-item.active:active {
+a.list-group-item.active:active, button.list-group-item.active:active {
     background-color: var(--background-color-progressive--active);
 }
 
