@@ -1,6 +1,6 @@
 /*
  * Codexify
- * Version 0.2.1
+ * Version 0.3.0
  * Last updated 2026-10-25
  * Repository: https://github.com/Xeverything11/Codexify
  * MIT License
@@ -3148,6 +3148,19 @@ table.table-c6-text-end tr > th:nth-child(6),    table.table-c6-text-end tr > td
     .tablet-position-absolute {position: absolute;}
     .tablet-position-fixed {position: fixed;}
     .tablet-position-sticky {position: sticky;}
+    .tablet-text-xs  {font-size: 0.750rem; line-height: 1.50;}
+    .tablet-text-sm  {font-size: 0.875rem; line-height: 1.50;}
+    .tablet-text-md  {font-size: 1.000rem; line-height: 1.50;}
+    .tablet-text-lg  {font-size: 1.125rem; line-height: 1.45;}
+    .tablet-text-xl  {font-size: 1.250rem; line-height: 1.40;}
+    .tablet-text-2xl {font-size: 1.500rem; line-height: 1.33;}
+    .tablet-text-3xl {font-size: 1.750rem; line-height: 1.25;}
+    .tablet-text-4xl {font-size: 2.250rem; line-height: 1.16;}
+    .tablet-text-5xl {font-size: 3.000rem; line-height: 1.08;}
+    .tablet-text-6xl {font-size: 4.000rem; line-height: 1.00;}
+    .tablet-text-start {text-align: start;}
+    .tablet-text-center {text-align: center;}
+    .tablet-text-end {text-align: end;}
 }
 
 @media (width >= 1120px) {
@@ -3278,6 +3291,19 @@ table.table-c6-text-end tr > th:nth-child(6),    table.table-c6-text-end tr > td
     .desktop-position-absolute {position: absolute;}
     .desktop-position-fixed {position: fixed;}
     .desktop-position-sticky {position: sticky;}
+    .desktop-text-xs  {font-size: 0.750rem; line-height: 1.50;}
+    .desktop-text-sm  {font-size: 0.875rem; line-height: 1.50;}
+    .desktop-text-md  {font-size: 1.000rem; line-height: 1.50;}
+    .desktop-text-lg  {font-size: 1.125rem; line-height: 1.45;}
+    .desktop-text-xl  {font-size: 1.250rem; line-height: 1.40;}
+    .desktop-text-2xl {font-size: 1.500rem; line-height: 1.33;}
+    .desktop-text-3xl {font-size: 1.750rem; line-height: 1.25;}
+    .desktop-text-4xl {font-size: 2.250rem; line-height: 1.16;}
+    .desktop-text-5xl {font-size: 3.000rem; line-height: 1.08;}
+    .desktop-text-6xl {font-size: 4.000rem; line-height: 1.00;}
+    .desktop-text-start {text-align: start;}
+    .desktop-text-center {text-align: center;}
+    .desktop-text-end {text-align: end;}
 }
 
 @media (width >= 1680px) {
@@ -3408,4 +3434,17 @@ table.table-c6-text-end tr > th:nth-child(6),    table.table-c6-text-end tr > td
     .desktop-wide-position-absolute {position: absolute;}
     .desktop-wide-position-fixed {position: fixed;}
     .desktop-wide-position-sticky {position: sticky;}
+    .desktop-wide-text-xs  {font-size: 0.750rem; line-height: 1.50;}
+    .desktop-wide-text-sm  {font-size: 0.875rem; line-height: 1.50;}
+    .desktop-wide-text-md  {font-size: 1.000rem; line-height: 1.50;}
+    .desktop-wide-text-lg  {font-size: 1.125rem; line-height: 1.45;}
+    .desktop-wide-text-xl  {font-size: 1.250rem; line-height: 1.40;}
+    .desktop-wide-text-2xl {font-size: 1.500rem; line-height: 1.33;}
+    .desktop-wide-text-3xl {font-size: 1.750rem; line-height: 1.25;}
+    .desktop-wide-text-4xl {font-size: 2.250rem; line-height: 1.16;}
+    .desktop-wide-text-5xl {font-size: 3.000rem; line-height: 1.08;}
+    .desktop-wide-text-6xl {font-size: 4.000rem; line-height: 1.00;}
+    .desktop-wide-text-start {text-align: start;}
+    .desktop-wide-text-center {text-align: center;}
+    .desktop-wide-text-end {text-align: end;}
 }
