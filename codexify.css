@@ -1,7 +1,7 @@
 /*
  * Codexify
- * Version 0.3.0
- * Last updated 2026-10-25
+ * Version 0.4.0
+ * Last updated 2026-11-01
  * Repository: https://github.com/Xeverything11/Codexify
  * MIT License
  * Copyright (c) 2026 Xeverything11
@@ -24,7 +24,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * Some icons are from Wikimedia's Codex design
+ * Some icons are from Wikimedia's Codex design, which is licensed under CC BY 4.0.
  */
 
 
@@ -486,12 +486,12 @@ body {
   font-family: var(--font-sans);
   font-variant-numeric: lining-nums;
   font-size: 1rem;
-  font-size-adjust: from-font;
+  font-size-adjust: 0.48;
   font-weight: 400;
   line-height: 1.5;
   padding: 0;
   margin: 0;
-  min-width: var(--breakpoint-mobile);
+  min-inline-size: var(--breakpoint-mobile);
   background: var(--background-color-base);
   color: var(--color-base);
 }
@@ -499,6 +499,7 @@ body {
 input, button, select, textarea {
   font-family: inherit;
   font-size: inherit;
+  font-size-adjust: inherit;
   font-variant-numeric: inherit;
   line-height: inherit;
 }
@@ -599,7 +600,7 @@ img, svg {
 }
 
 .container {
-    max-width: var(--breakpoint-desktop);
+    max-inline-size: var(--breakpoint-desktop);
     padding: 2rem 2rem;
     margin: 0 auto;
 }
@@ -613,8 +614,8 @@ img, svg {
 /* Icons */
 .icon {
     display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
     background: currentColor;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -1158,7 +1159,7 @@ img, svg {
 
 /* Tables */
 table.table {
-    width: 100%;
+    inline-size: 100%;
     border-collapse: collapse;
     margin-bottom: 1rem;
 }
@@ -1256,6 +1257,281 @@ table.table.table-notice {
 
 table.table.table-notice th, table.table.table-notice td {
     border-color: var(--border-color-notice);
+}
+
+/* Form control */
+.form-label {
+    display: block;
+}
+
+.form-control {
+    display: block;
+    padding: 0.25rem 0.5rem;
+    inline-size: 100%;
+    border-radius: 0.125rem;
+    border: 1px solid var(--border-color-interactive);
+    background: var(--background-color-base);
+    color: var(--color-base);
+    transition: border-color 150ms, box-shadow 150ms;
+}
+
+.form-control::placeholder {
+    color: var(--color-placeholder);
+}
+
+.form-control:hover {
+    border-color: var(--border-color-interactive--hover);
+}
+
+.form-control:focus {
+    border-color: var(--border-color-progressive--focus);
+    box-shadow: inset 0 0 0 2px var(--background-color-progressive--focus);
+}
+
+.form-control:disabled {
+    background-color: var(--background-color-disabled-subtle);
+    border-color: var(--border-color-disabled);
+    color: var(--color-disabled);
+}
+
+.form-control:disabled::placeholder {
+    color: var(--color-disabled);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-block-size: 2rem;
+}
+
+select.form-control {
+    padding-block: 0.5rem;
+}
+
+.form-control[type="color"] {
+    block-size: auto;
+    inline-size: auto;
+    padding: 0;
+}
+
+.form-control[type="color"]::-moz-color-swatch {
+    block-size: 2rem;
+    inline-size: 2rem;
+    margin: 0;
+    border: none;
+}
+
+.form-control[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.form-control[type="color"]::-webkit-color-swatch {
+    appearance: none;
+    block-size: 1.5rem;
+    inline-size: 1.5rem;
+    margin: 0;
+    border: none;
+}
+
+.form-control[type="file"] {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.form-control[type="file"]::file-selector-button {
+    appearance: none;
+    margin-inline-end: 0.5rem;
+    padding: 0 0.5rem;
+    border: 1px solid var(--border-color-interactive);
+    border-radius: 0.125rem;
+    color: var(--color-base);
+    background-color: var(--background-color-interactive-subtle);
+    font: inherit;
+    font-size-adjust: inherit;
+    font-variant-numeric: inherit;
+    font-weight: 700;
+    line-height: 2rem;
+    transition: color 150ms, background-color 150ms, border-color 150ms, box-shadow 150ms;
+}
+
+.form-control[type="file"]::file-selector-button:hover {
+    color: var(--color-gray-900);
+    background-color: var(--background-color-interactive-subtle--hover);
+    border-color: var(--border-color-interactive--hover);
+}
+
+.form-control[type="file"]::file-selector-button:active {
+    color: var(--color-gray-900);
+    background-color: var(--background-color-interactive--active);
+    border-color: var(--border-color-interactive--active);
+}
+
+.form-control[type="file"]:focus::file-selector-button {
+    box-shadow: inset 0 0 0 2px var(--background-color-progressive--focus);
+    border-color: var(--border-color-progressive--focus);
+}
+
+.form-control[type="file"]:disabled::file-selector-button {
+    color: var(--color-disabled);
+    background-color: var(--background-color-disabled);
+    border-color: transparent;
+}
+
+.form-field {
+    margin-block-end: 0.5rem;
+}
+
+.form-field > .form-label {
+    margin-block-end: 0.125rem;
+}
+
+.form-field > .form-text {
+    font-size: 0.875rem;
+}
+
+/* Checkboxes, radios & switches */
+.check, .radio, .switch {
+    appearance: none;
+    position: relative;
+    block-size: 1.5rem;
+    inline-size: 1.5rem;
+    background-color: var(--background-color-base);
+    border: 1px solid var(--border-color-interactive);
+    border-radius: 0.125rem;
+    transition: background-color 150ms, border-color 150ms, box-shadow 150ms;
+}
+
+.radio {
+    border-radius: 50%;
+}
+
+.switch {
+    border-radius: 1.5rem;
+    inline-size: 2.5rem;
+}
+
+.check::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background-color: transparent;
+    mask-image: url("icons/check.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    transition: background-color 150ms;
+}
+
+.radio::after {
+    content: "";
+    position: absolute;
+    inset: 0.375rem;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: background-color 150ms, scale 150ms;
+}
+
+.switch::after {
+    content: "";
+    position: absolute;
+    inset: 0.25rem;
+    width: 0.875rem;
+    background-color: var(--background-color-base);
+    border: 1px solid var(--border-color-interactive);
+    border-radius: 50%;
+    transition: background-color 150ms, border-color 150ms, translate 150ms;
+}
+
+:is(.check, .radio, .switch):hover {
+    background-color: var(--background-color-interactive--hover);
+    border-color: var(--border-color-interactive--hover);
+}
+
+.switch:not(:checked):hover::after {
+    border-color: var(--border-color-interactive--hover);
+}
+
+:is(.check, .radio, .switch):focus {
+    border-color: var(--border-color-progressive--focus);
+    box-shadow: inset 0 0 0 2px var(--background-color-progressive--focus);
+}
+
+.radio:focus:not(:active)::after {
+    scale: 0.75;
+}
+
+:is(.check, .radio, .switch):active {
+    background-color: var(--background-color-interactive--active);
+    border-color: var(--border-color-interactive--active);
+    box-shadow: none;
+}
+
+.switch:not(:checked):active::after {
+    border-color: var(--border-color-interactive--active);
+}
+
+:is(.check, .radio, .switch):checked, .check:indeterminate {
+    background-color: var(--background-color-progressive);
+    border-color: transparent;
+}
+
+:is(.check, .radio, .switch):checked::after {
+    background-color: var(--color-inverted);
+}
+
+.check:indeterminate::after {
+    background-color: var(--color-inverted);
+    mask-image: url("icons/subtract.svg");
+
+}
+
+.switch:checked::after {
+    border-color: transparent;
+    translate: 1rem;
+}
+
+:is(.check, .radio, .switch):checked:hover, .check:indeterminate:hover {
+    background-color: var(--background-color-progressive--hover);
+}
+
+:is(.check, .radio, .switch):checked:focus:not(:active), .check:indeterminate:focus:not(:active) {
+    border-color: var(--border-color-progressive--focus);
+    box-shadow: inset 0 0 0 2px var(--background-color-progressive--focus), inset 0 0 0 3px var(--background-color-base);
+}
+
+:is(.check, .radio, .switch):checked:active, .check:indeterminate:active {
+    background-color: var(--background-color-progressive--active);
+}
+
+:is(.check, .radio, .switch):disabled {
+    border-color: var(--border-color-disabled);
+    background-color: var(--background-color-disabled-subtle);
+}
+
+:is(.check, .radio, .switch):disabled + label {
+    color: var(--color-disabled);
+}
+
+.switch:disabled:not(:checked)::after {
+    background-color: var(--background-color-disabled-subtle);
+    border-color: var(--border-color-disabled);
+}
+
+:is(.check, .radio, .switch):disabled:checked, .check:indeterminate:disabled {
+    border-color: transparent;
+    background-color: var(--background-color-disabled);
+}
+
+:is(.check, .radio, .switch):disabled:checked::after, .check:indeterminate:disabled::after {
+    background-color: var(--color-disabled);
+}
+
+.form-field:has(.check, .radio, .switch) {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.25rem;
 }
 
 /* List groups */
@@ -1394,8 +1670,8 @@ a.list-group-item.active:active, button.list-group-item.active:active {
 
 .accordion-item summary::after {
     content: "";
-    width: 1.5rem;
-    height: 1.5rem;
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
     background-color: currentColor;
     mask: url("icons/expand.svg") center / contain no-repeat;
 }
@@ -1494,12 +1770,12 @@ a.list-group-item.active:active, button.list-group-item.active:active {
 }
 
 .navbar .container {
-    max-width: var(--breakpoint-desktop);
+    max-inline-size: var(--breakpoint-desktop);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 4rem;
+    block-size: 4rem;
     padding-top: 0;
     padding-bottom: 0;
 }

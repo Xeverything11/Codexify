@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Checkbox - Codexify</title>
+        <link rel="stylesheet" href="codexify.css" />
+    </head>
+    <body>
+        <a href="#main" class="skip-link">Skip to main content</a>
+        <header class="navbar">
+            <nav class="container">
+                <a class="navbar-brand" href="index.html">Codexify</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="quickstart.html">Documentation</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container container-grid align-items-start">
+            <aside class="col-fill tablet-col-4 desktop-col-3 tablet-position-sticky top-6">
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Getting started</summary>
+                        <div class="accordion-body">
+                            <div class="list-group">
+                                <a class="list-group-item" href="quickstart.html">Quickstart</a>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Content</summary>
+                        <div class="accordion-body">
+                            <div class="list-group">
+                                <a class="list-group-item" href="reboot.html">Reboot</a>
+                                <a class="list-group-item" href="typography.html">Typography</a>
+                                <a class="list-group-item" href="colors.html">Colors</a>
+                                <a class="list-group-item" href="tables.html">Tables</a>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="accordion-item" open>
+                        <summary class="accordion-header">Forms</summary>
+                        <div class="accordion-body">
+                            <div class="list-group">
+                                <a class="list-group-item" href="formcontrol.html">Form control</a>
+                                <a class="list-group-item active" href="checkbox.html" aria-current="true">Checkbox</a>
+                                <a class="list-group-item" href="radio.html">Radio</a>
+                                <a class="list-group-item" href="switch.html">Switch</a>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Components</summary>
+                        <div class="accordion-body">
+                            <div class="list-group">
+                                <a class="list-group-item" href="accordion.html">Accordion</a>
+                                <a class="list-group-item" href="buttons.html">Buttons</a>
+                                <a class="list-group-item" href="listgroup.html">List group</a>
+                                <a class="list-group-item" href="navbar.html">Navbar</a>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Utilities</summary>
+                        <div class="accordion-body">
+                            <div class="list-group">
+                                <a class="list-group-item" href="textcolor.html">Text color</a>
+                                <a class="list-group-item" href="backgroundcolor.html">Background color</a>
+                                <a class="list-group-item" href="textsize.html">Text size</a>
+                                <a class="list-group-item" href="fontfamily.html">Font family</a>
+                                <a class="list-group-item" href="fontweight.html">Font weight</a>
+                                <a class="list-group-item" href="fontstyle.html">Font style</a>
+                                <a class="list-group-item" href="textalign.html">Text align</a>
+                                <a class="list-group-item" href="margin.html">Margin</a>
+                                <a class="list-group-item" href="padding.html">Padding</a>
+                                <a class="list-group-item" href="gap.html">Gap</a>
+                                <a class="list-group-item" href="border.html">Border</a>
+                                <a class="list-group-item" href="display.html">Display</a>
+                                <a class="list-group-item" href="width.html">Width</a>
+                                <a class="list-group-item" href="height.html">Height</a>
+                                <a class="list-group-item" href="position.html">Position</a>
+                                <a class="list-group-item" href="flexbox.html">Flexbox</a>
+                                <a class="list-group-item" href="grid.html">Grid</a>
+                                <a class="list-group-item" href="alignitems.html">Align items</a>
+                                <a class="list-group-item" href="aligncontent.html">Align content</a>
+                                <a class="list-group-item" href="justifyitems.html">Justify items</a>
+                                <a class="list-group-item" href="justifycontent.html">Justify content</a>
+                                <a class="list-group-item" href="float.html">Float</a>
+                                <a class="list-group-item" href="overflow.html">Overflow</a>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </aside>
+            <main class="col-fill tablet-col-8 desktop-col-9" id="main">
+                <h1 id="checkbox">Checkbox</h1>
+                <p class="text-lg">Native <code class="language-html">&lt;input&gt;</code> checkboxes to toggle items.</p>
+                <h2 id="basiccheckbox">Basic checkbox</h2>
+                <p>Checkboxes are styled using <code class="language-css">.check</code> on the <code class="language-html">&lt;input&gt;</code> element. Checkboxes have 24px (1.5rem) size to meet WCAG 2.2 standards for touch targets.</p>
+                <input type="checkbox" id="check1" class="check" checked />
+                <pre class="language-html"><code>&lt;input type=&quot;checkbox&quot; id=&quot;check1&quot; class=&quot;check&quot; checked /&gt;</code></pre>
+                <h2 id="formfield">With form field</h2>
+                <p>Wrap <code class="language-css">.check</code> in <code class="language-css">.form-field</code> to lay the checkbox and label side by side.</p>
+                <div class="form-field">
+                    <input type="checkbox" id="check2" class="check" checked />
+                    <label for="check2">Example checkbox</label>
+                </div>
+                <pre class="language-html"><code>&lt;div class=&quot;form-field&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;check2&quot; class=&quot;check&quot; checked /&gt;
+    &lt;label for=&quot;check2&quot;&gt;Example checkbox&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                <h2 id="indeterminate">Indeterminate</h2>
+                <p>Indeterminate checkboxes are used to indicate that a checkbox is neither checked nor unchecked. You can set it via JavaScript.</p>
+                <div class="form-field">
+                    <input type="checkbox" id="check3" class="check" />
+                    <label for="check3">Example indeterminate checkbox</label>
+                </div>
+                <pre class="language-html"><code>&lt;div class=&quot;form-field&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;check3&quot; class=&quot;check&quot; /&gt;
+    &lt;label for=&quot;check3&quot;&gt;Example indeterminate checkbox&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="language-js"><code>const check3 = document.getElementById("check3");
+check3.indeterminate = true;</code></pre>
+                <h2 id="disabled">Disabled</h2>
+                <p>Add <code class="language-html">disabled</code> attribute in <code class="language-css">.check</code> to gray out the checkbox as well as the supporting label.</p>
+                <div class="form-field">
+                    <input type="checkbox" id="check4" class="check" disabled />
+                    <label for="check4">Disabled checkbox</label>
+                </div>
+                <div class="form-field">
+                    <input type="checkbox" id="check5" class="check" disabled checked />
+                    <label for="check5">Disabled checkbox that is checked</label>
+                </div>
+                <pre class="language-html"><code>&lt;div class=&quot;form-field&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;check4&quot; class=&quot;check&quot; disabled /&gt;
+    &lt;label for=&quot;check4&quot;&gt;Disabled checkbox&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-field&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;check5&quot; class=&quot;check&quot; disabled checked /&gt;
+    &lt;label for=&quot;check5&quot;&gt;Disabled checkbox that is checked&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+            </main>
+        </div>
+        <footer class="footer border-t">
+            <div class="container">
+                <image src="images/CC_BY-SA_icon.svg" alt="CC-BY-SA 4.0" width="88" height="31" class="float-end ms-4 mb-4" />
+                <p>&copy; 2026 Codexify. Code licensed under MIT. Documentation licensed under CC-BY-SA 4.0.</p>
+                <p>Icons &copy; 2026 Wikimedia Foundation; licensed under CC BY 4.0.</p>
+                <p>Contributors: Xeverything11</p>
+                <p>Last updated: 2026-11-01</p>
+            </div>
+        </footer>
+        <script>
+            const check3 = document.getElementById("check3");
+            check3.indeterminate = true;
+        </script>
+    </body>
+</html>
