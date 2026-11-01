@@ -69,9 +69,11 @@ Use the class names below with the shared `icon` class, for example `<i class="i
 
 ## Buttons
 
-Use `.btn` on native `<button>` or `<a>` elements. Buttons support `.btn-large` and `.btn-small` size modifiers (the default is medium), and the `.btn-quiet` appearance modifier.
+Use `.btn` on native `<button>` or `<a>` elements. Buttons support `.btn-large` and `.btn-small` size modifiers (the default is medium), `.btn-quiet` for a quiet appearance, and `.btn-icon` for an icon-only button.
 
 - Add `.btn-progressive` for a progressive action or `.btn-destructive` for a destructive action. Combine with `.btn-primary` for the filled primary treatment, such as `.btn btn-primary btn-progressive`.
+- For icon-only buttons, include an accessible name with `aria-label` and use an existing `.icon` class for the icon.
+- Group adjacent buttons in a `.btn-group` container. Keep each child a native button or link with the `.btn` class.
 - Use the `disabled` attribute on buttons to disable them. Preserve visible focus and the built-in hover, active, and disabled states.
 - Keep the native element appropriate to the action: buttons perform actions; anchors navigate.
 
@@ -122,16 +124,17 @@ Use `.list-group` on a `<ul>` or `<div>` container and `.list-group-item` on eac
 ## Utility classes
 
 - Utility classes are composable single-purpose classes defined in `codexify.css`. Reuse them in examples instead of adding one-off styles when they already cover the need.
-- Color utilities use `bg-{hue}-{shade}`, `text-{hue}-{shade}`, and `border-{hue}-{shade}` to apply palette colors. Use the existing hue and shade tokens; use semantic tokens for component states.
+- Prefer semantic color utilities such as `.text-progressive`, `.text-destructive`, `.text-success`, `.text-warning`, `.text-error`, and `.text-notice` over palette-specific utilities such as `.text-blue-700`. Use `bg-{hue}-{shade}`, `text-{hue}-{shade}`, and `border-{hue}-{shade}` for deliberate palette styling when no semantic role is appropriate.
 - Typography utilities include `.text-xs` through `.text-6xl` for size, `.font-sans`/`.font-mono` for family, `.font-*` for weight or style, and `.text-start`/`.text-center`/`.text-end` for alignment.
 - Spacing utilities use the numbered scale (`0`–`13`): `m-*` and `p-*` set margin and padding; `mx-*`/`my-*` and `px-*`/`py-*` set inline/block axes; `mt-*`, `mb-*`, `ms-*`, and `me-*` (and corresponding `p` forms) set logical sides. `gap-*`, `gap-x-*`, and `gap-y-*` set layout gaps.
-- Layout utilities include `.d-*` display modes, `.w-*` sizing, `.container`/`.container-grid`, grid column classes, alignment and justification classes, and overflow/float helpers.
+- Layout utilities include `.d-*` display modes, `.w-*` sizing, `.container`, `.row`, grid column classes, alignment and justification classes, and overflow/float helpers.
 - Border utilities include `.border` and logical side variants, `*-0` removal variants, and palette-based border color classes.
+- Border radius utilities includes `rounded-*` sizing and logical side variants, and `*-0` removal variants.
 - Responsive variants are provided only for selected utilities. Use the `tablet-*` and `desktop-*` classes where defined (for example, `tablet-text-center` or `desktop-grid-cols-12`); do not assume every base utility has a responsive counterpart.
 
 ### Spacing
 
-Supports numbers up to 13 for margins, paddings and gaps, and up to 40 for widths
+Supports numbers up to 13 for margins, paddings, gaps and border radii, and up to 40 for widths
 
 The spacing scale is:
 

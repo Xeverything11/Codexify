@@ -13,6 +13,7 @@
                 <a class="navbar-brand" href="index.html">Codexify</a>
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="quickstart.html">Documentation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="examples.html">Examples</a></li>
                 </ul>
             </nav>
         </header>
@@ -75,6 +76,7 @@
                                 <a class="list-group-item" href="padding.html">Padding</a>
                                 <a class="list-group-item" href="gap.html">Gap</a>
                                 <a class="list-group-item" href="border.html">Border</a>
+                                <a class="list-group-item" href="borderradius.html">Border radius</a>
                                 <a class="list-group-item" href="display.html">Display</a>
                                 <a class="list-group-item" href="width.html">Width</a>
                                 <a class="list-group-item" href="height.html">Height</a>
@@ -145,6 +147,38 @@
                 <pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-large&quot;&gt;Large button&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Medium button&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-small&quot;&gt;Small button&lt;/button&gt;</code></pre>
+                <h2 id="iconbuttons">Icon buttons</h2>
+                <p>Add <code class="language-css">btn-icon</code> to a button that only displays an icon to make the button square.</p>
+                <button type="button" class="btn btn-icon" aria-label="Search"><i class="icon icon-search"></i></button>
+                <button type="button" class="btn btn-icon btn-primary btn-progressive" aria-label="Appearance"><i class="icon icon-appearance"></i></button>
+                <button type="button" class="btn btn-small btn-icon" aria-label="Article"><i class="icon icon-article"></i></button>
+                <button type="button" class="btn btn-large btn-icon" aria-label="Bookmark"><i class="icon icon-bookmark"></i></button>
+                <pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-icon&quot; aria-label=&quot;Search&quot;&gt;&lt;i class=&quot;icon icon-search&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-icon btn-primary btn-progressive&quot; aria-label=&quot;Appearance&quot;&gt;&lt;i class=&quot;icon icon-appearance&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-small btn-icon&quot; aria-label=&quot;Article&quot;&gt;&lt;i class=&quot;icon icon-article&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-large btn-icon&quot; aria-label=&quot;Bookmark&quot;&gt;&lt;i class=&quot;icon icon-bookmark&quot;&gt;&lt;/i&gt;&lt;/button&gt;</code></pre>
+                <h2 id="buttongroups">Button groups</h2>
+                <p>Wrap buttons in a <code class="language-html">&lt;div class=&quot;btn-group&quot;&gt;</code> to create a group of buttons.</p>
+                <div class="btn-group">
+                    <button type="button" class="btn">Button 1</button>
+                    <button type="button" class="btn">Button 2</button>
+                    <button type="button" class="btn">Button 3</button>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-icon" aria-label="Bold"><i class="icon icon-bold-b"></i></button>
+                    <button type="button" class="btn btn-icon" aria-label="Italic"><i class="icon icon-italic-i"></i></button>
+                    <button type="button" class="btn btn-icon" aria-label="Underline"><i class="icon icon-underline-u"></i></button>
+                </div>
+                <pre><code class="language-html">&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Button 1&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Button 2&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Button 3&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-icon&quot; aria-label=&quot;Bold&quot;&gt;&lt;i class=&quot;icon icon-bold-b&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-icon&quot; aria-label=&quot;Italic&quot;&gt;&lt;i class=&quot;icon icon-italic-i&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-icon&quot; aria-label=&quot;Underline&quot;&gt;&lt;i class=&quot;icon icon-underline-u&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
             </main>
         </div>
         <footer class="footer border-t">
@@ -153,7 +187,7 @@
                 <p>&copy; 2026 Codexify. Code licensed under MIT. Documentation licensed under CC-BY-SA 4.0.</p>
                 <p>Icons &copy; 2026 Wikimedia Foundation; licensed under CC BY 4.0.</p>
                 <p>Contributors: Xeverything11</p>
-                <p>Last updated: 2026-10-22</p>
+                <p>Last updated: 2026-11-01</p>
             </div>
         </footer>
     </body>
