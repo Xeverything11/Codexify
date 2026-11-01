@@ -39,6 +39,7 @@ For icons, use `<i class="icon icon-[name]"></i>` to generate the icon with colo
 
 - Use an existing SVG from `icons/` whenever possible. Its corresponding `.icon-*` class in `codexify.css` determines the asset mapping and uses `currentColor` for the icon color.
 - When adding an icon, keep the SVG filename, CSS mask URL, and kebab-case class name in sync. Preserve the upstream source and license attribution for third-party artwork.
+- The default icon size is 1.25rem (20px). You can make it smaller by adding `.icon-small`, which reduces icon size to 1rem (16px), or `.icon-xs`, which reduces icon size to 0.75rem (12px)
 
 ### Available icon classes
 
@@ -124,6 +125,7 @@ Use `.list-group` on a `<ul>` or `<div>` container and `.list-group-item` on eac
 ## Utility classes
 
 - Utility classes are composable single-purpose classes defined in `codexify.css`. Reuse them in examples instead of adding one-off styles when they already cover the need.
+- Do not invent utility classes or assume classes from another framework exist. Verify each class in `codexify.css` before using it; for example, `.shadow-xl` and `.rounded-lg` are not Codexify classes. If a needed utility is missing, add it to the shared stylesheet rather than using an undefined class.
 - Prefer semantic color utilities such as `.text-progressive`, `.text-destructive`, `.text-success`, `.text-warning`, `.text-error`, and `.text-notice` over palette-specific utilities such as `.text-blue-700`. Use `bg-{hue}-{shade}`, `text-{hue}-{shade}`, and `border-{hue}-{shade}` for deliberate palette styling when no semantic role is appropriate.
 - Typography utilities include `.text-xs` through `.text-6xl` for size, `.font-sans`/`.font-mono` for family, `.font-*` for weight or style, and `.text-start`/`.text-center`/`.text-end` for alignment.
 - Spacing utilities use the numbered scale (`0`–`13`): `m-*` and `p-*` set margin and padding; `mx-*`/`my-*` and `px-*`/`py-*` set inline/block axes; `mt-*`, `mb-*`, `ms-*`, and `me-*` (and corresponding `p` forms) set logical sides. `gap-*`, `gap-x-*`, and `gap-y-*` set layout gaps.

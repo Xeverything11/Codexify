@@ -1,6 +1,6 @@
 /*
  * Codexify
- * Version 0.5.0
+ * Version 0.5.1
  * Last updated 2026-11-01
  * Repository: https://github.com/Xeverything11/Codexify
  * MIT License
@@ -618,13 +618,23 @@ img, svg {
 /* Icons */
 .icon {
     display: inline-block;
-    inline-size: 1.5rem;
-    block-size: 1.5rem;
+    inline-size: 1.25rem;
+    block-size: 1.25rem;
     background: currentColor;
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: contain;
     vertical-align: middle;
+}
+
+.icon-small {
+    inline-size: 1rem;
+    block-size: 1rem;
+}
+
+.icon-xs {
+    inline-size: 0.75rem;
+    block-size: 0.75rem;
 }
 
 .icon-add { mask-image: url("icons/add.svg");}
@@ -1004,8 +1014,8 @@ img, svg {
 }
 
 .btn.btn-small .icon {
-    inline-size: 1.25rem;
-    block-size: 1.25rem;
+    inline-size: 1rem;
+    block-size: 1rem;
 }
 
 .btn:hover {
@@ -1463,7 +1473,7 @@ select.form-control {
 .check::after {
     content: "";
     position: absolute;
-    inset: 2px;
+    inset: 0.125rem;
     background-color: transparent;
     mask-image: url("icons/check.svg");
     mask-repeat: no-repeat;
@@ -1719,8 +1729,8 @@ a.list-group-item.active:active, button.list-group-item.active:active {
 
 .accordion-item summary::after {
     content: "";
-    inline-size: 1.5rem;
-    block-size: 1.5rem;
+    inline-size: 1.25rem;
+    block-size: 1.25rem;
     background-color: currentColor;
     mask: url("icons/expand.svg") center / contain no-repeat;
 }
