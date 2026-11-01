@@ -1,6 +1,6 @@
 /*
  * Codexify
- * Version 0.5.1
+ * Version 0.5.2
  * Last updated 2026-11-01
  * Repository: https://github.com/Xeverything11/Codexify
  * MIT License
@@ -1018,96 +1018,96 @@ img, svg {
     block-size: 1rem;
 }
 
-.btn:hover {
+.btn:not(:disabled):hover {
     color: var(--color-gray-900);
     background-color: var(--background-color-interactive-subtle--hover);
     border-color: var(--border-color-interactive--hover);
 }
 
-.btn:active {
+.btn:not(:disabled):active {
     color: var(--color-gray-900);
     background-color: var(--background-color-interactive--active);
     border-color: var(--border-color-interactive--active);
 }
 
-.btn.btn-progressive {
+.btn.btn-progressive:not(:disabled) {
     color: var(--color-progressive);
     background-color: var(--color-blue-50);
     border-color: var(--color-blue-500);
 }
 
-.btn.btn-progressive:focus {
+.btn.btn-progressive:not(:disabled):focus {
     box-shadow: inset 0 0 0 2px var(--background-color-progressive--focus);
     border-color: var(--border-color-progressive--focus);
 }
 
-.btn.btn-progressive:hover {
+.btn.btn-progressive:not(:disabled):hover {
     color: var(--color-progressive--hover);
     background-color: var(--background-color-progressive-subtle--hover);
     border-color: var(--border-color-progressive--hover);
 }
 
-.btn.btn-progressive:active {
+.btn.btn-progressive:not(:disabled):active {
     color: var(--color-progressive--active);
     background-color: var(--background-color-progressive-subtle--active);
     border-color: var(--border-color-progressive--active);
     box-shadow: none;
 }
 
-.btn.btn-destructive {
+.btn.btn-destructive:not(:disabled) {
     color: var(--color-destructive);
     background-color: var(--background-color-destructive-subtle);
     border-color: var(--border-color-destructive);
 }
 
-.btn.btn-destructive:hover {
+.btn.btn-destructive:not(:disabled):hover {
     color: var(--color-destructive--hover);
     background-color: var(--background-color-destructive-subtle--hover);
     border-color: var(--border-color-destructive--hover);
 }
 
-.btn.btn-destructive:active {
+.btn.btn-destructive:not(:disabled):active {
     color: var(--color-destructive--active);
     background-color: var(--background-color-destructive-subtle--active);
     border-color: var(--border-color-destructive--active);
 }
 
-.btn.btn-primary.btn-progressive {
+.btn.btn-primary.btn-progressive:not(:disabled) {
     color: var(--color-inverted);
     background-color: var(--background-color-progressive);
     border-color: transparent;
 }
 
-.btn.btn-primary.btn-progressive:focus:not(:active) {
+.btn.btn-primary.btn-progressive:not(:disabled):focus:not(:active) {
     box-shadow: inset 0 0 0 2px var(--background-color-progressive--focus), inset 0 0 0 3px var(--background-color-base);
 }
 
-.btn.btn-primary.btn-progressive:hover {
+.btn.btn-primary.btn-progressive:not(:disabled):hover {
     color: var(--color-inverted);
     background-color: var(--background-color-progressive--hover);
 }
 
-.btn.btn-primary.btn-progressive:active {
+.btn.btn-primary.btn-progressive:not(:disabled):active {
     color: var(--color-inverted);
     background-color: var(--background-color-progressive--active);
 }
 
-.btn.btn-primary.btn-destructive {
+.btn.btn-primary.btn-destructive:not(:disabled) {
     color: var(--color-inverted);
     background-color: var(--background-color-destructive);
     border-color: transparent;
 }
 
-.btn.btn-primary.btn-destructive:focus:not(:active) {
+.btn.btn-primary.btn-destructive:not(:disabled):focus:not(:active) {
     box-shadow: inset 0 0 0 2px var(--background-color-destructive--focus), inset 0 0 0 3px var(--background-color-base);
 }
 
-.btn.btn-primary.btn-destructive:hover {
+.btn.btn-primary.btn-destructive:not(:disabled):hover {
     color: var(--color-inverted);
     background-color: var(--background-color-destructive--hover);
 }
 
-.btn.btn-primary.btn-destructive:active {
+.btn.btn-primary.btn-destructive:not(:disabled):active {
     color: var(--color-inverted);
     background-color: var(--background-color-destructive--active);
 }
@@ -1117,42 +1117,42 @@ img, svg {
     border-color: transparent;
 }
 
-.btn.btn-quiet:hover {
+.btn.btn-quiet:not(:disabled):hover {
     background-color: var(--background-color-interactive-subtle--hover);
 }
 
-.btn.btn-quiet:active {
+.btn.btn-quiet:not(:disabled):active {
     background-color: var(--background-color-interactive-subtle--active);
 }
 
-.btn.btn-quiet.btn-progressive {
+.btn.btn-quiet.btn-progressive:not(:disabled) {
     color: var(--color-blue-700);
     background-color: transparent;
     border-color: transparent;
 }
 
-.btn.btn-quiet.btn-progressive:hover {
+.btn.btn-quiet.btn-progressive:not(:disabled):hover {
     color: var(--color-progressive--hover);
     background-color:  var(--background-color-progressive-subtle--hover);
 }
 
-.btn.btn-quiet.btn-progressive:active {
+.btn.btn-quiet.btn-progressive:not(:disabled):active {
     color: var(--color-progressive--active);
     background-color:  var(--background-color-progressive-subtle--active);
 }
 
-.btn.btn-quiet.btn-destructive {
+.btn.btn-quiet.btn-destructive:not(:disabled) {
     color: var(--color-destructive);
     background-color: transparent;
     border-color: transparent;
 }
 
-.btn.btn-quiet.btn-destructive:hover {
+.btn.btn-quiet.btn-destructive:not(:disabled):hover {
     color: var(--color-destructive--hover);
     background-color:  var(--background-color-destructive-subtle--hover);
 }
 
-.btn.btn-quiet.btn-destructive:active {
+.btn.btn-quiet.btn-destructive:not(:disabled):active {
     color: var(--color-destructive--active);
     background-color:  var(--background-color-destructive-subtle--active);
 }
