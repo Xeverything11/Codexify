@@ -102,22 +102,22 @@
                 <input type="checkbox" id="check1" class="check" checked />
                 <pre class="language-html"><code>&lt;input type=&quot;checkbox&quot; id=&quot;check1&quot; class=&quot;check&quot; checked /&gt;</code></pre>
                 <h2 id="formfield">With form field</h2>
-                <p>Wrap <code class="language-css">.check</code> in <code class="language-css">.form-field</code> to lay the checkbox and label side by side.</p>
-                <div class="form-field">
+                <p>Wrap <code class="language-css">.check</code> and its label in <code class="language-css">.form-field.form-field-inline</code> to lay them side by side.</p>
+                <div class="form-field form-field-inline">
                     <input type="checkbox" id="check2" class="check" checked />
                     <label for="check2">Example checkbox</label>
                 </div>
-                <pre class="language-html"><code>&lt;div class=&quot;form-field&quot;&gt;
+                <pre class="language-html"><code>&lt;div class=&quot;form-field form-field-inline&quot;&gt;
     &lt;input type=&quot;checkbox&quot; id=&quot;check2&quot; class=&quot;check&quot; checked /&gt;
     &lt;label for=&quot;check2&quot;&gt;Example checkbox&lt;/label&gt;
 &lt;/div&gt;</code></pre>
                 <h2 id="indeterminate">Indeterminate</h2>
                 <p>Indeterminate checkboxes are used to indicate that a checkbox is neither checked nor unchecked. You can set it via JavaScript.</p>
-                <div class="form-field">
+                <div class="form-field form-field-inline">
                     <input type="checkbox" id="check3" class="check" />
                     <label for="check3">Example indeterminate checkbox</label>
                 </div>
-                <pre class="language-html"><code>&lt;div class=&quot;form-field&quot;&gt;
+                <pre class="language-html"><code>&lt;div class=&quot;form-field form-field-inline&quot;&gt;
     &lt;input type=&quot;checkbox&quot; id=&quot;check3&quot; class=&quot;check&quot; /&gt;
     &lt;label for=&quot;check3&quot;&gt;Example indeterminate checkbox&lt;/label&gt;
 &lt;/div&gt;</code></pre>
@@ -125,19 +125,19 @@
 check3.indeterminate = true;</code></pre>
                 <h2 id="disabled">Disabled</h2>
                 <p>Add <code class="language-html">disabled</code> attribute in <code class="language-css">.check</code> to gray out the checkbox as well as the supporting label.</p>
-                <div class="form-field">
+                <div class="form-field form-field-inline">
                     <input type="checkbox" id="check4" class="check" disabled />
                     <label for="check4">Disabled checkbox</label>
                 </div>
-                <div class="form-field">
+                <div class="form-field form-field-inline">
                     <input type="checkbox" id="check5" class="check" disabled checked />
                     <label for="check5">Disabled checkbox that is checked</label>
                 </div>
-                <pre class="language-html"><code>&lt;div class=&quot;form-field&quot;&gt;
+                <pre class="language-html"><code>&lt;div class=&quot;form-field form-field-inline&quot;&gt;
     &lt;input type=&quot;checkbox&quot; id=&quot;check4&quot; class=&quot;check&quot; disabled /&gt;
     &lt;label for=&quot;check4&quot;&gt;Disabled checkbox&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;form-field&quot;&gt;
+&lt;div class=&quot;form-field form-field-inline&quot;&gt;
     &lt;input type=&quot;checkbox&quot; id=&quot;check5&quot; class=&quot;check&quot; disabled checked /&gt;
     &lt;label for=&quot;check5&quot;&gt;Disabled checkbox that is checked&lt;/label&gt;
 &lt;/div&gt;</code></pre>

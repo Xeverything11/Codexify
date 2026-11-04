@@ -102,30 +102,30 @@
                 <input type="checkbox" role="switch" id="switch1" class="switch" switch />
                 <pre class="language-html"><code>&lt;input type=&quot;checkbox&quot; role=&quot;switch&quot; id=&quot;switch1&quot; class=&quot;switch&quot; switch /&gt;</code></pre>
                 <h2 id="formfield">With form field</h2>
-                <p>Wrap <code class="language-css">.switch</code> in <code class="language-css">.form-field</code> to lay the switch and label side by side.</p>
-                <div class="form-field">
+                <p>Wrap <code class="language-css">.switch</code> and its label in <code class="language-css">.form-field.form-field-inline</code> to lay them side by side.</p>
+                <div class="form-field form-field-inline">
                     <input type="checkbox" role="switch" id="switch2" class="switch" checked switch />
                     <label for="switch2">Example switch</label>
                 </div>
-                <pre class="language-html"><code>&lt;div class=&quot;form-field&quot;&gt;
+                <pre class="language-html"><code>&lt;div class=&quot;form-field form-field-inline&quot;&gt;
     &lt;input type=&quot;checkbox&quot; role=&quot;switch&quot; id=&quot;switch2&quot; class=&quot;switch&quot; checked switch /&gt;
     &lt;label for=&quot;switch2&quot;&gt;Example switch&lt;/label&gt;
 &lt;/div&gt;</code></pre>
                 <h2 id="disabled">Disabled</h2>
                 <p>Add <code class="language-html">disabled</code> attribute in <code class="language-css">.switch</code> to gray out the switch as well as the supporting label.</p>
-                <div class="form-field">
+                <div class="form-field form-field-inline">
                     <input type="checkbox" role="switch" id="switch3" class="switch" disabled switch />
                     <label for="switch3">Disabled switch</label>
                 </div>
-                <div class="form-field">
+                <div class="form-field form-field-inline">
                     <input type="checkbox" role="switch" id="switch4" class="switch" disabled checked switch />
                     <label for="switch4">Disabled switch that is checked</label>
                 </div>
-                <pre class="language-html"><code>&lt;div class=&quot;form-field&quot;&gt;
+                <pre class="language-html"><code>&lt;div class=&quot;form-field form-field-inline&quot;&gt;
     &lt;input type=&quot;checkbox&quot; role=&quot;switch&quot; id=&quot;switch3&quot; class=&quot;switch&quot; disabled switch /&gt;
     &lt;label for=&quot;switch3&quot;&gt;Disabled switch&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;form-field&quot;&gt;
+&lt;div class=&quot;form-field form-field-inline&quot;&gt;
     &lt;input type=&quot;checkbox&quot; role=&quot;switch&quot; id=&quot;switch4&quot; class=&quot;switch&quot; disabled checked switch /&gt;
     &lt;label for=&quot;switch4&quot;&gt;Disabled switch that is checked&lt;/label&gt;
 &lt;/div&gt;</code></pre>
