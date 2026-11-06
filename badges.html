@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Badges - Codexify</title>
+        <link rel="stylesheet" href="codexify.css" />
+    </head>
+    <body>
+        <a href="#main" class="skip-link">Skip to main content</a>
+        <header class="navbar">
+            <nav class="container">
+                <a class="navbar-brand" href="index.html">Codexify</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="quickstart.html">Documentation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="examples.html">Examples</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container container-grid align-items-start">
+            <aside class="col-fill tablet-col-4 desktop-col-3 tablet-position-sticky top-6">
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Getting started</summary>
+                        <div class="accordion-body">
+                            <div class="list-group">
+                                <a class="list-group-item" href="quickstart.html">Quickstart</a>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Content</summary>
+                        <div class="accordion-body">
+                            <div class="list-group">
+                                <a class="list-group-item" href="reboot.html">Reboot</a>
+                                <a class="list-group-item" href="typography.html">Typography</a>
+                                <a class="list-group-item" href="layout.html">Layout</a>
+                                <a class="list-group-item" href="colors.html">Colors</a>
+                                <a class="list-group-item" href="tables.html">Tables</a>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Forms</summary>
+                        <div class="accordion-body">
+                            <div class="list-group">
+                                <a class="list-group-item" href="formcontrol.html">Form control</a>
+                                <a class="list-group-item" href="checkbox.html">Checkbox</a>
+                                <a class="list-group-item" href="radio.html">Radio</a>
+                                <a class="list-group-item" href="switch.html">Switch</a>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="accordion-item" open>
+                        <summary class="accordion-header">Components</summary>
+                        <div class="accordion-body">
+                            <div class="list-group">
+                                <a class="list-group-item" href="accordion.html">Accordion</a>
+                                <a class="list-group-item" href="alert.html">Alert</a>
+                                <a class="list-group-item active" href="badges.html" aria-current="true">Badges</a>
+                                <a class="list-group-item" href="buttons.html">Buttons</a>
+                                <a class="list-group-item" href="listgroup.html">List group</a>
+                                <a class="list-group-item" href="navbar.html">Navbar</a>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Utilities</summary>
+                        <div class="accordion-body">
+                            <div class="list-group">
+                                <a class="list-group-item" href="utilities/textcolor.html">Text color</a>
+                                <a class="list-group-item" href="utilities/backgroundcolor.html">Background color</a>
+                                <a class="list-group-item" href="utilities/textsize.html">Text size</a>
+                                <a class="list-group-item" href="utilities/fontfamily.html">Font family</a>
+                                <a class="list-group-item" href="utilities/fontweight.html">Font weight</a>
+                                <a class="list-group-item" href="utilities/fontstyle.html">Font style</a>
+                                <a class="list-group-item" href="utilities/textalign.html">Text align</a>
+                                <a class="list-group-item" href="utilities/margin.html">Margin</a>
+                                <a class="list-group-item" href="utilities/padding.html">Padding</a>
+                                <a class="list-group-item" href="utilities/gap.html">Gap</a>
+                                <a class="list-group-item" href="utilities/border.html">Border</a>
+                                <a class="list-group-item" href="utilities/borderradius.html">Border radius</a>
+                                <a class="list-group-item" href="utilities/display.html">Display</a>
+                                <a class="list-group-item" href="utilities/width.html">Width</a>
+                                <a class="list-group-item" href="utilities/height.html">Height</a>
+                                <a class="list-group-item" href="utilities/position.html">Position</a>
+                                <a class="list-group-item" href="utilities/flexbox.html">Flexbox</a>
+                                <a class="list-group-item" href="utilities/grid.html">Grid</a>
+                                <a class="list-group-item" href="utilities/flexwrap.html">Flex wrap</a>
+                                <a class="list-group-item" href="utilities/alignitems.html">Align items</a>
+                                <a class="list-group-item" href="utilities/aligncontent.html">Align content</a>
+                                <a class="list-group-item" href="utilities/justifyitems.html">Justify items</a>
+                                <a class="list-group-item" href="utilities/justifycontent.html">Justify content</a>
+                                <a class="list-group-item" href="utilities/float.html">Float</a>
+                                <a class="list-group-item" href="utilities/overflow.html">Overflow</a>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </aside>
+            <main class="col-fill tablet-col-8 desktop-col-9" id="main">
+                <h1 id="badges">Badges</h1>
+                <p class="text-lg">Badges are used to display counts or labels next to elements.</p>
+                <h2 id="examples">Examples</h2>
+                <p>Badges comes in different semantic variants, as well as weights (default, subtle, outlined).</p>
+                <p>Default:
+                    <span class="badge badge-progressive">Progressive</span>
+                    <span class="badge badge-destructive">Destructive</span>
+                    <span class="badge badge-error">Error</span>
+                    <span class="badge badge-warning">Warning</span>
+                    <span class="badge badge-success">Success</span>
+                    <span class="badge badge-notice">Notice</span>
+                </p>
+                <p>Subtle:
+                    <span class="badge badge-subtle badge-progressive">Progressive</span>
+                    <span class="badge badge-subtle badge-destructive">Destructive</span>
+                    <span class="badge badge-subtle badge-error">Error</span>
+                    <span class="badge badge-subtle badge-warning">Warning</span>
+                    <span class="badge badge-subtle badge-success">Success</span>
+                    <span class="badge badge-subtle badge-notice">Notice</span>
+                </p>
+                <p>Outlined:
+                    <span class="badge badge-outlined badge-progressive">Progressive</span>
+                    <span class="badge badge-outlined badge-destructive">Destructive</span>
+                    <span class="badge badge-outlined badge-error">Error</span>
+                    <span class="badge badge-outlined badge-warning">Warning</span>
+                    <span class="badge badge-outlined badge-success">Success</span>
+                    <span class="badge badge-outlined badge-notice">Notice</span>
+                </p>
+                <pre><code class="language-html">&lt;!-- Default badges -&gt;
+&lt;span class=&quot;badge badge-progressive&quot;&gt;Progressive&lt;/span&gt;
+&lt;span class=&quot;badge badge-destructive&quot;&gt;Destructive&lt;/span&gt;
+&lt;span class=&quot;badge badge-error&quot;&gt;Error&lt;/span&gt;
+&lt;span class=&quot;badge badge-warning&quot;&gt;Warning&lt;/span&gt;
+&lt;span class=&quot;badge badge-success&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;badge badge-notice&quot;&gt;Notice&lt;/span&gt;
+
+&lt;!-- Subtle badges -&gt;
+&lt;span class=&quot;badge badge-subtle badge-progressive&quot;&gt;Progressive&lt;/span&gt;
+&lt;span class=&quot;badge badge-subtle badge-destructive&quot;&gt;Destructive&lt;/span&gt;
+&lt;span class=&quot;badge badge-subtle badge-error&quot;&gt;Error&lt;/span&gt;
+&lt;span class=&quot;badge badge-subtle badge-warning&quot;&gt;Warning&lt;/span&gt;
+&lt;span class=&quot;badge badge-subtle badge-success&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;badge badge-subtle badge-notice&quot;&gt;Notice&lt;/span&gt;
+
+&lt;!-- Outlined badges -&gt;
+&lt;span class=&quot;badge badge-outlined badge-progressive&quot;&gt;Progressive&lt;/span&gt;
+&lt;span class=&quot;badge badge-outlined badge-destructive&quot;&gt;Destructive&lt;/span&gt;
+&lt;span class=&quot;badge badge-outlined badge-error&quot;&gt;Error&lt;/span&gt;
+&lt;span class=&quot;badge badge-outlined badge-warning&quot;&gt;Warning&lt;/span&gt;
+&lt;span class=&quot;badge badge-outlined badge-success&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;badge badge-outlined badge-notice&quot;&gt;Notice&lt;/span&gt;</code></pre>
+            <p>They scale relative to font size, i.e. 87.5% of inherited font size (0.875em). For example, heading 1 have a font size of 2.25rem, so the badge will have a font size of 1.96875rem.</p>
+            <p class="heading-1">Heading 1 <span class="badge badge-progressive">New</span></p>
+            <p class="heading-2">Heading 2 <span class="badge badge-progressive">New</span></p>
+            <p class="heading-3">Heading 3 <span class="badge badge-progressive">New</span></p>
+            <p class="heading-4">Heading 4 <span class="badge badge-progressive">New</span></p>
+            <p class="heading-5">Heading 5 <span class="badge badge-progressive">New</span></p>
+            <p class="heading-6">Heading 6 <span class="badge badge-progressive">New</span></p>
+            <pre><code class="language-html">&lt;p class=&quot;heading-1&quot;&gt;Heading 1 &lt;span class=&quot;badge badge-progressive&quot;&gt;New&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;heading-2&quot;&gt;Heading 2 &lt;span class=&quot;badge badge-progressive&quot;&gt;New&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;heading-3&quot;&gt;Heading 3 &lt;span class=&quot;badge badge-progressive&quot;&gt;New&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;heading-4&quot;&gt;Heading 4 &lt;span class=&quot;badge badge-progressive&quot;&gt;New&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;heading-5&quot;&gt;Heading 5 &lt;span class=&quot;badge badge-progressive&quot;&gt;New&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;heading-6&quot;&gt;Heading 6 &lt;span class=&quot;badge badge-progressive&quot;&gt;New&lt;/span&gt;&lt;/p&gt;</code></pre>
+            <h2 id="buttons">Buttons</h2>
+            <p>Badges can be used in buttons, for example to indicate a notification count.</p>
+            <button class="btn btn-primary btn-progressive">
+                Notifications
+                <span class="badge badge-destructive">3</span>
+            </button>
+            <pre><code class="language-html">&lt;button class=&quot;btn btn-primary btn-progressive&quot;&gt;
+    Notifications
+    &lt;span class=&quot;badge badge-destructive&quot;&gt;3&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+            </main>
+        </div>
+        <footer class="footer border-t">
+            <div class="container">
+                <image src="images/CC_BY-SA_icon.svg" alt="CC-BY-SA 4.0" width="88" height="31" class="float-end ms-4 mb-4" />
+                <p>&copy; 2026 Codexify. Code licensed under MIT. Documentation licensed under CC-BY-SA 4.0.</p>
+                <p>Icons &copy; 2026 Wikimedia Foundation; licensed under CC BY 4.0.</p>
+                <p>Contributors: Xeverything11</p>
+                <p>Last updated: 2026-11-04</p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -50,6 +50,7 @@
                             <div class="list-group">
                                 <a class="list-group-item" href="reboot.html">Reboot</a>
                                 <a class="list-group-item" href="typography.html">Typography</a>
+                                <a class="list-group-item" href="layout.html">Layout</a>
                                 <a class="list-group-item active" href="colors.html" aria-current="true">Colors</a>
                                 <a class="list-group-item" href="tables.html">Tables</a>
                             </div>
@@ -71,6 +72,8 @@
                         <div class="accordion-body">
                             <div class="list-group">
                                 <a class="list-group-item" href="accordion.html">Accordion</a>
+                                <a class="list-group-item" href="alert.html">Alert</a>
+                                <a class="list-group-item" href="badges.html">Badges</a>
                                 <a class="list-group-item" href="buttons.html">Buttons</a>
                                 <a class="list-group-item" href="listgroup.html">List group</a>
                                 <a class="list-group-item" href="navbar.html">Navbar</a>
@@ -99,6 +102,7 @@
                                 <a class="list-group-item" href="utilities/position.html">Position</a>
                                 <a class="list-group-item" href="utilities/flexbox.html">Flexbox</a>
                                 <a class="list-group-item" href="utilities/grid.html">Grid</a>
+                                <a class="list-group-item" href="utilities/flexwrap.html">Flex wrap</a>
                                 <a class="list-group-item" href="utilities/alignitems.html">Align items</a>
                                 <a class="list-group-item" href="utilities/aligncontent.html">Align content</a>
                                 <a class="list-group-item" href="utilities/justifyitems.html">Justify items</a>
@@ -112,7 +116,24 @@
             </aside>
             <main class="col-fill tablet-col-8 desktop-col-9" id="main">
                 <h1 id="quickstart">Colors</h1>
-                <p class="text-lg">Codexify has an extensive color system, with 15 shades across 11 hues plus black and white, giving 167 colors to work with.</p>
+                <p class="text-lg">Codexify has an extensive color system, with 15 shades across 14 hues plus black and white, giving 212 colors to work with.</p>
+                <div class="w-24 h-24 rounded-circle mx-auto my-4" aria-labelledby="coloreheel" style="background-image: 
+                conic-gradient(
+                    var(--color-red-500) 0deg 30deg,
+                    var(--color-tomato-400) 30deg 60deg,
+                    var(--color-orange-300) 60deg 90deg,
+                    var(--color-amber-200) 90deg 120deg,
+                    var(--color-yellow-100) 120deg 150deg,
+                    var(--color-lime-200) 150deg 180deg,
+                    var(--color-green-400) 180deg 210deg,
+                    var(--color-teal-500) 210deg 240deg,
+                    var(--color-blue-500) 240deg 270deg,
+                    var(--color-indigo-600) 270deg 300deg,
+                    var(--color-purple-600) 300deg 330deg,
+                    var(--color-pink-600) 330deg 360deg
+                );
+                "></div>
+                <p id="coloreheel">Excluding neutral hues (brown and grey), these 12 hues form a color wheel. Red, yellow and blue are the primary colors, orange, green and purple are the secondary colors. The tertiary colours are tomato (red-orange), amber (yellow-orange), lime (yellow-green), teal (blue-green), indigo (blue-purple), and pink (red-purple).</p>
                 <h2 id="browsersupport">List of colors</h2>
                 <div class="overflow-x-auto">
                     <table class="table">
@@ -156,6 +177,24 @@
                                 <td class="bg-red-990"></td>
                             </tr>
                             <tr class="h-11">
+                                <th>Tomato</th>
+                                <td class="bg-tomato-10"></td>
+                                <td class="bg-tomato-20"></td>
+                                <td class="bg-tomato-50"></td>
+                                <td class="bg-tomato-100"></td>
+                                <td class="bg-tomato-200"></td>
+                                <td class="bg-tomato-300"></td>
+                                <td class="bg-tomato-400"></td>
+                                <td class="bg-tomato-500"></td>
+                                <td class="bg-tomato-600"></td>
+                                <td class="bg-tomato-700"></td>
+                                <td class="bg-tomato-800"></td>
+                                <td class="bg-tomato-900"></td>
+                                <td class="bg-tomato-950"></td>
+                                <td class="bg-tomato-980"></td>
+                                <td class="bg-tomato-990"></td>
+                            </tr>
+                            <tr class="h-11">
                                 <th>Orange</th>
                                 <td class="bg-orange-10"></td>
                                 <td class="bg-orange-20"></td>
@@ -172,6 +211,24 @@
                                 <td class="bg-orange-950"></td>
                                 <td class="bg-orange-980"></td>
                                 <td class="bg-orange-990"></td>
+                            </tr>
+                            <tr class="h-11">
+                                <th>Amber</th>
+                                <td class="bg-amber-10"></td>
+                                <td class="bg-amber-20"></td>
+                                <td class="bg-amber-50"></td>
+                                <td class="bg-amber-100"></td>
+                                <td class="bg-amber-200"></td>
+                                <td class="bg-amber-300"></td>
+                                <td class="bg-amber-400"></td>
+                                <td class="bg-amber-500"></td>
+                                <td class="bg-amber-600"></td>
+                                <td class="bg-amber-700"></td>
+                                <td class="bg-amber-800"></td>
+                                <td class="bg-amber-900"></td>
+                                <td class="bg-amber-950"></td>
+                                <td class="bg-amber-980"></td>
+                                <td class="bg-amber-990"></td>
                             </tr>
                             <tr class="h-11">
                                 <th>Yellow</th>
@@ -264,6 +321,24 @@
                                 <td class="bg-blue-990"></td>
                             </tr>
                             <tr class="h-11">
+                                <th>Indigo</th>
+                                <td class="bg-indigo-10"></td>
+                                <td class="bg-indigo-20"></td>
+                                <td class="bg-indigo-50"></td>
+                                <td class="bg-indigo-100"></td>
+                                <td class="bg-indigo-200"></td>
+                                <td class="bg-indigo-300"></td>
+                                <td class="bg-indigo-400"></td>
+                                <td class="bg-indigo-500"></td>
+                                <td class="bg-indigo-600"></td>
+                                <td class="bg-indigo-700"></td>
+                                <td class="bg-indigo-800"></td>
+                                <td class="bg-indigo-900"></td>
+                                <td class="bg-indigo-950"></td>
+                                <td class="bg-indigo-980"></td>
+                                <td class="bg-indigo-990"></td>
+                            </tr>
+                            <tr class="h-11">
                                 <th>Purple</th>
                                 <td class="bg-purple-10"></td>
                                 <td class="bg-purple-20"></td>
@@ -338,7 +413,7 @@
                         </tbody>
                     </table>
                 </div>
-                <h2 id="#checkingcontrast">Checking contrast ratio</h2>
+                <h2 id="checkingcontrast">Checking contrast ratio</h2>
                 <div class="overflow-x-auto" id="contrast-matrix"></div>
                 <noscript>Enable JavaScript to view the interactive contrast ratio table.</noscript>
                 <p>Blue borders around each combination indicates contrast ratio at or exceeding 7:1, which meets WCAG 2.1 AAA standards for all text, graphics and form components.</p>
@@ -360,7 +435,7 @@
                 <p>&copy; 2026 Codexify. Code licensed under MIT. Documentation licensed under CC-BY-SA 4.0.</p>
                 <p>Icons &copy; 2026 Wikimedia Foundation; licensed under CC BY 4.0.</p>
                 <p>Contributors: Xeverything11</p>
-                <p>Last updated: 2026-11-01</p>
+                <p>Last updated: 2026-11-04</p>
             </div>
         </footer>
         <script>
@@ -368,7 +443,7 @@
     "10", "20", "50", "100", "200", "300", "400", "500",
     "600", "700", "800", "900", "950", "980", "990"
 ];
-            const contrastHues = ["red", "orange", "yellow", "lime", "green", "teal", "blue", "purple", "pink", "brown", "gray"];
+            const contrastHues = ["red", "tomato", "orange", "amber", "yellow", "lime", "green", "teal", "blue", "indigo", "purple", "pink", "brown", "gray"];
             const contrastMatrix = document.querySelector("#contrast-matrix");
 
             if (contrastMatrix) {

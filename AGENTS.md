@@ -78,6 +78,22 @@ Use `.btn` on native `<button>` or `<a>` elements. Buttons support `.btn-large` 
 - Use the `disabled` attribute on buttons to disable them. Preserve visible focus and the built-in hover, active, and disabled states.
 - Keep the native element appropriate to the action: buttons perform actions; anchors navigate.
 
+## Badges
+
+Use `.badge` on inline elements such as `<span>`, `<a>`, or `<button>` when you need a compact label or count.
+
+- Use semantic modifiers: `.badge-progressive`, `.badge-destructive`, `.badge-error`, `.badge-warning`, `.badge-success`, and `.badge-notice`.
+- Combine `.badge-subtle` or `.badge-outlined` with a semantic variant for lower-contrast treatments, such as `.badge badge-subtle badge-success` or `.badge badge-outlined badge-warning`.
+- Keep badges concise and inline with adjacent text; avoid using them as standalone blocks or replacements for full text.
+
+## Alerts
+
+Use `.alert` for important status or contextual messages, and pair it with a semantic modifier class such as `.alert-error`, `.alert-warning`, `.alert-success`, or `.alert-notice`.
+
+- Add `role="alert"` to the container when the message is an assertive status update.
+- Keep alert content concise and action-oriented; links inside alerts inherit the alert’s semantic color treatment and must retain accessible contrast.
+- Use the variant that matches the message tone; do not mix different alert styles in the same container.
+
 ## Form controls
 
 Use `.form-control` on native `<input>`, `<textarea>`, and `<select>` elements. Use `.form-label` on labels, and associate each label with its control using matching `for` and `id` attributes.
@@ -152,25 +168,28 @@ The spacing scale is:
 | 35 | 56 | 36 | 64 | 37 | 72 | 38 | 80 | 39 | 88 |
 | 40 | 96 |  |  |  |  |  |  |  |  |
 
-# Colors
+## Colors
 
-There are 11 hues with 15 shades, plus black and white, totalling 167 colors.
+There are 14 hues with 15 shades, plus black and white, totalling 202 colors.
 
-## Hues
+### Hues
 
 - Red
+- Tomato
 - Orange
+- Amber
 - Yellow
 - Lime
 - Green
 - Teal
 - Blue
+- Indigo
 - Purple
 - Pink
 - Brown
 - Gray
 
-## Shades
+### Shades
 
 - 10
 - 20
@@ -187,3 +206,13 @@ There are 11 hues with 15 shades, plus black and white, totalling 167 colors.
 - 950
 - 980
 - 990
+
+### Semantic colors
+
+Use semantic color tokens instead of hard-coded colors for component states. Tokens are grouped by text (`--color-*` / `.text-*`), background (`--background-color-*` / `.bg-*`), and border (`--border-color-*` / `.border-*`):
+
+- Text: `base`, `fixed`, `hover`, `emphasised`, `neutral`, `subtle`, `placeholder`, `disabled`, `disabled-emphasised`, `inverted`, `inverted-fixed`, `progressive`, `destructive`, `error`, `warning`, `success`, `notice`, `link`, `link-visited`, and `link-red`.
+- Background: `base`, `base-fixed`, `neutral`, `neutral-subtle`, `interactive`, `interactive-subtle`, `disabled`, `disabled-subtle`, `inverted`, `progressive`, `progressive-subtle`, `destructive`, `destructive-subtle`, `error`, `error-subtle`, `warning`, `warning-subtle`, `success`, `success-subtle`, `notice`, and `notice-subtle`.
+- Border: `base`, `emphasised`, `subtle`, `muted`, `interactive`, `disabled`, `progressive`, `destructive`, `error`, `warning`, `success`, and `notice`.
+
+Where defined, state variants use `--hover`, `--active`, and `--focus` suffixes; link text also has `--visited--hover` and `--visited--active` variants. For example, use `.text-progressive` rather than a palette token when styling a progressive action.

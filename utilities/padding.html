@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Padding - Codexify</title>
+        <link rel="stylesheet" href="../codexify.css" />
+    </head>
+    <body>
+        <a href="#main" class="skip-link">Skip to main content</a>
+        <header class="navbar">
+            <nav class="container">
+                <a class="navbar-brand" href="../index.html">Codexify</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../quickstart.html">Documentation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../examples.html">Examples</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container container-grid align-items-start">
+            <aside class="col-fill tablet-col-4 desktop-col-3 tablet-position-sticky top-6">
+                <div class="accordion">
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Getting started</summary>
+                        <div class="accordion-body">
+                            <div class="list-group">
+                                <a class="list-group-item" href="../quickstart.html">Quickstart</a>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Content</summary>
+                        <div class="accordion-body">
+                            <div class="list-group">
+                                <a class="list-group-item" href="../reboot.html">Reboot</a>
+                                <a class="list-group-item" href="../typography.html">Typography</a>
+                                <a class="list-group-item" href="../layout.html">Layout</a>
+                                <a class="list-group-item" href="../colors.html">Colors</a>
+                                <a class="list-group-item" href="../tables.html">Tables</a>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Forms</summary>
+                        <div class="accordion-body">
+                            <div class="list-group">
+                                <a class="list-group-item" href="../formcontrol.html">Form control</a>
+                                <a class="list-group-item" href="../checkbox.html">Checkbox</a>
+                                <a class="list-group-item" href="../radio.html">Radio</a>
+                                <a class="list-group-item" href="../switch.html">Switch</a>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="accordion-item">
+                        <summary class="accordion-header">Components</summary>
+                        <div class="accordion-body">
+                            <div class="list-group">
+                                <a class="list-group-item" href="../accordion.html">Accordion</a>
+                                <a class="list-group-item" href="../alert.html">Alert</a>
+                                <a class="list-group-item" href="../badges.html">Badges</a>
+                                <a class="list-group-item" href="../buttons.html">Buttons</a>
+                                <a class="list-group-item" href="../listgroup.html">List group</a>
+                                <a class="list-group-item" href="../navbar.html">Navbar</a>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="accordion-item" open>
+                        <summary class="accordion-header">Utilities</summary>
+                        <div class="accordion-body">
+                            <div class="list-group">
+                                <a class="list-group-item" href="textcolor.html">Text color</a>
+                                <a class="list-group-item" href="backgroundcolor.html">Background color</a>
+                                <a class="list-group-item" href="textsize.html">Text size</a>
+                                <a class="list-group-item" href="fontfamily.html">Font family</a>
+                                <a class="list-group-item" href="fontweight.html">Font weight</a>
+                                <a class="list-group-item" href="fontstyle.html">Font style</a>
+                                <a class="list-group-item" href="textalign.html">Text align</a>
+                                <a class="list-group-item" href="margin.html">Margin</a>
+                                <a class="list-group-item active" href="padding.html" aria-current="true">Padding</a>
+                                <a class="list-group-item" href="gap.html">Gap</a>
+                                <a class="list-group-item" href="border.html">Border</a>
+                                <a class="list-group-item" href="borderradius.html">Border radius</a>
+                                <a class="list-group-item" href="display.html">Display</a>
+                                <a class="list-group-item" href="width.html">Width</a>
+                                <a class="list-group-item" href="height.html">Height</a>
+                                <a class="list-group-item" href="position.html">Position</a>
+                                <a class="list-group-item" href="flexbox.html">Flexbox</a>
+                                <a class="list-group-item" href="grid.html">Grid</a>
+                                <a class="list-group-item" href="flexwrap.html">Flex wrap</a>
+                                <a class="list-group-item" href="alignitems.html">Align items</a>
+                                <a class="list-group-item" href="aligncontent.html">Align content</a>
+                                <a class="list-group-item" href="justifyitems.html">Justify items</a>
+                                <a class="list-group-item" href="justifycontent.html">Justify content</a>
+                                <a class="list-group-item" href="float.html">Float</a>
+                                <a class="list-group-item" href="overflow.html">Overflow</a>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </aside>
+            <main class="col-fill tablet-col-8 desktop-col-9" id="main">
+                <h1 id="padding">Padding</h1>
+                <p class="text-lg">Adjust the padding (inner spacing) of an element.</p>
+                <div class="max-h-30 overflow-auto">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Class</th>
+                                <th>Styles</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code class="language-css">.p-0</code></td>
+                                <td><code class="language-css">padding: 0;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.p-1</code></td>
+                                <td><code class="language-css">padding: 0.125rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.p-2</code></td>
+                                <td><code class="language-css">padding: 0.25rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.p-3</code></td>
+                                <td><code class="language-css">padding: 0.375rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.p-4</code></td>
+                                <td><code class="language-css">padding: 0.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.p-5</code></td>
+                                <td><code class="language-css">padding: 0.75rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.p-6</code></td>
+                                <td><code class="language-css">padding: 1rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.p-7</code></td>
+                                <td><code class="language-css">padding: 1.25rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.p-8</code></td>
+                                <td><code class="language-css">padding: 1.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.p-9</code></td>
+                                <td><code class="language-css">padding: 2rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.p-10</code></td>
+                                <td><code class="language-css">padding: 2.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.p-11</code></td>
+                                <td><code class="language-css">padding: 3rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.p-12</code></td>
+                                <td><code class="language-css">padding: 3.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.p-13</code></td>
+                                <td><code class="language-css">padding: 4rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.px-0</code></td>
+                                <td><code class="language-css">padding-inline: 0;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.px-1</code></td>
+                                <td><code class="language-css">padding-inline: 0.125rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.px-2</code></td>
+                                <td><code class="language-css">padding-inline: 0.25rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.px-3</code></td>
+                                <td><code class="language-css">padding-inline: 0.375rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.px-4</code></td>
+                                <td><code class="language-css">padding-inline: 0.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.px-5</code></td>
+                                <td><code class="language-css">padding-inline: 0.75rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.px-6</code></td>
+                                <td><code class="language-css">padding-inline: 1rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.px-7</code></td>
+                                <td><code class="language-css">padding-inline: 1.25rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.px-8</code></td>
+                                <td><code class="language-css">padding-inline: 1.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.px-9</code></td>
+                                <td><code class="language-css">padding-inline: 2rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.px-10</code></td>
+                                <td><code class="language-css">padding-inline: 2.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.px-11</code></td>
+                                <td><code class="language-css">padding-inline: 3rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.px-12</code></td>
+                                <td><code class="language-css">padding-inline: 3.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.px-13</code></td>
+                                <td><code class="language-css">padding-inline: 4rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.py-0</code></td>
+                                <td><code class="language-css">padding-block: 0;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.py-1</code></td>
+                                <td><code class="language-css">padding-block: 0.125rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.py-2</code></td>
+                                <td><code class="language-css">padding-block: 0.25rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.py-3</code></td>
+                                <td><code class="language-css">padding-block: 0.375rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.py-4</code></td>
+                                <td><code class="language-css">padding-block: 0.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.py-5</code></td>
+                                <td><code class="language-css">padding-block: 0.75rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.py-6</code></td>
+                                <td><code class="language-css">padding-block: 1rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.py-7</code></td>
+                                <td><code class="language-css">padding-block: 1.25rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.py-8</code></td>
+                                <td><code class="language-css">padding-block: 1.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.py-9</code></td>
+                                <td><code class="language-css">padding-block: 2rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.py-10</code></td>
+                                <td><code class="language-css">padding-block: 2.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.py-11</code></td>
+                                <td><code class="language-css">padding-block: 3rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.py-12</code></td>
+                                <td><code class="language-css">padding-block: 3.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.py-13</code></td>
+                                <td><code class="language-css">padding-block: 4rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pt-0</code></td>
+                                <td><code class="language-css">padding-block-start: 0;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pt-1</code></td>
+                                <td><code class="language-css">padding-block-start: 0.125rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pt-2</code></td>
+                                <td><code class="language-css">padding-block-start: 0.25rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pt-3</code></td>
+                                <td><code class="language-css">padding-block-start: 0.375rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pt-4</code></td>
+                                <td><code class="language-css">padding-block-start: 0.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pt-5</code></td>
+                                <td><code class="language-css">padding-block-start: 0.75rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pt-6</code></td>
+                                <td><code class="language-css">padding-block-start: 1rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pt-7</code></td>
+                                <td><code class="language-css">padding-block-start: 1.25rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pt-8</code></td>
+                                <td><code class="language-css">padding-block-start: 1.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pt-9</code></td>
+                                <td><code class="language-css">padding-block-start: 2rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pt-10</code></td>
+                                <td><code class="language-css">padding-block-start: 2.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pt-11</code></td>
+                                <td><code class="language-css">padding-block-start: 3rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pt-12</code></td>
+                                <td><code class="language-css">padding-block-start: 3.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pt-13</code></td>
+                                <td><code class="language-css">padding-block-start: 4rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pb-0</code></td>
+                                <td><code class="language-css">padding-block-end: 0;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pb-1</code></td>
+                                <td><code class="language-css">padding-block-end: 0.125rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pb-2</code></td>
+                                <td><code class="language-css">padding-block-end: 0.25rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pb-3</code></td>
+                                <td><code class="language-css">padding-block-end: 0.375rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pb-4</code></td>
+                                <td><code class="language-css">padding-block-end: 0.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pb-5</code></td>
+                                <td><code class="language-css">padding-block-end: 0.75rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pb-6</code></td>
+                                <td><code class="language-css">padding-block-end: 1rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pb-7</code></td>
+                                <td><code class="language-css">padding-block-end: 1.25rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pb-8</code></td>
+                                <td><code class="language-css">padding-block-end: 1.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pb-9</code></td>
+                                <td><code class="language-css">padding-block-end: 2rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pb-10</code></td>
+                                <td><code class="language-css">padding-block-end: 2.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pb-11</code></td>
+                                <td><code class="language-css">padding-block-end: 3rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pb-12</code></td>
+                                <td><code class="language-css">padding-block-end: 3.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pb-13</code></td>
+                                <td><code class="language-css">padding-block-end: 4rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.ps-0</code></td>
+                                <td><code class="language-css">padding-inline-start: 0;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.ps-1</code></td>
+                                <td><code class="language-css">padding-inline-start: 0.125rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.ps-2</code></td>
+                                <td><code class="language-css">padding-inline-start: 0.25rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.ps-3</code></td>
+                                <td><code class="language-css">padding-inline-start: 0.375rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.ps-4</code></td>
+                                <td><code class="language-css">padding-inline-start: 0.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.ps-5</code></td>
+                                <td><code class="language-css">padding-inline-start: 0.75rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.ps-6</code></td>
+                                <td><code class="language-css">padding-inline-start: 1rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.ps-7</code></td>
+                                <td><code class="language-css">padding-inline-start: 1.25rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.ps-8</code></td>
+                                <td><code class="language-css">padding-inline-start: 1.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.ps-9</code></td>
+                                <td><code class="language-css">padding-inline-start: 2rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.ps-10</code></td>
+                                <td><code class="language-css">padding-inline-start: 2.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.ps-11</code></td>
+                                <td><code class="language-css">padding-inline-start: 3rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.ps-12</code></td>
+                                <td><code class="language-css">padding-inline-start: 3.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.ps-13</code></td>
+                                <td><code class="language-css">padding-inline-start: 4rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pe-0</code></td>
+                                <td><code class="language-css">padding-inline-end: 0;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pe-1</code></td>
+                                <td><code class="language-css">padding-inline-end: 0.125rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pe-2</code></td>
+                                <td><code class="language-css">padding-inline-end: 0.25rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pe-3</code></td>
+                                <td><code class="language-css">padding-inline-end: 0.375rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pe-4</code></td>
+                                <td><code class="language-css">padding-inline-end: 0.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pe-5</code></td>
+                                <td><code class="language-css">padding-inline-end: 0.75rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pe-6</code></td>
+                                <td><code class="language-css">padding-inline-end: 1rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pe-7</code></td>
+                                <td><code class="language-css">padding-inline-end: 1.25rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pe-8</code></td>
+                                <td><code class="language-css">padding-inline-end: 1.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pe-9</code></td>
+                                <td><code class="language-css">padding-inline-end: 2rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pe-10</code></td>
+                                <td><code class="language-css">padding-inline-end: 2.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pe-11</code></td>
+                                <td><code class="language-css">padding-inline-end: 3rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pe-12</code></td>
+                                <td><code class="language-css">padding-inline-end: 3.5rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code class="language-css">.pe-13</code></td>
+                                <td><code class="language-css">padding-inline-end: 4rem;</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h2 id="example">Example</h2>
+                <p>You can combine multiple padding utilities, such as <code class="language-css">.px-4 py-9</code> or <code class="language-css">.pt-4 pb-6 ps-8 pe-9</code>, to create complex layouts.</p>
+                <div class="d-flex align-items-center flex-wrap gap-4 mb-4">
+                    <div class="bg-base border border-base p-4">
+                        <div class="bg-neutral w-13 h-13 d-flex align-items-center justify-content-center">p-4</div>
+                    </div>
+                    <div class="bg-base border border-base p-9">
+                        <div class="bg-neutral w-13 h-13 d-flex align-items-center justify-content-center">p-9</div>
+                    </div>
+                    <div class="bg-base border border-base px-6">
+                        <div class="bg-neutral w-13 h-13 d-flex align-items-center justify-content-center">px-6</div>
+                    </div>
+                    <div class="bg-base border border-base py-6">
+                        <div class="bg-neutral w-13 h-13 d-flex align-items-center justify-content-center">py-6</div>
+                    </div>
+                    <div class="bg-base border border-base pt-9">
+                        <div class="bg-neutral w-13 h-13 d-flex align-items-center justify-content-center">pt-9</div>
+                    </div>
+                    <div class="bg-base border border-base pb-9">
+                        <div class="bg-neutral w-13 h-13 d-flex align-items-center justify-content-center">pb-9</div>
+                    </div>
+                    <div class="bg-base border border-base ps-9">
+                        <div class="bg-neutral w-13 h-13 d-flex align-items-center justify-content-center">ps-9</div>
+                    </div>
+                    <div class="bg-base border border-base pe-9">
+                        <div class="bg-neutral w-13 h-13 d-flex align-items-center justify-content-center">pe-9</div>
+                    </div>
+                    <div class="bg-base border border-base px-6 py-8">
+                        <div class="bg-neutral w-13 h-13 d-flex align-items-center justify-content-center">px-6<br>py-8</div>
+                    </div>
+                    <div class="bg-base border border-base pt-4 pb-6 ps-8 pe-9">
+                        <div class="bg-neutral w-16 h-16 d-flex align-items-center justify-content-center">pt-4 pb-6<br>ps-8 pe-9</div>
+                    </div>
+                </div>
+                <pre><code class="language-html">&lt;div class=&quot;... p-4&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;... p-9&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;... px-6&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;... py-6&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;... pt-9&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;... pb-9&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;... ps-9&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;... pe-9&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;... px-6 py-8&quot;&gt;...&lt;/div&gt;
+&lt;div class=&quot;... pt-4 pb-6 ps-8 pe-9&quot;&gt;...&lt;/div&gt;
+</code></pre>
+            </main>
+        </div>
+        <footer class="footer border-t">
+            <div class="container">
+                <image src="../images/CC_BY-SA_icon.svg" alt="CC-BY-SA 4.0" width="88" height="31" class="float-end ms-4 mb-4" />
+                <p>&copy; 2026 Codexify. Code licensed under MIT. Documentation licensed under CC-BY-SA 4.0.</p>
+                <p>Icons &copy; 2026 Wikimedia Foundation; licensed under CC BY 4.0.</p>
+                <p>Contributors: Xeverything11</p>
+                <p>Last updated: 2026-11-06</p>
+            </div>
+        </footer>
+    </body>
+</html>
