@@ -130,6 +130,33 @@ Build accordions from a `.accordion` container with native `<details class="acco
 - Optional item variants are `.accordion-progressive`, `.accordion-destructive`, `.accordion-error`, `.accordion-warning`, `.accordion-success`, and `.accordion-notice`. Apply a variant to the `.accordion-item`.
 - The stylesheet supplies the disclosure indicator and open-state styling; do not replace the native disclosure control with a non-semantic clickable element.
 
+## Tooltips
+
+Use `data-c-toggle="tooltip"` and `data-c-title` on a native button or link to enable a tooltip. The tooltip appears on hover or keyboard focus and is removed when neither applies.
+
+- Use `data-c-placement="top|bottom|left|right"` to choose placement; the default is `top`.
+- The script supplies `role="tooltip"` and connects it to the trigger with `aria-describedby`. Keep essential information in the page content rather than only in a tooltip.
+- Tooltip behavior is implemented in `js/tooltips.js`, imported by `js/codexify.js`; do not add duplicate page-specific scripts.
+- When a tooltip trigger is inside an open dialog, the script places the tooltip inside that dialog so it remains in the browser top layer. Do not move it to `document.body` or rely on z-index to layer it above a modal dialog.
+
+## Popovers
+
+Use `data-c-toggle="popover"` and `data-c-content` on a native button to create a click-toggle popover. `data-c-title` is optional.
+
+- Use `data-c-placement="top|bottom|left|right"` to choose placement; the default is `right`.
+- Popovers are generated with dialog semantics and the trigger receives the associated ARIA attributes. Use a native dialog instead when the content requires a modal interaction or more complex controls.
+- Popover behavior is implemented in `js/popover.js`, imported by `js/codexify.js`; do not add duplicate page-specific scripts.
+- When a popover trigger is inside an open dialog, the script places the popover inside that dialog so it remains in the browser top layer. Do not move it to `document.body` or rely on z-index to layer it above a modal dialog.
+
+## Dialogs
+
+Use native `<dialog class="dialog">` elements for modal interactions. Open them with a native button using `data-c-toggle="dialog"` and `data-c-target` set to the dialog selector. The shared script opens them with `showModal()`.
+
+- Dismiss with a button inside the dialog using `data-c-dismiss="dialog"`. Keep native `<dialog>` semantics and use native forms and controls for dialog content.
+- The shared script handles animated closing, Escape, and `method="dialog"` forms. Preserve these behaviors rather than directly removing or hiding the dialog.
+- Modal dialogs use the browser top layer; ordinary page elements cannot be raised above them by increasing z-index. Tooltips and popovers triggered inside an open dialog are placed inside that dialog to appear above it.
+- Dialog behavior is implemented in `js/dialog.js`, imported by `js/codexify.js`; do not add duplicate page-specific scripts.
+
 ## List groups
 
 Use `.list-group` on a `<ul>` or `<div>` container and `.list-group-item` on each item. For a semantic list, use `<li class="list-group-item">`; for interactive items, use anchors or buttons with the same item class.
@@ -149,6 +176,14 @@ Use `.list-group` on a `<ul>` or `<div>` container and `.list-group-item` on eac
 - Border utilities include `.border` and logical side variants, `*-0` removal variants, and palette-based border color classes.
 - Border radius utilities includes `rounded-*` sizing and logical side variants, and `*-0` removal variants.
 - Responsive variants are provided only for selected utilities. Use the `tablet-*` and `desktop-*` classes where defined (for example, `tablet-text-center` or `desktop-grid-cols-12`); do not assume every base utility has a responsive counterpart.
+
+### Glassmorphism
+
+Use `.glass-{shade}` to apply a translucent, blurred backdrop-filter effect. Supported shades are `10`, `20`, `50`, `100`, `200`, `300`, `400`, `500`, `600`, `700`, `800`, `900`, `950`, `980`, and `990`. `.glass-500` is the baseline; lower shades are lighter and higher shades are darker.
+
+- The glass effect filters what is behind the element, so it needs visible content behind it.
+- Do not add `.bg-*` or an opaque `background-color` to a glass element; a background fill obscures the backdrop effect.
+- Reuse these utilities instead of adding one-off `backdrop-filter` declarations.
 
 ### Spacing
 
@@ -170,7 +205,7 @@ The spacing scale is:
 
 ## Colors
 
-There are 14 hues with 15 shades, plus black and white, totalling 202 colors.
+There are 14 hues with 15 shades, plus black and white, totalling 212 colors.
 
 ### Hues
 
