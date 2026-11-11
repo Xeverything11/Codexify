@@ -67,6 +67,30 @@ popoverTriggers.forEach((trigger) => {
         popover.classList.add(`popover-anchor-${popoverOrigin}`);
     };
 
+    const updatePopoverContent = (popover) => {
+        const popoverInner = popover.querySelector(".popover-inner");
+        const content = popover.querySelector(".popover-content");
+        let title = popover.querySelector(".popover-title");
+
+        if (trigger.dataset.cTitle) {
+            if (!title) {
+                title = document.createElement("div");
+                title.className = "popover-title";
+                title.id = `${popoverId}-title`;
+                popoverInner.prepend(title);
+            }
+            title.textContent = trigger.dataset.cTitle;
+            popover.setAttribute("aria-labelledby", title.id);
+            popover.removeAttribute("aria-label");
+        } else {
+            title?.remove();
+            popover.removeAttribute("aria-labelledby");
+            popover.setAttribute("aria-label", "Popover");
+        }
+
+        content.textContent = trigger.dataset.cContent;
+    };
+
     const togglePopover = () => {
         if (activePopover?.trigger === trigger) {
             if (activePopover.closing) {
@@ -93,22 +117,11 @@ popoverTriggers.forEach((trigger) => {
 
         const popoverInner = document.createElement("div");
         popoverInner.className = "popover-inner";
-        if (trigger.dataset.cTitle) {
-            const title = document.createElement("div");
-            title.className = "popover-title";
-            title.id = `${popoverId}-title`;
-            title.textContent = trigger.dataset.cTitle;
-            popover.setAttribute("aria-labelledby", title.id);
-            popoverInner.append(title);
-        } else {
-            popover.setAttribute("aria-label", "Popover");
-        }
-
         const content = document.createElement("div");
         content.className = "popover-content";
-        content.textContent = trigger.dataset.cContent;
         popoverInner.append(content);
         popover.append(popoverInner);
+        updatePopoverContent(popover);
         (trigger.closest("dialog[open]") ?? document.body).append(popover);
         trigger.setAttribute("aria-controls", popoverId);
         trigger.setAttribute("aria-haspopup", "dialog");
@@ -127,6 +140,19 @@ popoverTriggers.forEach((trigger) => {
             }
         });
     };
+
+    const contentObserver = new MutationObserver(() => {
+        if (!activePopover || activePopover.closing) {
+            return;
+        }
+
+        updatePopoverContent(activePopover.popover);
+        activePopover.updatePosition();
+    });
+    contentObserver.observe(trigger, {
+        attributes: true,
+        attributeFilter: ["data-c-title", "data-c-content"]
+    });
 
     trigger.addEventListener("click", togglePopover);
     trigger.setAttribute("aria-haspopup", "dialog");

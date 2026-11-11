@@ -1,0 +1,12 @@
+last 2 major versions
+not dead
+unreleased versions
+Chrome >= 142
+Edge >= 142
+Firefox >= 115
+iOS >= 17.6
+Safari >= 17.6
+not and_uc > 0
+not and_qq > 0
+not kaios > 0
+not op_mini all

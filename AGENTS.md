@@ -86,6 +86,16 @@ Use `.badge` on inline elements such as `<span>`, `<a>`, or `<button>` when you 
 - Combine `.badge-subtle` or `.badge-outlined` with a semantic variant for lower-contrast treatments, such as `.badge badge-subtle badge-success` or `.badge badge-outlined badge-warning`.
 - Keep badges concise and inline with adjacent text; avoid using them as standalone blocks or replacements for full text.
 
+## Cards
+
+Use `.card` on a semantic container such as `<article>` or `<section>`. Cards have no fixed width, so size and place them with the existing layout utilities.
+
+- Use `.card-body` on an inner element to add card padding, or combine it with `.card` when the entire card is content.
+- Use `.card-title` for the card heading; use semantic elements for the remaining content.
+- An image is optional. When present as a direct child, it spans the card width; provide useful `alt` text for meaningful images and empty `alt` text for decorative images.
+- Keep actions as native links or buttons and follow the existing button conventions.
+- Update `cards.html` when changing card styles or adding card patterns so its examples match the shared stylesheet.
+
 ## Alerts
 
 Use `.alert` for important status or contextual messages, and pair it with a semantic modifier class such as `.alert-error`, `.alert-warning`, `.alert-success`, or `.alert-notice`.
@@ -127,6 +137,7 @@ Use `.form-control` on native `<input>`, `<textarea>`, and `<select>` elements. 
 Build accordions from a `.accordion` container with native `<details class="accordion-item">` elements. Each item contains a `<summary class="accordion-header">` and a `<div class="accordion-body">` for its content. Use the native `open` attribute when an item should start expanded.
 
 - Native `<details>` and `<summary>` provide built-in disclosure behavior; keep them so keyboard and browser behavior remain accessible.
+- Add `.accordion-flush` to the `.accordion` container for a flush layout without inline item borders and without the first item's top border. Keep it on the group, not on individual items.
 - Optional item variants are `.accordion-progressive`, `.accordion-destructive`, `.accordion-error`, `.accordion-warning`, `.accordion-success`, and `.accordion-notice`. Apply a variant to the `.accordion-item`.
 - The stylesheet supplies the disclosure indicator and open-state styling; do not replace the native disclosure control with a non-semantic clickable element.
 
@@ -169,13 +180,31 @@ Use `.list-group` on a `<ul>` or `<div>` container and `.list-group-item` on eac
 
 - Utility classes are composable single-purpose classes defined in `codexify.css`. Reuse them in examples instead of adding one-off styles when they already cover the need.
 - Do not invent utility classes or assume classes from another framework exist. Verify each class in `codexify.css` before using it; for example, `.shadow-xl` and `.rounded-lg` are not Codexify classes. If a needed utility is missing, add it to the shared stylesheet rather than using an undefined class.
-- Prefer semantic color utilities such as `.text-progressive`, `.text-destructive`, `.text-success`, `.text-warning`, `.text-error`, and `.text-notice` over palette-specific utilities such as `.text-blue-700`. Use `bg-{hue}-{shade}`, `text-{hue}-{shade}`, and `border-{hue}-{shade}` for deliberate palette styling when no semantic role is appropriate.
-- Typography utilities include `.text-xs` through `.text-6xl` for size, `.font-sans`/`.font-mono` for family, `.font-*` for weight or style, and `.text-start`/`.text-center`/`.text-end` for alignment.
-- Spacing utilities use the numbered scale (`0`–`13`): `m-*` and `p-*` set margin and padding; `mx-*`/`my-*` and `px-*`/`py-*` set inline/block axes; `mt-*`, `mb-*`, `ms-*`, and `me-*` (and corresponding `p` forms) set logical sides. `gap-*`, `gap-x-*`, and `gap-y-*` set layout gaps.
-- Layout utilities include `.d-*` display modes, `.w-*` sizing, `.container`, `.row`, grid column classes, alignment and justification classes, and overflow/float helpers.
-- Border utilities include `.border` and logical side variants, `*-0` removal variants, and palette-based border color classes.
-- Border radius utilities includes `rounded-*` sizing and logical side variants, and `*-0` removal variants.
-- Responsive variants are provided only for selected utilities. Use the `tablet-*` and `desktop-*` classes where defined (for example, `tablet-text-center` or `desktop-grid-cols-12`); do not assume every base utility has a responsive counterpart.
+- Notation below is exhaustive: `{a|b}` means one of those literal suffixes, and `0..13` means every integer from 0 through 13 inclusive.
+- **Color:** `.bg-{hue}-{shade}`, `.text-{hue}-{shade}`, and `.border-{hue}-{shade}` use the hues and shades listed under Colors. Background also has `.bg-{black|white|transparent}`; text and border each have `.{text|border}-{black|white}`. Semantic background classes are `.bg-{base|base-fixed|neutral|neutral-subtle|interactive|interactive-subtle|disabled|disabled-subtle|inverted|progressive|progressive-subtle|destructive|destructive-subtle|error|error-subtle|warning|warning-subtle|success|success-subtle|notice|notice-subtle}`. Semantic text classes are `.text-{base|fixed|emphasised|neutral|subtle|placeholder|disabled|disabled-emphasised|inverted|inverted-fixed|progressive|destructive|error|warning|success|notice|link|link-visited|link-red}`. Semantic border classes are `.border-{base|emphasised|subtle|muted|interactive|disabled|progressive|destructive|error|warning|success|notice}`.
+- **Glass:** `.glass-{10|20|50|100|200|300|400|500|600|700|800|900|950|980|990}`.
+- **Typography:** text sizes `.text-{xs|sm|md|lg|xl|2xl|3xl|4xl|5xl|6xl}`; families `.font-{sans|mono}`; weights `.font-{thin|extralight|light|regular|medium|semibold|bold|extrabold|black}`; styles `.font-{normal|italic}`; alignment `.text-{start|center|end|justify}`.
+- **Table text alignment:** `.table-c{1..12}-text-{start|center|end|justify}`.
+- **Margin:** `.m-{0..13}`, `.mx-{0..13|auto}`, `.my-{0..13}`, `.mt-{0..13}`, `.mb-{0..13}`, `.ms-{0..13|auto}`, and `.me-{0..13|auto}`. These prefixes also support negative values using a double hyphen: `.m--1` through `.m--13`, and likewise for `mx`, `my`, `mt`, `mb`, `ms`, and `me`.
+- **Padding:** `.p-{0..13}`, `.px-{0..13}`, `.py-{0..13}`, `.pt-{0..13}`, `.pb-{0..13}`, `.ps-{0..13}`, `.pe-{0..13}`.
+- **Gap:** `.gap-{0..13}`, `.gap-x-{0..13}`, `.gap-y-{0..13}`.
+- **Borders and radius:** `.border`, `.border-{x|y|t|b|s|e}`, and `.border-{0|x-0|y-0|t-0|b-0|s-0|e-0}`; palette and semantic border-color classes are listed under Color. `.rounded` and `.rounded-{0..13|full|circle}`, plus `.rounded-{s|e|t|b}` and `.rounded-{s|e|t|b}-{0..13|full|circle}`.
+- **Sizing:** `.w-*`, `.min-w-*`, `.max-w-*`, `.h-*`, `.min-h-*`, and `.max-h-*` support suffixes `0..40`, `1-6`, `1-5`, `1-4`, `1-3`, `2-5`, `1-2`, `3-5`, `2-3`, `3-4`, `4-5`, `5-6`, `full`, `min`, `max`, and `fit`.
+- **Position:** `.position-{static|relative|absolute|fixed|sticky}`; `.top-*`, `.bottom-*`, `.start-*`, and `.end-*` use suffixes `0..13`, `1-6`, `1-5`, `1-4`, `1-3`, `2-5`, `1-2`, `3-5`, `2-3`, `3-4`, `4-5`, `5-6`, and `full`; `.inset-{0..13}`.
+- **Display and layout:** `.d-{block|contents|flex|flow-root|grid|inline|inline-block|inline-flex|inline-grid|none}`; `.container`, `.container-wide`, `.container-fluid`, `.container-grid`, and `.row`; `.grid-cols-{1|2|3|4|5|6|8|10|12|15|16|18|20|24}`; `.col-{1..24|fill}`, `.col-start-{1..25}`, and `.col-end-{1..25}`.
+- **Flex:** `.flex-{row|row-reverse|col|col-reverse|wrap|wrap-reverse|nowrap|fill|grow|grow-0|shrink|shrink-0}`.
+- **Alignment:** `.align-items-{baseline|start|end|center|stretch}`, `.align-content-{start|end|center|between|around|stretch}`, `.justify-items-{start|end|center|stretch}`, and `.justify-content-{start|end|center|between|around|evenly}`.
+- **Float and overflow:** `.float-{start|end|none}`; `.overflow-{visible|hidden|clip|scroll|auto}` and `.overflow-{x|y}-{visible|hidden|clip|scroll|auto}`.
+- **Dark mode:** `.dark-bg-{hue}-{shade}`, `.dark-text-{hue}-{shade}`, and `.dark-border-{hue}-{shade}` use the documented hue/shade sets; dark background also supports `.dark-bg-{black|white|transparent}`, and dark text and border support `.dark-{text|border}-{black|white}`. `.dark-glass-{10|20|50|100|200|300|400|500|600|700|800|900|950|980|990}` is the glass counterpart. These utilities activate under `prefers-color-scheme: dark` and are excluded in forced-colors mode; they do not target a manually toggled `.dark` ancestor.
+- **Responsive:** only the following families have responsive variants, with prefixes `tablet-` (640px), `desktop-` (1120px), and `desktop-wide-` (1680px): all display classes; grid column counts and `.col-*`/`.col-start-*`/`.col-end-*`; flex classes; position modes (`.position-*`, not inset offsets); text sizes and alignment; align-items, align-content, justify-items, and justify-content. Apply the prefix to the complete class, e.g. `.tablet-d-none`, `.desktop-col-12`, or `.desktop-wide-text-6xl`; do not assume other utilities have responsive counterparts.
+
+### Dark mode utilities
+
+- Use `.dark-bg-{hue}-{shade}`, `.dark-text-{hue}-{shade}`, and `.dark-border-{hue}-{shade}` to apply palette colors in dark color-scheme preference; black and white are also available without a shade suffix.
+- Available hues and shades match the color palette documented below. Apply these alongside their regular utility when the element should have a distinct appearance in light and dark color schemes (for example, `bg-white dark-bg-gray-900 text-gray-900 dark-text-gray-10`).
+- Semantic color classes adapt to dark mode, so you don't need to add dark mode utility classes.
+- Use `.dark-glass-{shade}` for the dark-mode counterpart to `.glass-{shade}`. It supports the same glass shade scale.
+- As with regular glass utilities, do not pair `.dark-glass-*` with an opaque background fill that would hide the backdrop effect.
 
 ### Glassmorphism
 
@@ -241,13 +270,3 @@ There are 14 hues with 15 shades, plus black and white, totalling 212 colors.
 - 950
 - 980
 - 990
-
-### Semantic colors
-
-Use semantic color tokens instead of hard-coded colors for component states. Tokens are grouped by text (`--color-*` / `.text-*`), background (`--background-color-*` / `.bg-*`), and border (`--border-color-*` / `.border-*`):
-
-- Text: `base`, `fixed`, `hover`, `emphasised`, `neutral`, `subtle`, `placeholder`, `disabled`, `disabled-emphasised`, `inverted`, `inverted-fixed`, `progressive`, `destructive`, `error`, `warning`, `success`, `notice`, `link`, `link-visited`, and `link-red`.
-- Background: `base`, `base-fixed`, `neutral`, `neutral-subtle`, `interactive`, `interactive-subtle`, `disabled`, `disabled-subtle`, `inverted`, `progressive`, `progressive-subtle`, `destructive`, `destructive-subtle`, `error`, `error-subtle`, `warning`, `warning-subtle`, `success`, `success-subtle`, `notice`, and `notice-subtle`.
-- Border: `base`, `emphasised`, `subtle`, `muted`, `interactive`, `disabled`, `progressive`, `destructive`, `error`, `warning`, `success`, and `notice`.
-
-Where defined, state variants use `--hover`, `--active`, and `--focus` suffixes; link text also has `--visited--hover` and `--visited--active` variants. For example, use `.text-progressive` rather than a palette token when styling a progressive action.

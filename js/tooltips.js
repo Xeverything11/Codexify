@@ -131,6 +131,19 @@ tooltipTriggers.forEach((trigger) => {
         }, 150);
     };
 
+    const titleObserver = new MutationObserver(() => {
+        if (!tooltip) {
+            return;
+        }
+
+        const tooltipInner = tooltip.querySelector(".tooltip-inner");
+        if (tooltipInner) {
+            tooltipInner.textContent = trigger.dataset.cTitle;
+            updatePosition();
+        }
+    });
+    titleObserver.observe(trigger, { attributes: true, attributeFilter: ["data-c-title"] });
+
     trigger.addEventListener("mouseenter", () => {
         isHovered = true;
         show();
