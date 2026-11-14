@@ -1,6 +1,6 @@
 /*
  * Codexify
- * Version 0.9.1
+ * Version 0.9.2
  * Last updated 2026-11-14
  * Repository: https://github.com/Xeverything11/Codexify
  * MIT License
@@ -1712,6 +1712,7 @@
         position: relative;
         block-size: 1.5rem;
         inline-size: 1.5rem;
+        flex: none;
         background-color: var(--background-color-base);
         border: 1px solid var(--border-color-interactive);
         border-radius: 0.125rem;
