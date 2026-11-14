@@ -1,3 +1,5 @@
+import { updateAnchorPosition } from "./anchor.js";
+
 const popoverTriggers = document.querySelectorAll('[data-c-toggle="popover"][data-c-content]');
 let popoverCount = 0;
 
@@ -31,40 +33,7 @@ popoverTriggers.forEach((trigger) => {
     };
 
     const updatePosition = (popover) => {
-        const triggerRect = trigger.getBoundingClientRect();
-        const popoverWidth = popover.offsetWidth;
-        const popoverHeight = popover.offsetHeight;
-        const viewportPadding = 8;
-        const gap = 8;
-        const requestedPlacement = trigger.dataset.cPlacement;
-        const placement = ["top", "bottom", "left", "right"].includes(requestedPlacement)
-            ? requestedPlacement
-            : "right";
-        const popoverOrigin = {
-            top: "bottom",
-            bottom: "top",
-            left: "right",
-            right: "left"
-        }[placement];
-        let left = triggerRect.left + (triggerRect.width - popoverWidth) / 2;
-        let top = triggerRect.top - popoverHeight - gap;
-
-        if (placement === "bottom") {
-            top = triggerRect.bottom + gap;
-        } else if (placement === "left") {
-            left = triggerRect.left - popoverWidth - gap;
-            top = triggerRect.top + (triggerRect.height - popoverHeight) / 2;
-        } else if (placement === "right") {
-            left = triggerRect.right + gap;
-            top = triggerRect.top + (triggerRect.height - popoverHeight) / 2;
-        }
-
-        left = Math.max(viewportPadding, Math.min(left, window.innerWidth - popoverWidth - viewportPadding));
-        top = Math.max(viewportPadding, Math.min(top, window.innerHeight - popoverHeight - viewportPadding));
-        popover.style.top = `${top}px`;
-        popover.style.left = `${left}px`;
-        popover.classList.remove("popover-anchor-top", "popover-anchor-bottom", "popover-anchor-left", "popover-anchor-right");
-        popover.classList.add(`popover-anchor-${popoverOrigin}`);
+        updateAnchorPosition(trigger, popover, "right", "popover");
     };
 
     const updatePopoverContent = (popover) => {

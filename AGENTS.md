@@ -176,6 +176,17 @@ Use `.list-group` on a `<ul>` or `<div>` container and `.list-group-item` on eac
 - Disable button items with the native `disabled` attribute. Anchors do not support `disabled`; for a disabled link, use `.disabled` and `aria-disabled="true"` and ensure it does not navigate.
 - Preserve the native element’s semantics and built-in focus, hover, active, and disabled behavior.
 
+## Navigation
+
+Use `.nav` on a semantic `<nav>` or list container, with `.nav-link` on native anchors or buttons. For list markup, use `<li class="nav-item">` around each link or button.
+
+- Use `.active` with `aria-current="true"` for the current page or selection.
+- Use `.disabled` and `aria-disabled="true"` on disabled links, and ensure they do not navigate. Use the native `disabled` attribute for disabled buttons.
+- Add `.nav-tabs` for tab styling or `.nav-tabs-framed` for framed tabs; keep links and buttons native and keyboard-operable.
+- For a horizontally overflowing nav, place it directly inside `.nav-overflow`. The wrapper is relatively positioned and clips overflow; `.nav-overflow > .nav` owns horizontal scrolling and hides its scrollbar without disabling scrolling.
+- `js/nav.js`, imported by `js/codexify.js`, injects accessible start/end scroll buttons when the nav overflows and hides each button at its corresponding scroll edge. Do not add duplicate overflow controls.
+- Update `nav.html` when changing nav styles or adding nav patterns so its examples match the shared stylesheet and script.
+
 ## Utility classes
 
 - Utility classes are composable single-purpose classes defined in `codexify.css`. Reuse them in examples instead of adding one-off styles when they already cover the need.
@@ -190,13 +201,14 @@ Use `.list-group` on a `<ul>` or `<div>` container and `.list-group-item` on eac
 - **Gap:** `.gap-{0..13}`, `.gap-x-{0..13}`, `.gap-y-{0..13}`.
 - **Borders and radius:** `.border`, `.border-{x|y|t|b|s|e}`, and `.border-{0|x-0|y-0|t-0|b-0|s-0|e-0}`; palette and semantic border-color classes are listed under Color. `.rounded` and `.rounded-{0..13|full|circle}`, plus `.rounded-{s|e|t|b}` and `.rounded-{s|e|t|b}-{0..13|full|circle}`.
 - **Sizing:** `.w-*`, `.min-w-*`, `.max-w-*`, `.h-*`, `.min-h-*`, and `.max-h-*` support suffixes `0..40`, `1-6`, `1-5`, `1-4`, `1-3`, `2-5`, `1-2`, `3-5`, `2-3`, `3-4`, `4-5`, `5-6`, `full`, `min`, `max`, and `fit`.
-- **Position:** `.position-{static|relative|absolute|fixed|sticky}`; `.top-*`, `.bottom-*`, `.start-*`, and `.end-*` use suffixes `0..13`, `1-6`, `1-5`, `1-4`, `1-3`, `2-5`, `1-2`, `3-5`, `2-3`, `3-4`, `4-5`, `5-6`, and `full`; `.inset-{0..13}`.
+- **Position:** `.position-{static|relative|absolute|fixed|sticky}`; `.top-*`, `.bottom-*`, `.start-*`, and `.end-*` use suffixes `0..40`, `1-6`, `1-5`, `1-4`, `1-3`, `2-5`, `1-2`, `3-5`, `2-3`, `3-4`, `4-5`, `5-6`, and `full`; `.inset-{0..40}`.
+- **Z-index:** `.z-{1..10}` and `.z-{bottom|base|toolbar|dropdown|sticky|fixed|offcanvas|overlay|popover|tooltip|toast|top}`. These set stack levels but cannot move content out of its stacking context or above browser top-layer elements such as modal dialogs.
 - **Display and layout:** `.d-{block|contents|flex|flow-root|grid|inline|inline-block|inline-flex|inline-grid|none}`; `.container`, `.container-wide`, `.container-fluid`, `.container-grid`, and `.row`; `.grid-cols-{1|2|3|4|5|6|8|10|12|15|16|18|20|24}`; `.col-{1..24|fill}`, `.col-start-{1..25}`, and `.col-end-{1..25}`.
 - **Flex:** `.flex-{row|row-reverse|col|col-reverse|wrap|wrap-reverse|nowrap|fill|grow|grow-0|shrink|shrink-0}`.
 - **Alignment:** `.align-items-{baseline|start|end|center|stretch}`, `.align-content-{start|end|center|between|around|stretch}`, `.justify-items-{start|end|center|stretch}`, and `.justify-content-{start|end|center|between|around|evenly}`.
 - **Float and overflow:** `.float-{start|end|none}`; `.overflow-{visible|hidden|clip|scroll|auto}` and `.overflow-{x|y}-{visible|hidden|clip|scroll|auto}`.
 - **Dark mode:** `.dark-bg-{hue}-{shade}`, `.dark-text-{hue}-{shade}`, and `.dark-border-{hue}-{shade}` use the documented hue/shade sets; dark background also supports `.dark-bg-{black|white|transparent}`, and dark text and border support `.dark-{text|border}-{black|white}`. `.dark-glass-{10|20|50|100|200|300|400|500|600|700|800|900|950|980|990}` is the glass counterpart. These utilities activate under `prefers-color-scheme: dark` and are excluded in forced-colors mode; they do not target a manually toggled `.dark` ancestor.
-- **Responsive:** only the following families have responsive variants, with prefixes `tablet-` (640px), `desktop-` (1120px), and `desktop-wide-` (1680px): all display classes; grid column counts and `.col-*`/`.col-start-*`/`.col-end-*`; flex classes; position modes (`.position-*`, not inset offsets); text sizes and alignment; align-items, align-content, justify-items, and justify-content. Apply the prefix to the complete class, e.g. `.tablet-d-none`, `.desktop-col-12`, or `.desktop-wide-text-6xl`; do not assume other utilities have responsive counterparts.
+- **Responsive:** only the following families have responsive variants, with prefixes `tablet-` (640px), `desktop-` (1120px), and `desktop-wide-` (1680px): all display classes; grid column counts and `.col-*`/`.col-start-*`/`.col-end-*`; flex classes; position modes (`.position-*`) and inset offsets; text sizes and alignment; align-items, align-content, justify-items, and justify-content. Apply the prefix to the complete class, e.g. `.tablet-d-none`, `.desktop-col-12`, or `.desktop-wide-text-6xl`; do not assume other utilities have responsive counterparts.
 
 ### Dark mode utilities
 

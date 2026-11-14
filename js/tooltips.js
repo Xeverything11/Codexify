@@ -1,3 +1,5 @@
+import { updateAnchorPosition } from "./anchor.js";
+
 const tooltipTriggers = document.querySelectorAll('[data-c-toggle="tooltip"][data-c-title]');
 let tooltipCount = 0;
 
@@ -14,44 +16,11 @@ tooltipTriggers.forEach((trigger) => {
             return;
         }
 
-        const triggerRect = trigger.getBoundingClientRect();
-        const tooltipWidth = tooltip.offsetWidth;
-        const tooltipHeight = tooltip.offsetHeight;
-        const viewportPadding = 8;
-        const gap = 8;
-        const requestedPlacement = trigger.dataset.cPlacement;
-        const placement = ["top", "bottom", "left", "right"].includes(requestedPlacement)
-            ? requestedPlacement
-            : "top";
-        const tooltipOrigin = {
-            top: "bottom",
-            bottom: "top",
-            left: "right",
-            right: "left"
-        }[placement];
-        let left = triggerRect.left + (triggerRect.width - tooltipWidth) / 2;
-        let top = triggerRect.top - tooltipHeight - gap;
-
-        if (placement === "bottom") {
-            top = triggerRect.bottom + gap;
-        } else if (placement === "left") {
-            left = triggerRect.left - tooltipWidth - gap;
-            top = triggerRect.top + (triggerRect.height - tooltipHeight) / 2;
-        } else if (placement === "right") {
-            left = triggerRect.right + gap;
-            top = triggerRect.top + (triggerRect.height - tooltipHeight) / 2;
-        }
-
-        left = Math.max(viewportPadding, Math.min(left, window.innerWidth - tooltipWidth - viewportPadding));
-        top = Math.max(viewportPadding, Math.min(top, window.innerHeight - tooltipHeight - viewportPadding));
-        tooltip.style.top = `${top}px`;
+        updateAnchorPosition(trigger, tooltip, "top", "tooltip");
         tooltip.style.bottom = "auto";
-        tooltip.style.left = `${left}px`;
         tooltip.style.right = "auto";
         tooltip.style.removeProperty("translate");
         tooltip.style.setProperty("--tooltip-before-inset", "0");
-        tooltip.classList.remove("tooltip-anchor-top", "tooltip-anchor-bottom", "tooltip-anchor-left", "tooltip-anchor-right");
-        tooltip.classList.add(`tooltip-anchor-${tooltipOrigin}`);
     };
 
     const show = () => {

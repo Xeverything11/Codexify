@@ -1,7 +1,7 @@
 /*
  * Codexify
- * Version 0.8.0
- * Last updated 2026-11-11
+ * Version 0.9.0
+ * Last updated 2026-11-14
  * Repository: https://github.com/Xeverything11/Codexify
  * MIT License
  * Copyright (c) 2026 Xeverything11
@@ -321,49 +321,49 @@
     --color-blue-20:  oklch(98% 0.02 215.0);
     --color-blue-50:  oklch(96% 0.03 225.0);
     --color-blue-100: oklch(92% 0.05 232.0);
-    --color-blue-200: oklch(85% 0.08 237.0);
-    --color-blue-300: oklch(77% 0.12 242.0);
-    --color-blue-400: oklch(69% 0.15 247.0);
+    --color-blue-200: oklch(85% 0.08 238.0);
+    --color-blue-300: oklch(77% 0.12 243.0);
+    --color-blue-400: oklch(69% 0.15 248.0);
     --color-blue-500: oklch(61% 0.17 252.0);
-    --color-blue-600: oklch(52% 0.17 257.0);
-    --color-blue-700: oklch(42% 0.17 261.8);
-    --color-blue-800: oklch(32% 0.16 266.0);
-    --color-blue-900: oklch(24% 0.15 270.1);
-    --color-blue-950: oklch(19% 0.12 273.4);
-    --color-blue-980: oklch(15% 0.10 275.5);
-    --color-blue-990: oklch(11% 0.07 277.0);
+    --color-blue-600: oklch(52% 0.17 256.0);
+    --color-blue-700: oklch(42% 0.17 260.0);
+    --color-blue-800: oklch(32% 0.16 263.0);
+    --color-blue-900: oklch(24% 0.15 264.8);
+    --color-blue-950: oklch(19% 0.12 265.4);
+    --color-blue-980: oklch(15% 0.10 265.8);
+    --color-blue-990: oklch(11% 0.07 266.0);
 
-    --color-indigo-10:  oklch(99% 0.01 274.0);
-    --color-indigo-20:  oklch(98% 0.02 276.0);
-    --color-indigo-50:  oklch(96% 0.03 276.5);
-    --color-indigo-100: oklch(92% 0.05 276.9);
-    --color-indigo-200: oklch(84% 0.08 277.2);
-    --color-indigo-300: oklch(75% 0.12 277.5);
-    --color-indigo-400: oklch(67% 0.16 277.8);
-    --color-indigo-500: oklch(59% 0.20 278.0);
-    --color-indigo-600: oklch(50% 0.22 278.1);
-    --color-indigo-700: oklch(40% 0.20 278.2);
-    --color-indigo-800: oklch(31% 0.17 278.2);
-    --color-indigo-900: oklch(23% 0.14 278.3);
-    --color-indigo-950: oklch(18% 0.12 278.3);
-    --color-indigo-980: oklch(14% 0.10 278.3);
-    --color-indigo-990: oklch(11% 0.07 278.3);
+    --color-indigo-10:  oklch(99% 0.01 247.0);
+    --color-indigo-20:  oklch(98% 0.02 256.5);
+    --color-indigo-50:  oklch(96% 0.03 262.0);
+    --color-indigo-100: oklch(92% 0.05 265.8);
+    --color-indigo-200: oklch(84% 0.08 268.8);
+    --color-indigo-300: oklch(75% 0.12 270.8);
+    --color-indigo-400: oklch(67% 0.16 272.2);
+    --color-indigo-500: oklch(59% 0.20 273.2);
+    --color-indigo-600: oklch(50% 0.22 273.8);
+    --color-indigo-700: oklch(40% 0.20 274.0);
+    --color-indigo-800: oklch(31% 0.17 274.0);
+    --color-indigo-900: oklch(23% 0.14 273.8);
+    --color-indigo-950: oklch(18% 0.12 273.5);
+    --color-indigo-980: oklch(14% 0.10 273.0);
+    --color-indigo-990: oklch(11% 0.07 272.0);
 
-    --color-purple-10:  oklch(99% 0.01 330.0);
-    --color-purple-20:  oklch(98% 0.02 322.0);
-    --color-purple-50:  oklch(96% 0.03 317.0);
-    --color-purple-100: oklch(92% 0.05 312.0);
-    --color-purple-200: oklch(84% 0.09 307.4);
-    --color-purple-300: oklch(76% 0.13 303.0);
-    --color-purple-400: oklch(68% 0.18 299.0);
-    --color-purple-500: oklch(60% 0.23 295.0);
-    --color-purple-600: oklch(51% 0.25 291.2);
-    --color-purple-700: oklch(41% 0.21 287.5);
-    --color-purple-800: oklch(31% 0.17 284.0);
-    --color-purple-900: oklch(23% 0.13 281.0);
-    --color-purple-950: oklch(19% 0.10 280.0);
-    --color-purple-980: oklch(15% 0.08 279.5);
-    --color-purple-990: oklch(11% 0.06 279.0);
+    --color-purple-10:  oklch(99% 0.01 341.0);
+    --color-purple-20:  oklch(98% 0.02 331.0);
+    --color-purple-50:  oklch(96% 0.03 324.0);
+    --color-purple-100: oklch(92% 0.05 318.0);
+    --color-purple-200: oklch(84% 0.09 313.0);
+    --color-purple-300: oklch(76% 0.13 308.0);
+    --color-purple-400: oklch(68% 0.18 303.0);
+    --color-purple-500: oklch(60% 0.22 298.0);
+    --color-purple-600: oklch(51% 0.25 293.0);
+    --color-purple-700: oklch(41% 0.21 288.5);
+    --color-purple-800: oklch(31% 0.17 284.5);
+    --color-purple-900: oklch(23% 0.13 282.0);
+    --color-purple-950: oklch(19% 0.10 280.3);
+    --color-purple-980: oklch(15% 0.08 279.0);
+    --color-purple-990: oklch(11% 0.06 278.0);
 
     --color-pink-10:  oklch(99% 0.01  20.0);
     --color-pink-20:  oklch(98% 0.02  10.0);
@@ -2421,6 +2421,206 @@
         }
     }
 
+    /* Nav */
+    .nav {
+        display: flex;
+        gap: 0.25rem;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .nav .nav-link {
+        position: relative;
+        flex: none;
+        padding: 0 0.75rem;
+        min-height: 2rem;
+        border-radius: 0.125rem;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: inherit;
+        text-decoration: none;
+        transition: color 150ms, box-shadow 150ms, background-color 150ms;
+    }
+
+    .nav .nav-link:where(:hover) {
+        color: var(--color--hover);
+    }
+
+    .nav .nav-link:focus {
+        box-shadow: inset 0 0 0 2px var(--background-color-progressive--focus);
+    }
+
+    .nav .nav-link:where(.active) {
+        font-weight: 600;
+    }
+
+    .nav .nav-link:where(.disabled) {
+        color: var(--color-disabled);
+        pointer-events: none;
+    }
+
+    .nav.nav-tabs {
+        border-block-end: 1px solid var(--border-color-base);
+    }
+
+    .nav.nav-tabs .nav-link {
+        box-shadow: inset 0 0 currentColor;
+        font-weight: 700;
+        border-end-start-radius: 0;
+        border-end-end-radius: 0;
+    }
+
+    .nav.nav-tabs .nav-link.active {
+        box-shadow: inset 0 -2px currentColor;
+        color: var(--color-progressive)
+    }
+
+    .nav.nav-tabs .nav-link:hover {
+        box-shadow: inset 0 -2px currentColor;
+        color: var(--color-progressive--hover)
+    }
+
+    .nav.nav-tabs .nav-link:focus {
+        box-shadow: inset 0 0 0 2px currentColor;
+        color: var(--color-progressive--focus)
+    }
+
+    .nav.nav-tabs .nav-link:active {
+        box-shadow: inset 0 -2px currentColor;
+        color: var(--color-progressive--active)
+    }
+
+    .nav.nav-tabs-framed {
+        padding: 0.5rem 0.5rem 0;
+        background-color: var(--background-color-neutral);
+    }
+
+    .nav.nav-tabs-framed > .nav-link {
+        border-end-start-radius: 0;
+        border-end-end-radius: 0;
+        font-weight: 700;
+    }
+
+    .nav.nav-tabs-framed .nav-link:where(:hover) {
+        background-color: var(--background-color-interactive--hover);
+    }
+
+    .nav.nav-tabs-framed .nav-link:where(:active) {
+        background-color: var(--background-color-interactive--active);
+    }
+
+    .nav.nav-tabs-framed .nav-link:where(.active) {
+        background-color: var(--background-color-base);
+    }
+
+    .nav.nav-tabs-framed .nav-link:where(:hover, :active, .active)::before,
+    .nav.nav-tabs-framed .nav-link:where(:hover, :active, .active)::after {
+        content: "";
+        position: absolute;
+        inset-block-end: 0;
+        block-size: 0.25rem;
+        inline-size: 0.25rem;
+        clip-path: rect(0 100% 100% 0);
+        background: transparent;
+        transition: box-shadow 150ms;
+    }
+
+    .nav.nav-tabs-framed .nav-link:where(:hover, :active, .active)::before {
+        inset-inline-end: 100%;
+        border-end-end-radius: 0.125rem;
+    }
+
+    .nav.nav-tabs-framed .nav-link:where(:hover, :active, .active)::after {
+        inset-inline-start: 100%;
+        border-end-start-radius: 0.125rem;
+    }
+
+    .nav.nav-tabs-framed .nav-link:where(:hover)::before {
+        box-shadow: 0 0.125rem var(--background-color-interactive--hover), 0.125rem 0 var(--background-color-interactive--hover);
+    }
+
+    .nav.nav-tabs-framed .nav-link:where(:hover)::after {
+        box-shadow: 0 0.125rem var(--background-color-interactive--hover), -0.125rem 0 var(--background-color-interactive--hover);
+    }
+
+    .nav.nav-tabs-framed .nav-link:where(:active)::before {
+        box-shadow: 0 0.125rem var(--background-color-interactive--active), 0.125rem 0 var(--background-color-interactive--active);
+    }
+
+    .nav.nav-tabs-framed .nav-link:where(:active)::after {
+        box-shadow: 0 0.125rem var(--background-color-interactive--active), -0.125rem 0 var(--background-color-interactive--active);
+    }
+
+    .nav.nav-tabs-framed .nav-link:where(.active)::before {
+        box-shadow: 0 0.125rem var(--background-color-base), 0.125rem 0 var(--background-color-base);
+    }
+
+    .nav.nav-tabs-framed .nav-link:where(.active)::after {
+        box-shadow: 0 0.125rem var(--background-color-base), -0.125rem 0 var(--background-color-base);
+    }
+
+    .nav-overflow {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .nav-overflow > .nav {
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .nav-overflow > .nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-overflow > .nav-overflow-button {
+        position: absolute;
+        inset-block-end: 0;
+        z-index: 1;
+        border: none;
+        border-radius: 0;
+        background-color: var(--background-color-base);
+    }
+
+    .nav-overflow > .nav-overflow-start {
+        inset-inline-start: 0;
+    }
+
+    .nav-overflow > .nav-overflow-start::before {
+        content: '';
+        position: absolute;
+        inset-inline-start: 2rem;
+        inline-size: 2rem;
+        block-size: 2rem;
+        background: linear-gradient(to right, var(--background-color-base), transparent);
+        pointer-events: none;
+    }
+
+    .nav-overflow > .nav-overflow-end {
+        inset-inline-end: 0;
+    }
+
+    .nav-overflow > .nav-overflow-end::before {
+        content: '';
+        position: absolute;
+        inset-inline-end: 2rem;
+        inline-size: 2rem;
+        block-size: 2rem;
+        background: linear-gradient(to left, var(--background-color-base), transparent);
+        pointer-events: none;
+    }
+
+    .nav-overflow-icon-start {
+        mask-image: url("icons/previous.svg");
+    }
+
+    .nav-overflow-icon-end {
+        mask-image: url("icons/next.svg");
+    }
+
     /* Navbar */
     .navbar {
         background: var(--background-color-base);
@@ -2442,38 +2642,21 @@
         font-size: 1.25rem;
         padding: 0.5rem 1rem;
         border-radius: 0.125rem;
-    }
-
-    .navbar.navbar a {
         color: inherit;
-        transition: color 150ms, box-shadow 150ms;
     }
 
-    .navbar.navbar a:hover, .navbar.navbar a:active {
-        color: var(--color--hover)
+    .navbar.navbar-brand a:has(:hover, :active) {
+        color: var(--color--hover);
     }
 
-    .navbar a:focus {
+    .navbar .navbar-brand:focus {
         text-decoration: none;
         box-shadow: inset 0 0 0 2px var(--background-color-progressive--focus);
     }
 
     .navbar .navbar-nav {
+        margin: 0;
         flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 0;
-        list-style: none;
-        margin: 0;
-    }
-    .navbar .navbar-nav .nav-item {
-        margin: 0;
-    }
-
-    .navbar .navbar-nav .nav-link {
-        padding: 0.5rem 1rem;
-        border-radius: 2px;
     }
 
     /* Badges */
@@ -3812,6 +3995,7 @@
     .position-fixed {position: fixed !important;}
     .position-sticky {position: sticky !important;}
 
+    /* Insets */
     .top-0    {top: 0 !important;}
     .top-1    {top: 0.125rem !important;}
     .top-2    {top: 0.250rem !important;}
@@ -3826,6 +4010,33 @@
     .top-11   {top: 3.000rem !important;}
     .top-12   {top: 3.500rem !important;}
     .top-13   {top: 4.000rem !important;}
+    .top-14   {top: 4.500rem !important;}
+    .top-15   {top: 5.000rem !important;}
+    .top-16   {top: 6.000rem !important;}
+    .top-17   {top: 7.000rem !important;}
+    .top-18   {top: 8.000rem !important;}
+    .top-19   {top: 9.000rem !important;}
+    .top-20   {top: 10.000rem !important;}
+    .top-21   {top: 11.000rem !important;}
+    .top-22   {top: 12.000rem !important;}
+    .top-23   {top: 14.000rem !important;}
+    .top-24   {top: 16.000rem !important;}
+    .top-25   {top: 18.000rem !important;}
+    .top-26   {top: 20.000rem !important;}
+    .top-27   {top: 22.000rem !important;}
+    .top-28   {top: 24.000rem !important;}
+    .top-29   {top: 28.000rem !important;}
+    .top-30   {top: 32.000rem !important;}
+    .top-31   {top: 36.000rem !important;}
+    .top-32   {top: 40.000rem !important;}
+    .top-33   {top: 44.000rem !important;}
+    .top-34   {top: 48.000rem !important;}
+    .top-35   {top: 56.000rem !important;}
+    .top-36   {top: 64.000rem !important;}
+    .top-37   {top: 72.000rem !important;}
+    .top-38   {top: 80.000rem !important;}
+    .top-39   {top: 88.000rem !important;}
+    .top-40   {top: 96.000rem !important;}
     .top-1-6  {top: calc(100% / 6) !important;}
     .top-1-5  {top: 20% !important;}
     .top-1-4  {top: 25% !important;}
@@ -3852,6 +4063,33 @@
     .bottom-11   {bottom: 3.000rem !important;}
     .bottom-12   {bottom: 3.500rem !important;}
     .bottom-13   {bottom: 4.000rem !important;}
+    .bottom-14   {bottom: 4.500rem !important;}
+    .bottom-15   {bottom: 5.000rem !important;}
+    .bottom-16   {bottom: 6.000rem !important;}
+    .bottom-17   {bottom: 7.000rem !important;}
+    .bottom-18   {bottom: 8.000rem !important;}
+    .bottom-19   {bottom: 9.000rem !important;}
+    .bottom-20   {bottom: 10.000rem !important;}
+    .bottom-21   {bottom: 11.000rem !important;}
+    .bottom-22   {bottom: 12.000rem !important;}
+    .bottom-23   {bottom: 14.000rem !important;}
+    .bottom-24   {bottom: 16.000rem !important;}
+    .bottom-25   {bottom: 18.000rem !important;}
+    .bottom-26   {bottom: 20.000rem !important;}
+    .bottom-27   {bottom: 22.000rem !important;}
+    .bottom-28   {bottom: 24.000rem !important;}
+    .bottom-29   {bottom: 28.000rem !important;}
+    .bottom-30   {bottom: 32.000rem !important;}
+    .bottom-31   {bottom: 36.000rem !important;}
+    .bottom-32   {bottom: 40.000rem !important;}
+    .bottom-33   {bottom: 44.000rem !important;}
+    .bottom-34   {bottom: 48.000rem !important;}
+    .bottom-35   {bottom: 56.000rem !important;}
+    .bottom-36   {bottom: 64.000rem !important;}
+    .bottom-37   {bottom: 72.000rem !important;}
+    .bottom-38   {bottom: 80.000rem !important;}
+    .bottom-39   {bottom: 88.000rem !important;}
+    .bottom-40   {bottom: 96.000rem !important;}
     .bottom-1-6  {bottom: calc(100% / 6) !important;}
     .bottom-1-5  {bottom: 20% !important;}
     .bottom-1-4  {bottom: 25% !important;}
@@ -3878,6 +4116,33 @@
     .start-11   {inset-inline-start: 3.000rem !important;}
     .start-12   {inset-inline-start: 3.500rem !important;}
     .start-13   {inset-inline-start: 4.000rem !important;}
+    .start-14   {inset-inline-start: 4.500rem !important;}
+    .start-15   {inset-inline-start: 5.000rem !important;}
+    .start-16   {inset-inline-start: 6.000rem !important;}
+    .start-17   {inset-inline-start: 7.000rem !important;}
+    .start-18   {inset-inline-start: 8.000rem !important;}
+    .start-19   {inset-inline-start: 9.000rem !important;}
+    .start-20   {inset-inline-start: 10.000rem !important;}
+    .start-21   {inset-inline-start: 11.000rem !important;}
+    .start-22   {inset-inline-start: 12.000rem !important;}
+    .start-23   {inset-inline-start: 14.000rem !important;}
+    .start-24   {inset-inline-start: 16.000rem !important;}
+    .start-25   {inset-inline-start: 18.000rem !important;}
+    .start-26   {inset-inline-start: 20.000rem !important;}
+    .start-27   {inset-inline-start: 22.000rem !important;}
+    .start-28   {inset-inline-start: 24.000rem !important;}
+    .start-29   {inset-inline-start: 28.000rem !important;}
+    .start-30   {inset-inline-start: 32.000rem !important;}
+    .start-31   {inset-inline-start: 36.000rem !important;}
+    .start-32   {inset-inline-start: 40.000rem !important;}
+    .start-33   {inset-inline-start: 44.000rem !important;}
+    .start-34   {inset-inline-start: 48.000rem !important;}
+    .start-35   {inset-inline-start: 56.000rem !important;}
+    .start-36   {inset-inline-start: 64.000rem !important;}
+    .start-37   {inset-inline-start: 72.000rem !important;}
+    .start-38   {inset-inline-start: 80.000rem !important;}
+    .start-39   {inset-inline-start: 88.000rem !important;}
+    .start-40   {inset-inline-start: 96.000rem !important;}
     .start-1-6  {inset-inline-start: calc(100% / 6) !important;}
     .start-1-5  {inset-inline-start: 20% !important;}
     .start-1-4  {inset-inline-start: 25% !important;}
@@ -3904,6 +4169,33 @@
     .end-11  {inset-inline-end: 3.000rem !important;}
     .end-12  {inset-inline-end: 3.500rem !important;}
     .end-13  {inset-inline-end: 4.000rem !important;}
+    .end-14  {inset-inline-end: 4.500rem !important;}
+    .end-15  {inset-inline-end: 5.000rem !important;}
+    .end-16  {inset-inline-end: 6.000rem !important;}
+    .end-17  {inset-inline-end: 7.000rem !important;}
+    .end-18  {inset-inline-end: 8.000rem !important;}
+    .end-19  {inset-inline-end: 9.000rem !important;}
+    .end-20  {inset-inline-end: 10.000rem !important;}
+    .end-21  {inset-inline-end: 11.000rem !important;}
+    .end-22  {inset-inline-end: 12.000rem !important;}
+    .end-23  {inset-inline-end: 14.000rem !important;}
+    .end-24  {inset-inline-end: 16.000rem !important;}
+    .end-25  {inset-inline-end: 18.000rem !important;}
+    .end-26  {inset-inline-end: 20.000rem !important;}
+    .end-27  {inset-inline-end: 22.000rem !important;}
+    .end-28  {inset-inline-end: 24.000rem !important;}
+    .end-29  {inset-inline-end: 28.000rem !important;}
+    .end-30  {inset-inline-end: 32.000rem !important;}
+    .end-31  {inset-inline-end: 36.000rem !important;}
+    .end-32  {inset-inline-end: 40.000rem !important;}
+    .end-33  {inset-inline-end: 44.000rem !important;}
+    .end-34  {inset-inline-end: 48.000rem !important;}
+    .end-35  {inset-inline-end: 56.000rem !important;}
+    .end-36  {inset-inline-end: 64.000rem !important;}
+    .end-37  {inset-inline-end: 72.000rem !important;}
+    .end-38  {inset-inline-end: 80.000rem !important;}
+    .end-39  {inset-inline-end: 88.000rem !important;}
+    .end-40  {inset-inline-end: 96.000rem !important;}
     .end-1-6  {inset-inline-end: calc(100% / 6) !important;}
     .end-1-5  {inset-inline-end: 20% !important;}
     .end-1-4  {inset-inline-end: 25% !important;}
@@ -3930,6 +4222,33 @@
     .inset-11  {inset: 3.000rem !important;}
     .inset-12  {inset: 3.500rem !important;}
     .inset-13  {inset: 4.000rem !important;}
+    .inset-14  {inset: 4.500rem !important;}
+    .inset-15  {inset: 5.000rem !important;}
+    .inset-16  {inset: 6.000rem !important;}
+    .inset-17  {inset: 7.000rem !important;}
+    .inset-18  {inset: 8.000rem !important;}
+    .inset-19  {inset: 9.000rem !important;}
+    .inset-20  {inset: 10.000rem !important;}
+    .inset-21  {inset: 11.000rem !important;}
+    .inset-22  {inset: 12.000rem !important;}
+    .inset-23  {inset: 14.000rem !important;}
+    .inset-24  {inset: 16.000rem !important;}
+    .inset-25  {inset: 18.000rem !important;}
+    .inset-26  {inset: 20.000rem !important;}
+    .inset-27  {inset: 22.000rem !important;}
+    .inset-28  {inset: 24.000rem !important;}
+    .inset-29  {inset: 28.000rem !important;}
+    .inset-30  {inset: 32.000rem !important;}
+    .inset-31  {inset: 36.000rem !important;}
+    .inset-32  {inset: 40.000rem !important;}
+    .inset-33  {inset: 44.000rem !important;}
+    .inset-34  {inset: 48.000rem !important;}
+    .inset-35  {inset: 56.000rem !important;}
+    .inset-36  {inset: 64.000rem !important;}
+    .inset-37  {inset: 72.000rem !important;}
+    .inset-38  {inset: 80.000rem !important;}
+    .inset-39  {inset: 88.000rem !important;}
+    .inset-40  {inset: 96.000rem !important;}
 
     /* Flexbox */
     .flex-row {flex-direction: row !important;}
@@ -4098,6 +4417,36 @@
     .overflow-y-scroll  {overflow-y: scroll !important;}
     .overflow-y-auto    {overflow-y: auto !important;}
 
+    /* Resize */
+    .resize      {resize: both !important;}
+    .resize-x    {resize: horizontal !important;}
+    .resize-y    {resize: vertical !important;}
+    .resize-none {resize: none !important;}
+
+    /* Z-index */
+    .z-bottom        {z-index: -100 !important;}
+    .z-base          {z-index:    0 !important;}
+    .z-toolbar       {z-index:    2 !important;}
+    .z-dropdown      {z-index:   50 !important;}
+    .z-sticky        {z-index:  100 !important;}
+    .z-fixed         {z-index:  200 !important;}
+    .z-offcanvas     {z-index:  350 !important;}
+    .z-overlay       {z-index:  450 !important;}
+    .z-popover       {z-index:  700 !important;}
+    .z-tooltip       {z-index:  800 !important;}
+    .z-toast         {z-index:  900 !important;}
+    .z-top           {z-index: 9999 !important;}
+    .z-1             {z-index:    1 !important;}
+    .z-2             {z-index:    2 !important;}
+    .z-3             {z-index:    3 !important;}
+    .z-4             {z-index:    4 !important;}
+    .z-5             {z-index:    5 !important;}
+    .z-6             {z-index:    6 !important;}
+    .z-7             {z-index:    7 !important;}
+    .z-8             {z-index:    8 !important;}
+    .z-9             {z-index:    9 !important;}
+    .z-10            {z-index:   10 !important;}
+
     /* Responsive grid and flex utilities */
     @media (width >= 640px) {
         .tablet-d-block {display: block !important;}
@@ -4237,6 +4586,259 @@
         .tablet-position-absolute {position: absolute !important;}
         .tablet-position-fixed {position: fixed !important;}
         .tablet-position-sticky {position: sticky !important;}
+        .tablet-inset-0   {inset: 0 !important;}
+        .tablet-inset-1   {inset: 0.125rem !important;}
+        .tablet-inset-2   {inset: 0.250rem !important;}
+        .tablet-inset-3   {inset: 0.375rem !important;}
+        .tablet-inset-4   {inset: 0.500rem !important;}
+        .tablet-inset-5   {inset: 0.750rem !important;}
+        .tablet-inset-6   {inset: 1.000rem !important;}
+        .tablet-inset-7   {inset: 1.250rem !important;}
+        .tablet-inset-8   {inset: 1.500rem !important;}
+        .tablet-inset-9   {inset: 2.000rem !important;}
+        .tablet-inset-10  {inset: 2.500rem !important;}
+        .tablet-inset-11  {inset: 3.000rem !important;}
+        .tablet-inset-12  {inset: 3.500rem !important;}
+        .tablet-inset-13  {inset: 4.000rem !important;}
+        .tablet-inset-14 {inset: 4.500rem !important;}
+        .tablet-inset-15 {inset: 5.000rem !important;}
+        .tablet-inset-16 {inset: 6.000rem !important;}
+        .tablet-inset-17 {inset: 7.000rem !important;}
+        .tablet-inset-18 {inset: 8.000rem !important;}
+        .tablet-inset-19 {inset: 9.000rem !important;}
+        .tablet-inset-20 {inset: 10.000rem !important;}
+        .tablet-inset-21 {inset: 11.000rem !important;}
+        .tablet-inset-22 {inset: 12.000rem !important;}
+        .tablet-inset-23 {inset: 14.000rem !important;}
+        .tablet-inset-24 {inset: 16.000rem !important;}
+        .tablet-inset-25 {inset: 18.000rem !important;}
+        .tablet-inset-26 {inset: 20.000rem !important;}
+        .tablet-inset-27 {inset: 22.000rem !important;}
+        .tablet-inset-28 {inset: 24.000rem !important;}
+        .tablet-inset-29 {inset: 28.000rem !important;}
+        .tablet-inset-30 {inset: 32.000rem !important;}
+        .tablet-inset-31 {inset: 36.000rem !important;}
+        .tablet-inset-32 {inset: 40.000rem !important;}
+        .tablet-inset-33 {inset: 44.000rem !important;}
+        .tablet-inset-34 {inset: 48.000rem !important;}
+        .tablet-inset-35 {inset: 56.000rem !important;}
+        .tablet-inset-36 {inset: 64.000rem !important;}
+        .tablet-inset-37 {inset: 72.000rem !important;}
+        .tablet-inset-38 {inset: 80.000rem !important;}
+        .tablet-inset-39 {inset: 88.000rem !important;}
+        .tablet-inset-40 {inset: 96.000rem !important;}
+        .tablet-top-0 {top: 0 !important;}
+        .tablet-top-1 {top: 0.125rem !important;}
+        .tablet-top-2 {top: 0.250rem !important;}
+        .tablet-top-3 {top: 0.375rem !important;}
+        .tablet-top-4 {top: 0.500rem !important;}
+        .tablet-top-5 {top: 0.750rem !important;}
+        .tablet-top-6 {top: 1.000rem !important;}
+        .tablet-top-7 {top: 1.250rem !important;}
+        .tablet-top-8 {top: 1.500rem !important;}
+        .tablet-top-9 {top: 2.000rem !important;}
+        .tablet-top-10 {top: 2.500rem !important;}
+        .tablet-top-11 {top: 3.000rem !important;}
+        .tablet-top-12 {top: 3.500rem !important;}
+        .tablet-top-13 {top: 4.000rem !important;}
+        .tablet-top-14 {top: 4.500rem !important;}
+        .tablet-top-15 {top: 5.000rem !important;}
+        .tablet-top-16 {top: 6.000rem !important;}
+        .tablet-top-17 {top: 7.000rem !important;}
+        .tablet-top-18 {top: 8.000rem !important;}
+        .tablet-top-19 {top: 9.000rem !important;}
+        .tablet-top-20 {top: 10.000rem !important;}
+        .tablet-top-21 {top: 11.000rem !important;}
+        .tablet-top-22 {top: 12.000rem !important;}
+        .tablet-top-23 {top: 14.000rem !important;}
+        .tablet-top-24 {top: 16.000rem !important;}
+        .tablet-top-25 {top: 18.000rem !important;}
+        .tablet-top-26 {top: 20.000rem !important;}
+        .tablet-top-27 {top: 22.000rem !important;}
+        .tablet-top-28 {top: 24.000rem !important;}
+        .tablet-top-29 {top: 28.000rem !important;}
+        .tablet-top-30 {top: 32.000rem !important;}
+        .tablet-top-31 {top: 36.000rem !important;}
+        .tablet-top-32 {top: 40.000rem !important;}
+        .tablet-top-33 {top: 44.000rem !important;}
+        .tablet-top-34 {top: 48.000rem !important;}
+        .tablet-top-35 {top: 56.000rem !important;}
+        .tablet-top-36 {top: 64.000rem !important;}
+        .tablet-top-37 {top: 72.000rem !important;}
+        .tablet-top-38 {top: 80.000rem !important;}
+        .tablet-top-39 {top: 88.000rem !important;}
+        .tablet-top-40 {top: 96.000rem !important;}
+        .tablet-top-1-6 {top: calc(100% / 6) !important;}
+        .tablet-top-1-5 {top: 20% !important;}
+        .tablet-top-1-4 {top: 25% !important;}
+        .tablet-top-1-3 {top: calc(100% / 3) !important;}
+        .tablet-top-2-5 {top: 40% !important;}
+        .tablet-top-1-2 {top: 50% !important;}
+        .tablet-top-3-5 {top: 60% !important;}
+        .tablet-top-2-3 {top: calc(100% / 1.5) !important;}
+        .tablet-top-3-4 {top: 75% !important;}
+        .tablet-top-4-5 {top: 80% !important;}
+        .tablet-top-5-6 {top: calc(100% / 1.2) !important;}
+        .tablet-top-full {top: 100% !important;}
+        .tablet-bottom-0 {bottom: 0 !important;}
+        .tablet-bottom-1 {bottom: 0.125rem !important;}
+        .tablet-bottom-2 {bottom: 0.250rem !important;}
+        .tablet-bottom-3 {bottom: 0.375rem !important;}
+        .tablet-bottom-4 {bottom: 0.500rem !important;}
+        .tablet-bottom-5 {bottom: 0.750rem !important;}
+        .tablet-bottom-6 {bottom: 1.000rem !important;}
+        .tablet-bottom-7 {bottom: 1.250rem !important;}
+        .tablet-bottom-8 {bottom: 1.500rem !important;}
+        .tablet-bottom-9 {bottom: 2.000rem !important;}
+        .tablet-bottom-10 {bottom: 2.500rem !important;}
+        .tablet-bottom-11 {bottom: 3.000rem !important;}
+        .tablet-bottom-12 {bottom: 3.500rem !important;}
+        .tablet-bottom-13 {bottom: 4.000rem !important;}
+        .tablet-bottom-14 {bottom: 4.500rem !important;}
+        .tablet-bottom-15 {bottom: 5.000rem !important;}
+        .tablet-bottom-16 {bottom: 6.000rem !important;}
+        .tablet-bottom-17 {bottom: 7.000rem !important;}
+        .tablet-bottom-18 {bottom: 8.000rem !important;}
+        .tablet-bottom-19 {bottom: 9.000rem !important;}
+        .tablet-bottom-20 {bottom: 10.000rem !important;}
+        .tablet-bottom-21 {bottom: 11.000rem !important;}
+        .tablet-bottom-22 {bottom: 12.000rem !important;}
+        .tablet-bottom-23 {bottom: 14.000rem !important;}
+        .tablet-bottom-24 {bottom: 16.000rem !important;}
+        .tablet-bottom-25 {bottom: 18.000rem !important;}
+        .tablet-bottom-26 {bottom: 20.000rem !important;}
+        .tablet-bottom-27 {bottom: 22.000rem !important;}
+        .tablet-bottom-28 {bottom: 24.000rem !important;}
+        .tablet-bottom-29 {bottom: 28.000rem !important;}
+        .tablet-bottom-30 {bottom: 32.000rem !important;}
+        .tablet-bottom-31 {bottom: 36.000rem !important;}
+        .tablet-bottom-32 {bottom: 40.000rem !important;}
+        .tablet-bottom-33 {bottom: 44.000rem !important;}
+        .tablet-bottom-34 {bottom: 48.000rem !important;}
+        .tablet-bottom-35 {bottom: 56.000rem !important;}
+        .tablet-bottom-36 {bottom: 64.000rem !important;}
+        .tablet-bottom-37 {bottom: 72.000rem !important;}
+        .tablet-bottom-38 {bottom: 80.000rem !important;}
+        .tablet-bottom-39 {bottom: 88.000rem !important;}
+        .tablet-bottom-40 {bottom: 96.000rem !important;}
+        .tablet-bottom-1-6 {bottom: calc(100% / 6) !important;}
+        .tablet-bottom-1-5 {bottom: 20% !important;}
+        .tablet-bottom-1-4 {bottom: 25% !important;}
+        .tablet-bottom-1-3 {bottom: calc(100% / 3) !important;}
+        .tablet-bottom-2-5 {bottom: 40% !important;}
+        .tablet-bottom-1-2 {bottom: 50% !important;}
+        .tablet-bottom-3-5 {bottom: 60% !important;}
+        .tablet-bottom-2-3 {bottom: calc(100% / 1.5) !important;}
+        .tablet-bottom-3-4 {bottom: 75% !important;}
+        .tablet-bottom-4-5 {bottom: 80% !important;}
+        .tablet-bottom-5-6 {bottom: calc(100% / 1.2) !important;}
+        .tablet-bottom-full {bottom: 100% !important;}
+        .tablet-start-0 {inset-inline-start: 0 !important;}
+        .tablet-start-1 {inset-inline-start: 0.125rem !important;}
+        .tablet-start-2 {inset-inline-start: 0.250rem !important;}
+        .tablet-start-3 {inset-inline-start: 0.375rem !important;}
+        .tablet-start-4 {inset-inline-start: 0.500rem !important;}
+        .tablet-start-5 {inset-inline-start: 0.750rem !important;}
+        .tablet-start-6 {inset-inline-start: 1.000rem !important;}
+        .tablet-start-7 {inset-inline-start: 1.250rem !important;}
+        .tablet-start-8 {inset-inline-start: 1.500rem !important;}
+        .tablet-start-9 {inset-inline-start: 2.000rem !important;}
+        .tablet-start-10 {inset-inline-start: 2.500rem !important;}
+        .tablet-start-11 {inset-inline-start: 3.000rem !important;}
+        .tablet-start-12 {inset-inline-start: 3.500rem !important;}
+        .tablet-start-13 {inset-inline-start: 4.000rem !important;}
+        .tablet-start-14 {inset-inline-start: 4.500rem !important;}
+        .tablet-start-15 {inset-inline-start: 5.000rem !important;}
+        .tablet-start-16 {inset-inline-start: 6.000rem !important;}
+        .tablet-start-17 {inset-inline-start: 7.000rem !important;}
+        .tablet-start-18 {inset-inline-start: 8.000rem !important;}
+        .tablet-start-19 {inset-inline-start: 9.000rem !important;}
+        .tablet-start-20 {inset-inline-start: 10.000rem !important;}
+        .tablet-start-21 {inset-inline-start: 11.000rem !important;}
+        .tablet-start-22 {inset-inline-start: 12.000rem !important;}
+        .tablet-start-23 {inset-inline-start: 14.000rem !important;}
+        .tablet-start-24 {inset-inline-start: 16.000rem !important;}
+        .tablet-start-25 {inset-inline-start: 18.000rem !important;}
+        .tablet-start-26 {inset-inline-start: 20.000rem !important;}
+        .tablet-start-27 {inset-inline-start: 22.000rem !important;}
+        .tablet-start-28 {inset-inline-start: 24.000rem !important;}
+        .tablet-start-29 {inset-inline-start: 28.000rem !important;}
+        .tablet-start-30 {inset-inline-start: 32.000rem !important;}
+        .tablet-start-31 {inset-inline-start: 36.000rem !important;}
+        .tablet-start-32 {inset-inline-start: 40.000rem !important;}
+        .tablet-start-33 {inset-inline-start: 44.000rem !important;}
+        .tablet-start-34 {inset-inline-start: 48.000rem !important;}
+        .tablet-start-35 {inset-inline-start: 56.000rem !important;}
+        .tablet-start-36 {inset-inline-start: 64.000rem !important;}
+        .tablet-start-37 {inset-inline-start: 72.000rem !important;}
+        .tablet-start-38 {inset-inline-start: 80.000rem !important;}
+        .tablet-start-39 {inset-inline-start: 88.000rem !important;}
+        .tablet-start-40 {inset-inline-start: 96.000rem !important;}
+        .tablet-start-1-6 {inset-inline-start: calc(100% / 6) !important;}
+        .tablet-start-1-5 {inset-inline-start: 20% !important;}
+        .tablet-start-1-4 {inset-inline-start: 25% !important;}
+        .tablet-start-1-3 {inset-inline-start: calc(100% / 3) !important;}
+        .tablet-start-2-5 {inset-inline-start: 40% !important;}
+        .tablet-start-1-2 {inset-inline-start: 50% !important;}
+        .tablet-start-3-5 {inset-inline-start: 60% !important;}
+        .tablet-start-2-3 {inset-inline-start: calc(100% / 1.5) !important;}
+        .tablet-start-3-4 {inset-inline-start: 75% !important;}
+        .tablet-start-4-5 {inset-inline-start: 80% !important;}
+        .tablet-start-5-6 {inset-inline-start: calc(100% / 1.2) !important;}
+        .tablet-start-full {inset-inline-start: 100% !important;}
+        .tablet-end-0 {inset-inline-end: 0 !important;}
+        .tablet-end-1 {inset-inline-end: 0.125rem !important;}
+        .tablet-end-2 {inset-inline-end: 0.250rem !important;}
+        .tablet-end-3 {inset-inline-end: 0.375rem !important;}
+        .tablet-end-4 {inset-inline-end: 0.500rem !important;}
+        .tablet-end-5 {inset-inline-end: 0.750rem !important;}
+        .tablet-end-6 {inset-inline-end: 1.000rem !important;}
+        .tablet-end-7 {inset-inline-end: 1.250rem !important;}
+        .tablet-end-8 {inset-inline-end: 1.500rem !important;}
+        .tablet-end-9 {inset-inline-end: 2.000rem !important;}
+        .tablet-end-10 {inset-inline-end: 2.500rem !important;}
+        .tablet-end-11 {inset-inline-end: 3.000rem !important;}
+        .tablet-end-12 {inset-inline-end: 3.500rem !important;}
+        .tablet-end-13 {inset-inline-end: 4.000rem !important;}
+        .tablet-end-14 {inset-inline-end: 4.500rem !important;}
+        .tablet-end-15 {inset-inline-end: 5.000rem !important;}
+        .tablet-end-16 {inset-inline-end: 6.000rem !important;}
+        .tablet-end-17 {inset-inline-end: 7.000rem !important;}
+        .tablet-end-18 {inset-inline-end: 8.000rem !important;}
+        .tablet-end-19 {inset-inline-end: 9.000rem !important;}
+        .tablet-end-20 {inset-inline-end: 10.000rem !important;}
+        .tablet-end-21 {inset-inline-end: 11.000rem !important;}
+        .tablet-end-22 {inset-inline-end: 12.000rem !important;}
+        .tablet-end-23 {inset-inline-end: 14.000rem !important;}
+        .tablet-end-24 {inset-inline-end: 16.000rem !important;}
+        .tablet-end-25 {inset-inline-end: 18.000rem !important;}
+        .tablet-end-26 {inset-inline-end: 20.000rem !important;}
+        .tablet-end-27 {inset-inline-end: 22.000rem !important;}
+        .tablet-end-28 {inset-inline-end: 24.000rem !important;}
+        .tablet-end-29 {inset-inline-end: 28.000rem !important;}
+        .tablet-end-30 {inset-inline-end: 32.000rem !important;}
+        .tablet-end-31 {inset-inline-end: 36.000rem !important;}
+        .tablet-end-32 {inset-inline-end: 40.000rem !important;}
+        .tablet-end-33 {inset-inline-end: 44.000rem !important;}
+        .tablet-end-34 {inset-inline-end: 48.000rem !important;}
+        .tablet-end-35 {inset-inline-end: 56.000rem !important;}
+        .tablet-end-36 {inset-inline-end: 64.000rem !important;}
+        .tablet-end-37 {inset-inline-end: 72.000rem !important;}
+        .tablet-end-38 {inset-inline-end: 80.000rem !important;}
+        .tablet-end-39 {inset-inline-end: 88.000rem !important;}
+        .tablet-end-40 {inset-inline-end: 96.000rem !important;}
+        .tablet-end-1-6 {inset-inline-end: calc(100% / 6) !important;}
+        .tablet-end-1-5 {inset-inline-end: 20% !important;}
+        .tablet-end-1-4 {inset-inline-end: 25% !important;}
+        .tablet-end-1-3 {inset-inline-end: calc(100% / 3) !important;}
+        .tablet-end-2-5 {inset-inline-end: 40% !important;}
+        .tablet-end-1-2 {inset-inline-end: 50% !important;}
+        .tablet-end-3-5 {inset-inline-end: 60% !important;}
+        .tablet-end-2-3 {inset-inline-end: calc(100% / 1.5) !important;}
+        .tablet-end-3-4 {inset-inline-end: 75% !important;}
+        .tablet-end-4-5 {inset-inline-end: 80% !important;}
+        .tablet-end-5-6 {inset-inline-end: calc(100% / 1.2) !important;}
+        .tablet-end-full {inset-inline-end: 100% !important;}
         .tablet-text-xs  {font-size: 0.750rem; line-height: 1.50 !important;}
         .tablet-text-sm  {font-size: 0.875rem; line-height: 1.50 !important;}
         .tablet-text-md  {font-size: 1.000rem; line-height: 1.50 !important;}
@@ -4391,6 +4993,259 @@
         .desktop-position-absolute {position: absolute !important;}
         .desktop-position-fixed {position: fixed !important;}
         .desktop-position-sticky {position: sticky !important;}
+        .desktop-inset-0   {inset: 0 !important;}
+        .desktop-inset-1   {inset: 0.125rem !important;}
+        .desktop-inset-2   {inset: 0.250rem !important;}
+        .desktop-inset-3   {inset: 0.375rem !important;}
+        .desktop-inset-4   {inset: 0.500rem !important;}
+        .desktop-inset-5   {inset: 0.750rem !important;}
+        .desktop-inset-6   {inset: 1.000rem !important;}
+        .desktop-inset-7   {inset: 1.250rem !important;}
+        .desktop-inset-8   {inset: 1.500rem !important;}
+        .desktop-inset-9   {inset: 2.000rem !important;}
+        .desktop-inset-10  {inset: 2.500rem !important;}
+        .desktop-inset-11  {inset: 3.000rem !important;}
+        .desktop-inset-12  {inset: 3.500rem !important;}
+        .desktop-inset-13  {inset: 4.000rem !important;}
+        .desktop-inset-14 {inset: 4.500rem !important;}
+        .desktop-inset-15 {inset: 5.000rem !important;}
+        .desktop-inset-16 {inset: 6.000rem !important;}
+        .desktop-inset-17 {inset: 7.000rem !important;}
+        .desktop-inset-18 {inset: 8.000rem !important;}
+        .desktop-inset-19 {inset: 9.000rem !important;}
+        .desktop-inset-20 {inset: 10.000rem !important;}
+        .desktop-inset-21 {inset: 11.000rem !important;}
+        .desktop-inset-22 {inset: 12.000rem !important;}
+        .desktop-inset-23 {inset: 14.000rem !important;}
+        .desktop-inset-24 {inset: 16.000rem !important;}
+        .desktop-inset-25 {inset: 18.000rem !important;}
+        .desktop-inset-26 {inset: 20.000rem !important;}
+        .desktop-inset-27 {inset: 22.000rem !important;}
+        .desktop-inset-28 {inset: 24.000rem !important;}
+        .desktop-inset-29 {inset: 28.000rem !important;}
+        .desktop-inset-30 {inset: 32.000rem !important;}
+        .desktop-inset-31 {inset: 36.000rem !important;}
+        .desktop-inset-32 {inset: 40.000rem !important;}
+        .desktop-inset-33 {inset: 44.000rem !important;}
+        .desktop-inset-34 {inset: 48.000rem !important;}
+        .desktop-inset-35 {inset: 56.000rem !important;}
+        .desktop-inset-36 {inset: 64.000rem !important;}
+        .desktop-inset-37 {inset: 72.000rem !important;}
+        .desktop-inset-38 {inset: 80.000rem !important;}
+        .desktop-inset-39 {inset: 88.000rem !important;}
+        .desktop-inset-40 {inset: 96.000rem !important;}
+        .desktop-top-0 {top: 0 !important;}
+        .desktop-top-1 {top: 0.125rem !important;}
+        .desktop-top-2 {top: 0.250rem !important;}
+        .desktop-top-3 {top: 0.375rem !important;}
+        .desktop-top-4 {top: 0.500rem !important;}
+        .desktop-top-5 {top: 0.750rem !important;}
+        .desktop-top-6 {top: 1.000rem !important;}
+        .desktop-top-7 {top: 1.250rem !important;}
+        .desktop-top-8 {top: 1.500rem !important;}
+        .desktop-top-9 {top: 2.000rem !important;}
+        .desktop-top-10 {top: 2.500rem !important;}
+        .desktop-top-11 {top: 3.000rem !important;}
+        .desktop-top-12 {top: 3.500rem !important;}
+        .desktop-top-13 {top: 4.000rem !important;}
+        .desktop-top-14 {top: 4.500rem !important;}
+        .desktop-top-15 {top: 5.000rem !important;}
+        .desktop-top-16 {top: 6.000rem !important;}
+        .desktop-top-17 {top: 7.000rem !important;}
+        .desktop-top-18 {top: 8.000rem !important;}
+        .desktop-top-19 {top: 9.000rem !important;}
+        .desktop-top-20 {top: 10.000rem !important;}
+        .desktop-top-21 {top: 11.000rem !important;}
+        .desktop-top-22 {top: 12.000rem !important;}
+        .desktop-top-23 {top: 14.000rem !important;}
+        .desktop-top-24 {top: 16.000rem !important;}
+        .desktop-top-25 {top: 18.000rem !important;}
+        .desktop-top-26 {top: 20.000rem !important;}
+        .desktop-top-27 {top: 22.000rem !important;}
+        .desktop-top-28 {top: 24.000rem !important;}
+        .desktop-top-29 {top: 28.000rem !important;}
+        .desktop-top-30 {top: 32.000rem !important;}
+        .desktop-top-31 {top: 36.000rem !important;}
+        .desktop-top-32 {top: 40.000rem !important;}
+        .desktop-top-33 {top: 44.000rem !important;}
+        .desktop-top-34 {top: 48.000rem !important;}
+        .desktop-top-35 {top: 56.000rem !important;}
+        .desktop-top-36 {top: 64.000rem !important;}
+        .desktop-top-37 {top: 72.000rem !important;}
+        .desktop-top-38 {top: 80.000rem !important;}
+        .desktop-top-39 {top: 88.000rem !important;}
+        .desktop-top-40 {top: 96.000rem !important;}
+        .desktop-top-1-6 {top: calc(100% / 6) !important;}
+        .desktop-top-1-5 {top: 20% !important;}
+        .desktop-top-1-4 {top: 25% !important;}
+        .desktop-top-1-3 {top: calc(100% / 3) !important;}
+        .desktop-top-2-5 {top: 40% !important;}
+        .desktop-top-1-2 {top: 50% !important;}
+        .desktop-top-3-5 {top: 60% !important;}
+        .desktop-top-2-3 {top: calc(100% / 1.5) !important;}
+        .desktop-top-3-4 {top: 75% !important;}
+        .desktop-top-4-5 {top: 80% !important;}
+        .desktop-top-5-6 {top: calc(100% / 1.2) !important;}
+        .desktop-top-full {top: 100% !important;}
+        .desktop-bottom-0 {bottom: 0 !important;}
+        .desktop-bottom-1 {bottom: 0.125rem !important;}
+        .desktop-bottom-2 {bottom: 0.250rem !important;}
+        .desktop-bottom-3 {bottom: 0.375rem !important;}
+        .desktop-bottom-4 {bottom: 0.500rem !important;}
+        .desktop-bottom-5 {bottom: 0.750rem !important;}
+        .desktop-bottom-6 {bottom: 1.000rem !important;}
+        .desktop-bottom-7 {bottom: 1.250rem !important;}
+        .desktop-bottom-8 {bottom: 1.500rem !important;}
+        .desktop-bottom-9 {bottom: 2.000rem !important;}
+        .desktop-bottom-10 {bottom: 2.500rem !important;}
+        .desktop-bottom-11 {bottom: 3.000rem !important;}
+        .desktop-bottom-12 {bottom: 3.500rem !important;}
+        .desktop-bottom-13 {bottom: 4.000rem !important;}
+        .desktop-bottom-14 {bottom: 4.500rem !important;}
+        .desktop-bottom-15 {bottom: 5.000rem !important;}
+        .desktop-bottom-16 {bottom: 6.000rem !important;}
+        .desktop-bottom-17 {bottom: 7.000rem !important;}
+        .desktop-bottom-18 {bottom: 8.000rem !important;}
+        .desktop-bottom-19 {bottom: 9.000rem !important;}
+        .desktop-bottom-20 {bottom: 10.000rem !important;}
+        .desktop-bottom-21 {bottom: 11.000rem !important;}
+        .desktop-bottom-22 {bottom: 12.000rem !important;}
+        .desktop-bottom-23 {bottom: 14.000rem !important;}
+        .desktop-bottom-24 {bottom: 16.000rem !important;}
+        .desktop-bottom-25 {bottom: 18.000rem !important;}
+        .desktop-bottom-26 {bottom: 20.000rem !important;}
+        .desktop-bottom-27 {bottom: 22.000rem !important;}
+        .desktop-bottom-28 {bottom: 24.000rem !important;}
+        .desktop-bottom-29 {bottom: 28.000rem !important;}
+        .desktop-bottom-30 {bottom: 32.000rem !important;}
+        .desktop-bottom-31 {bottom: 36.000rem !important;}
+        .desktop-bottom-32 {bottom: 40.000rem !important;}
+        .desktop-bottom-33 {bottom: 44.000rem !important;}
+        .desktop-bottom-34 {bottom: 48.000rem !important;}
+        .desktop-bottom-35 {bottom: 56.000rem !important;}
+        .desktop-bottom-36 {bottom: 64.000rem !important;}
+        .desktop-bottom-37 {bottom: 72.000rem !important;}
+        .desktop-bottom-38 {bottom: 80.000rem !important;}
+        .desktop-bottom-39 {bottom: 88.000rem !important;}
+        .desktop-bottom-40 {bottom: 96.000rem !important;}
+        .desktop-bottom-1-6 {bottom: calc(100% / 6) !important;}
+        .desktop-bottom-1-5 {bottom: 20% !important;}
+        .desktop-bottom-1-4 {bottom: 25% !important;}
+        .desktop-bottom-1-3 {bottom: calc(100% / 3) !important;}
+        .desktop-bottom-2-5 {bottom: 40% !important;}
+        .desktop-bottom-1-2 {bottom: 50% !important;}
+        .desktop-bottom-3-5 {bottom: 60% !important;}
+        .desktop-bottom-2-3 {bottom: calc(100% / 1.5) !important;}
+        .desktop-bottom-3-4 {bottom: 75% !important;}
+        .desktop-bottom-4-5 {bottom: 80% !important;}
+        .desktop-bottom-5-6 {bottom: calc(100% / 1.2) !important;}
+        .desktop-bottom-full {bottom: 100% !important;}
+        .desktop-start-0 {inset-inline-start: 0 !important;}
+        .desktop-start-1 {inset-inline-start: 0.125rem !important;}
+        .desktop-start-2 {inset-inline-start: 0.250rem !important;}
+        .desktop-start-3 {inset-inline-start: 0.375rem !important;}
+        .desktop-start-4 {inset-inline-start: 0.500rem !important;}
+        .desktop-start-5 {inset-inline-start: 0.750rem !important;}
+        .desktop-start-6 {inset-inline-start: 1.000rem !important;}
+        .desktop-start-7 {inset-inline-start: 1.250rem !important;}
+        .desktop-start-8 {inset-inline-start: 1.500rem !important;}
+        .desktop-start-9 {inset-inline-start: 2.000rem !important;}
+        .desktop-start-10 {inset-inline-start: 2.500rem !important;}
+        .desktop-start-11 {inset-inline-start: 3.000rem !important;}
+        .desktop-start-12 {inset-inline-start: 3.500rem !important;}
+        .desktop-start-13 {inset-inline-start: 4.000rem !important;}
+        .desktop-start-14 {inset-inline-start: 4.500rem !important;}
+        .desktop-start-15 {inset-inline-start: 5.000rem !important;}
+        .desktop-start-16 {inset-inline-start: 6.000rem !important;}
+        .desktop-start-17 {inset-inline-start: 7.000rem !important;}
+        .desktop-start-18 {inset-inline-start: 8.000rem !important;}
+        .desktop-start-19 {inset-inline-start: 9.000rem !important;}
+        .desktop-start-20 {inset-inline-start: 10.000rem !important;}
+        .desktop-start-21 {inset-inline-start: 11.000rem !important;}
+        .desktop-start-22 {inset-inline-start: 12.000rem !important;}
+        .desktop-start-23 {inset-inline-start: 14.000rem !important;}
+        .desktop-start-24 {inset-inline-start: 16.000rem !important;}
+        .desktop-start-25 {inset-inline-start: 18.000rem !important;}
+        .desktop-start-26 {inset-inline-start: 20.000rem !important;}
+        .desktop-start-27 {inset-inline-start: 22.000rem !important;}
+        .desktop-start-28 {inset-inline-start: 24.000rem !important;}
+        .desktop-start-29 {inset-inline-start: 28.000rem !important;}
+        .desktop-start-30 {inset-inline-start: 32.000rem !important;}
+        .desktop-start-31 {inset-inline-start: 36.000rem !important;}
+        .desktop-start-32 {inset-inline-start: 40.000rem !important;}
+        .desktop-start-33 {inset-inline-start: 44.000rem !important;}
+        .desktop-start-34 {inset-inline-start: 48.000rem !important;}
+        .desktop-start-35 {inset-inline-start: 56.000rem !important;}
+        .desktop-start-36 {inset-inline-start: 64.000rem !important;}
+        .desktop-start-37 {inset-inline-start: 72.000rem !important;}
+        .desktop-start-38 {inset-inline-start: 80.000rem !important;}
+        .desktop-start-39 {inset-inline-start: 88.000rem !important;}
+        .desktop-start-40 {inset-inline-start: 96.000rem !important;}
+        .desktop-start-1-6 {inset-inline-start: calc(100% / 6) !important;}
+        .desktop-start-1-5 {inset-inline-start: 20% !important;}
+        .desktop-start-1-4 {inset-inline-start: 25% !important;}
+        .desktop-start-1-3 {inset-inline-start: calc(100% / 3) !important;}
+        .desktop-start-2-5 {inset-inline-start: 40% !important;}
+        .desktop-start-1-2 {inset-inline-start: 50% !important;}
+        .desktop-start-3-5 {inset-inline-start: 60% !important;}
+        .desktop-start-2-3 {inset-inline-start: calc(100% / 1.5) !important;}
+        .desktop-start-3-4 {inset-inline-start: 75% !important;}
+        .desktop-start-4-5 {inset-inline-start: 80% !important;}
+        .desktop-start-5-6 {inset-inline-start: calc(100% / 1.2) !important;}
+        .desktop-start-full {inset-inline-start: 100% !important;}
+        .desktop-end-0 {inset-inline-end: 0 !important;}
+        .desktop-end-1 {inset-inline-end: 0.125rem !important;}
+        .desktop-end-2 {inset-inline-end: 0.250rem !important;}
+        .desktop-end-3 {inset-inline-end: 0.375rem !important;}
+        .desktop-end-4 {inset-inline-end: 0.500rem !important;}
+        .desktop-end-5 {inset-inline-end: 0.750rem !important;}
+        .desktop-end-6 {inset-inline-end: 1.000rem !important;}
+        .desktop-end-7 {inset-inline-end: 1.250rem !important;}
+        .desktop-end-8 {inset-inline-end: 1.500rem !important;}
+        .desktop-end-9 {inset-inline-end: 2.000rem !important;}
+        .desktop-end-10 {inset-inline-end: 2.500rem !important;}
+        .desktop-end-11 {inset-inline-end: 3.000rem !important;}
+        .desktop-end-12 {inset-inline-end: 3.500rem !important;}
+        .desktop-end-13 {inset-inline-end: 4.000rem !important;}
+        .desktop-end-14 {inset-inline-end: 4.500rem !important;}
+        .desktop-end-15 {inset-inline-end: 5.000rem !important;}
+        .desktop-end-16 {inset-inline-end: 6.000rem !important;}
+        .desktop-end-17 {inset-inline-end: 7.000rem !important;}
+        .desktop-end-18 {inset-inline-end: 8.000rem !important;}
+        .desktop-end-19 {inset-inline-end: 9.000rem !important;}
+        .desktop-end-20 {inset-inline-end: 10.000rem !important;}
+        .desktop-end-21 {inset-inline-end: 11.000rem !important;}
+        .desktop-end-22 {inset-inline-end: 12.000rem !important;}
+        .desktop-end-23 {inset-inline-end: 14.000rem !important;}
+        .desktop-end-24 {inset-inline-end: 16.000rem !important;}
+        .desktop-end-25 {inset-inline-end: 18.000rem !important;}
+        .desktop-end-26 {inset-inline-end: 20.000rem !important;}
+        .desktop-end-27 {inset-inline-end: 22.000rem !important;}
+        .desktop-end-28 {inset-inline-end: 24.000rem !important;}
+        .desktop-end-29 {inset-inline-end: 28.000rem !important;}
+        .desktop-end-30 {inset-inline-end: 32.000rem !important;}
+        .desktop-end-31 {inset-inline-end: 36.000rem !important;}
+        .desktop-end-32 {inset-inline-end: 40.000rem !important;}
+        .desktop-end-33 {inset-inline-end: 44.000rem !important;}
+        .desktop-end-34 {inset-inline-end: 48.000rem !important;}
+        .desktop-end-35 {inset-inline-end: 56.000rem !important;}
+        .desktop-end-36 {inset-inline-end: 64.000rem !important;}
+        .desktop-end-37 {inset-inline-end: 72.000rem !important;}
+        .desktop-end-38 {inset-inline-end: 80.000rem !important;}
+        .desktop-end-39 {inset-inline-end: 88.000rem !important;}
+        .desktop-end-40 {inset-inline-end: 96.000rem !important;}
+        .desktop-end-1-6 {inset-inline-end: calc(100% / 6) !important;}
+        .desktop-end-1-5 {inset-inline-end: 20% !important;}
+        .desktop-end-1-4 {inset-inline-end: 25% !important;}
+        .desktop-end-1-3 {inset-inline-end: calc(100% / 3) !important;}
+        .desktop-end-2-5 {inset-inline-end: 40% !important;}
+        .desktop-end-1-2 {inset-inline-end: 50% !important;}
+        .desktop-end-3-5 {inset-inline-end: 60% !important;}
+        .desktop-end-2-3 {inset-inline-end: calc(100% / 1.5) !important;}
+        .desktop-end-3-4 {inset-inline-end: 75% !important;}
+        .desktop-end-4-5 {inset-inline-end: 80% !important;}
+        .desktop-end-5-6 {inset-inline-end: calc(100% / 1.2) !important;}
+        .desktop-end-full {inset-inline-end: 100% !important;}
         .desktop-text-xs  {font-size: 0.750rem; line-height: 1.50 !important;}
         .desktop-text-sm  {font-size: 0.875rem; line-height: 1.50 !important;}
         .desktop-text-md  {font-size: 1.000rem; line-height: 1.50 !important;}
@@ -4545,6 +5400,259 @@
         .desktop-wide-position-absolute {position: absolute !important;}
         .desktop-wide-position-fixed {position: fixed !important;}
         .desktop-wide-position-sticky {position: sticky !important;}
+        .desktop-wide-inset-0   {inset: 0 !important;}
+        .desktop-wide-inset-1   {inset: 0.125rem !important;}
+        .desktop-wide-inset-2   {inset: 0.250rem !important;}
+        .desktop-wide-inset-3   {inset: 0.375rem !important;}
+        .desktop-wide-inset-4   {inset: 0.500rem !important;}
+        .desktop-wide-inset-5   {inset: 0.750rem !important;}
+        .desktop-wide-inset-6   {inset: 1.000rem !important;}
+        .desktop-wide-inset-7   {inset: 1.250rem !important;}
+        .desktop-wide-inset-8   {inset: 1.500rem !important;}
+        .desktop-wide-inset-9   {inset: 2.000rem !important;}
+        .desktop-wide-inset-10  {inset: 2.500rem !important;}
+        .desktop-wide-inset-11  {inset: 3.000rem !important;}
+        .desktop-wide-inset-12  {inset: 3.500rem !important;}
+        .desktop-wide-inset-13  {inset: 4.000rem !important;}
+        .desktop-wide-inset-14 {inset: 4.500rem !important;}
+        .desktop-wide-inset-15 {inset: 5.000rem !important;}
+        .desktop-wide-inset-16 {inset: 6.000rem !important;}
+        .desktop-wide-inset-17 {inset: 7.000rem !important;}
+        .desktop-wide-inset-18 {inset: 8.000rem !important;}
+        .desktop-wide-inset-19 {inset: 9.000rem !important;}
+        .desktop-wide-inset-20 {inset: 10.000rem !important;}
+        .desktop-wide-inset-21 {inset: 11.000rem !important;}
+        .desktop-wide-inset-22 {inset: 12.000rem !important;}
+        .desktop-wide-inset-23 {inset: 14.000rem !important;}
+        .desktop-wide-inset-24 {inset: 16.000rem !important;}
+        .desktop-wide-inset-25 {inset: 18.000rem !important;}
+        .desktop-wide-inset-26 {inset: 20.000rem !important;}
+        .desktop-wide-inset-27 {inset: 22.000rem !important;}
+        .desktop-wide-inset-28 {inset: 24.000rem !important;}
+        .desktop-wide-inset-29 {inset: 28.000rem !important;}
+        .desktop-wide-inset-30 {inset: 32.000rem !important;}
+        .desktop-wide-inset-31 {inset: 36.000rem !important;}
+        .desktop-wide-inset-32 {inset: 40.000rem !important;}
+        .desktop-wide-inset-33 {inset: 44.000rem !important;}
+        .desktop-wide-inset-34 {inset: 48.000rem !important;}
+        .desktop-wide-inset-35 {inset: 56.000rem !important;}
+        .desktop-wide-inset-36 {inset: 64.000rem !important;}
+        .desktop-wide-inset-37 {inset: 72.000rem !important;}
+        .desktop-wide-inset-38 {inset: 80.000rem !important;}
+        .desktop-wide-inset-39 {inset: 88.000rem !important;}
+        .desktop-wide-inset-40 {inset: 96.000rem !important;}
+        .desktop-wide-top-0 {top: 0 !important;}
+        .desktop-wide-top-1 {top: 0.125rem !important;}
+        .desktop-wide-top-2 {top: 0.250rem !important;}
+        .desktop-wide-top-3 {top: 0.375rem !important;}
+        .desktop-wide-top-4 {top: 0.500rem !important;}
+        .desktop-wide-top-5 {top: 0.750rem !important;}
+        .desktop-wide-top-6 {top: 1.000rem !important;}
+        .desktop-wide-top-7 {top: 1.250rem !important;}
+        .desktop-wide-top-8 {top: 1.500rem !important;}
+        .desktop-wide-top-9 {top: 2.000rem !important;}
+        .desktop-wide-top-10 {top: 2.500rem !important;}
+        .desktop-wide-top-11 {top: 3.000rem !important;}
+        .desktop-wide-top-12 {top: 3.500rem !important;}
+        .desktop-wide-top-13 {top: 4.000rem !important;}
+        .desktop-wide-top-14 {top: 4.500rem !important;}
+        .desktop-wide-top-15 {top: 5.000rem !important;}
+        .desktop-wide-top-16 {top: 6.000rem !important;}
+        .desktop-wide-top-17 {top: 7.000rem !important;}
+        .desktop-wide-top-18 {top: 8.000rem !important;}
+        .desktop-wide-top-19 {top: 9.000rem !important;}
+        .desktop-wide-top-20 {top: 10.000rem !important;}
+        .desktop-wide-top-21 {top: 11.000rem !important;}
+        .desktop-wide-top-22 {top: 12.000rem !important;}
+        .desktop-wide-top-23 {top: 14.000rem !important;}
+        .desktop-wide-top-24 {top: 16.000rem !important;}
+        .desktop-wide-top-25 {top: 18.000rem !important;}
+        .desktop-wide-top-26 {top: 20.000rem !important;}
+        .desktop-wide-top-27 {top: 22.000rem !important;}
+        .desktop-wide-top-28 {top: 24.000rem !important;}
+        .desktop-wide-top-29 {top: 28.000rem !important;}
+        .desktop-wide-top-30 {top: 32.000rem !important;}
+        .desktop-wide-top-31 {top: 36.000rem !important;}
+        .desktop-wide-top-32 {top: 40.000rem !important;}
+        .desktop-wide-top-33 {top: 44.000rem !important;}
+        .desktop-wide-top-34 {top: 48.000rem !important;}
+        .desktop-wide-top-35 {top: 56.000rem !important;}
+        .desktop-wide-top-36 {top: 64.000rem !important;}
+        .desktop-wide-top-37 {top: 72.000rem !important;}
+        .desktop-wide-top-38 {top: 80.000rem !important;}
+        .desktop-wide-top-39 {top: 88.000rem !important;}
+        .desktop-wide-top-40 {top: 96.000rem !important;}
+        .desktop-wide-top-1-6 {top: calc(100% / 6) !important;}
+        .desktop-wide-top-1-5 {top: 20% !important;}
+        .desktop-wide-top-1-4 {top: 25% !important;}
+        .desktop-wide-top-1-3 {top: calc(100% / 3) !important;}
+        .desktop-wide-top-2-5 {top: 40% !important;}
+        .desktop-wide-top-1-2 {top: 50% !important;}
+        .desktop-wide-top-3-5 {top: 60% !important;}
+        .desktop-wide-top-2-3 {top: calc(100% / 1.5) !important;}
+        .desktop-wide-top-3-4 {top: 75% !important;}
+        .desktop-wide-top-4-5 {top: 80% !important;}
+        .desktop-wide-top-5-6 {top: calc(100% / 1.2) !important;}
+        .desktop-wide-top-full {top: 100% !important;}
+        .desktop-wide-bottom-0 {bottom: 0 !important;}
+        .desktop-wide-bottom-1 {bottom: 0.125rem !important;}
+        .desktop-wide-bottom-2 {bottom: 0.250rem !important;}
+        .desktop-wide-bottom-3 {bottom: 0.375rem !important;}
+        .desktop-wide-bottom-4 {bottom: 0.500rem !important;}
+        .desktop-wide-bottom-5 {bottom: 0.750rem !important;}
+        .desktop-wide-bottom-6 {bottom: 1.000rem !important;}
+        .desktop-wide-bottom-7 {bottom: 1.250rem !important;}
+        .desktop-wide-bottom-8 {bottom: 1.500rem !important;}
+        .desktop-wide-bottom-9 {bottom: 2.000rem !important;}
+        .desktop-wide-bottom-10 {bottom: 2.500rem !important;}
+        .desktop-wide-bottom-11 {bottom: 3.000rem !important;}
+        .desktop-wide-bottom-12 {bottom: 3.500rem !important;}
+        .desktop-wide-bottom-13 {bottom: 4.000rem !important;}
+        .desktop-wide-bottom-14 {bottom: 4.500rem !important;}
+        .desktop-wide-bottom-15 {bottom: 5.000rem !important;}
+        .desktop-wide-bottom-16 {bottom: 6.000rem !important;}
+        .desktop-wide-bottom-17 {bottom: 7.000rem !important;}
+        .desktop-wide-bottom-18 {bottom: 8.000rem !important;}
+        .desktop-wide-bottom-19 {bottom: 9.000rem !important;}
+        .desktop-wide-bottom-20 {bottom: 10.000rem !important;}
+        .desktop-wide-bottom-21 {bottom: 11.000rem !important;}
+        .desktop-wide-bottom-22 {bottom: 12.000rem !important;}
+        .desktop-wide-bottom-23 {bottom: 14.000rem !important;}
+        .desktop-wide-bottom-24 {bottom: 16.000rem !important;}
+        .desktop-wide-bottom-25 {bottom: 18.000rem !important;}
+        .desktop-wide-bottom-26 {bottom: 20.000rem !important;}
+        .desktop-wide-bottom-27 {bottom: 22.000rem !important;}
+        .desktop-wide-bottom-28 {bottom: 24.000rem !important;}
+        .desktop-wide-bottom-29 {bottom: 28.000rem !important;}
+        .desktop-wide-bottom-30 {bottom: 32.000rem !important;}
+        .desktop-wide-bottom-31 {bottom: 36.000rem !important;}
+        .desktop-wide-bottom-32 {bottom: 40.000rem !important;}
+        .desktop-wide-bottom-33 {bottom: 44.000rem !important;}
+        .desktop-wide-bottom-34 {bottom: 48.000rem !important;}
+        .desktop-wide-bottom-35 {bottom: 56.000rem !important;}
+        .desktop-wide-bottom-36 {bottom: 64.000rem !important;}
+        .desktop-wide-bottom-37 {bottom: 72.000rem !important;}
+        .desktop-wide-bottom-38 {bottom: 80.000rem !important;}
+        .desktop-wide-bottom-39 {bottom: 88.000rem !important;}
+        .desktop-wide-bottom-40 {bottom: 96.000rem !important;}
+        .desktop-wide-bottom-1-6 {bottom: calc(100% / 6) !important;}
+        .desktop-wide-bottom-1-5 {bottom: 20% !important;}
+        .desktop-wide-bottom-1-4 {bottom: 25% !important;}
+        .desktop-wide-bottom-1-3 {bottom: calc(100% / 3) !important;}
+        .desktop-wide-bottom-2-5 {bottom: 40% !important;}
+        .desktop-wide-bottom-1-2 {bottom: 50% !important;}
+        .desktop-wide-bottom-3-5 {bottom: 60% !important;}
+        .desktop-wide-bottom-2-3 {bottom: calc(100% / 1.5) !important;}
+        .desktop-wide-bottom-3-4 {bottom: 75% !important;}
+        .desktop-wide-bottom-4-5 {bottom: 80% !important;}
+        .desktop-wide-bottom-5-6 {bottom: calc(100% / 1.2) !important;}
+        .desktop-wide-bottom-full {bottom: 100% !important;}
+        .desktop-wide-start-0 {inset-inline-start: 0 !important;}
+        .desktop-wide-start-1 {inset-inline-start: 0.125rem !important;}
+        .desktop-wide-start-2 {inset-inline-start: 0.250rem !important;}
+        .desktop-wide-start-3 {inset-inline-start: 0.375rem !important;}
+        .desktop-wide-start-4 {inset-inline-start: 0.500rem !important;}
+        .desktop-wide-start-5 {inset-inline-start: 0.750rem !important;}
+        .desktop-wide-start-6 {inset-inline-start: 1.000rem !important;}
+        .desktop-wide-start-7 {inset-inline-start: 1.250rem !important;}
+        .desktop-wide-start-8 {inset-inline-start: 1.500rem !important;}
+        .desktop-wide-start-9 {inset-inline-start: 2.000rem !important;}
+        .desktop-wide-start-10 {inset-inline-start: 2.500rem !important;}
+        .desktop-wide-start-11 {inset-inline-start: 3.000rem !important;}
+        .desktop-wide-start-12 {inset-inline-start: 3.500rem !important;}
+        .desktop-wide-start-13 {inset-inline-start: 4.000rem !important;}
+        .desktop-wide-start-14 {inset-inline-start: 4.500rem !important;}
+        .desktop-wide-start-15 {inset-inline-start: 5.000rem !important;}
+        .desktop-wide-start-16 {inset-inline-start: 6.000rem !important;}
+        .desktop-wide-start-17 {inset-inline-start: 7.000rem !important;}
+        .desktop-wide-start-18 {inset-inline-start: 8.000rem !important;}
+        .desktop-wide-start-19 {inset-inline-start: 9.000rem !important;}
+        .desktop-wide-start-20 {inset-inline-start: 10.000rem !important;}
+        .desktop-wide-start-21 {inset-inline-start: 11.000rem !important;}
+        .desktop-wide-start-22 {inset-inline-start: 12.000rem !important;}
+        .desktop-wide-start-23 {inset-inline-start: 14.000rem !important;}
+        .desktop-wide-start-24 {inset-inline-start: 16.000rem !important;}
+        .desktop-wide-start-25 {inset-inline-start: 18.000rem !important;}
+        .desktop-wide-start-26 {inset-inline-start: 20.000rem !important;}
+        .desktop-wide-start-27 {inset-inline-start: 22.000rem !important;}
+        .desktop-wide-start-28 {inset-inline-start: 24.000rem !important;}
+        .desktop-wide-start-29 {inset-inline-start: 28.000rem !important;}
+        .desktop-wide-start-30 {inset-inline-start: 32.000rem !important;}
+        .desktop-wide-start-31 {inset-inline-start: 36.000rem !important;}
+        .desktop-wide-start-32 {inset-inline-start: 40.000rem !important;}
+        .desktop-wide-start-33 {inset-inline-start: 44.000rem !important;}
+        .desktop-wide-start-34 {inset-inline-start: 48.000rem !important;}
+        .desktop-wide-start-35 {inset-inline-start: 56.000rem !important;}
+        .desktop-wide-start-36 {inset-inline-start: 64.000rem !important;}
+        .desktop-wide-start-37 {inset-inline-start: 72.000rem !important;}
+        .desktop-wide-start-38 {inset-inline-start: 80.000rem !important;}
+        .desktop-wide-start-39 {inset-inline-start: 88.000rem !important;}
+        .desktop-wide-start-40 {inset-inline-start: 96.000rem !important;}
+        .desktop-wide-start-1-6 {inset-inline-start: calc(100% / 6) !important;}
+        .desktop-wide-start-1-5 {inset-inline-start: 20% !important;}
+        .desktop-wide-start-1-4 {inset-inline-start: 25% !important;}
+        .desktop-wide-start-1-3 {inset-inline-start: calc(100% / 3) !important;}
+        .desktop-wide-start-2-5 {inset-inline-start: 40% !important;}
+        .desktop-wide-start-1-2 {inset-inline-start: 50% !important;}
+        .desktop-wide-start-3-5 {inset-inline-start: 60% !important;}
+        .desktop-wide-start-2-3 {inset-inline-start: calc(100% / 1.5) !important;}
+        .desktop-wide-start-3-4 {inset-inline-start: 75% !important;}
+        .desktop-wide-start-4-5 {inset-inline-start: 80% !important;}
+        .desktop-wide-start-5-6 {inset-inline-start: calc(100% / 1.2) !important;}
+        .desktop-wide-start-full {inset-inline-start: 100% !important;}
+        .desktop-wide-end-0 {inset-inline-end: 0 !important;}
+        .desktop-wide-end-1 {inset-inline-end: 0.125rem !important;}
+        .desktop-wide-end-2 {inset-inline-end: 0.250rem !important;}
+        .desktop-wide-end-3 {inset-inline-end: 0.375rem !important;}
+        .desktop-wide-end-4 {inset-inline-end: 0.500rem !important;}
+        .desktop-wide-end-5 {inset-inline-end: 0.750rem !important;}
+        .desktop-wide-end-6 {inset-inline-end: 1.000rem !important;}
+        .desktop-wide-end-7 {inset-inline-end: 1.250rem !important;}
+        .desktop-wide-end-8 {inset-inline-end: 1.500rem !important;}
+        .desktop-wide-end-9 {inset-inline-end: 2.000rem !important;}
+        .desktop-wide-end-10 {inset-inline-end: 2.500rem !important;}
+        .desktop-wide-end-11 {inset-inline-end: 3.000rem !important;}
+        .desktop-wide-end-12 {inset-inline-end: 3.500rem !important;}
+        .desktop-wide-end-13 {inset-inline-end: 4.000rem !important;}
+        .desktop-wide-end-14 {inset-inline-end: 4.500rem !important;}
+        .desktop-wide-end-15 {inset-inline-end: 5.000rem !important;}
+        .desktop-wide-end-16 {inset-inline-end: 6.000rem !important;}
+        .desktop-wide-end-17 {inset-inline-end: 7.000rem !important;}
+        .desktop-wide-end-18 {inset-inline-end: 8.000rem !important;}
+        .desktop-wide-end-19 {inset-inline-end: 9.000rem !important;}
+        .desktop-wide-end-20 {inset-inline-end: 10.000rem !important;}
+        .desktop-wide-end-21 {inset-inline-end: 11.000rem !important;}
+        .desktop-wide-end-22 {inset-inline-end: 12.000rem !important;}
+        .desktop-wide-end-23 {inset-inline-end: 14.000rem !important;}
+        .desktop-wide-end-24 {inset-inline-end: 16.000rem !important;}
+        .desktop-wide-end-25 {inset-inline-end: 18.000rem !important;}
+        .desktop-wide-end-26 {inset-inline-end: 20.000rem !important;}
+        .desktop-wide-end-27 {inset-inline-end: 22.000rem !important;}
+        .desktop-wide-end-28 {inset-inline-end: 24.000rem !important;}
+        .desktop-wide-end-29 {inset-inline-end: 28.000rem !important;}
+        .desktop-wide-end-30 {inset-inline-end: 32.000rem !important;}
+        .desktop-wide-end-31 {inset-inline-end: 36.000rem !important;}
+        .desktop-wide-end-32 {inset-inline-end: 40.000rem !important;}
+        .desktop-wide-end-33 {inset-inline-end: 44.000rem !important;}
+        .desktop-wide-end-34 {inset-inline-end: 48.000rem !important;}
+        .desktop-wide-end-35 {inset-inline-end: 56.000rem !important;}
+        .desktop-wide-end-36 {inset-inline-end: 64.000rem !important;}
+        .desktop-wide-end-37 {inset-inline-end: 72.000rem !important;}
+        .desktop-wide-end-38 {inset-inline-end: 80.000rem !important;}
+        .desktop-wide-end-39 {inset-inline-end: 88.000rem !important;}
+        .desktop-wide-end-40 {inset-inline-end: 96.000rem !important;}
+        .desktop-wide-end-1-6 {inset-inline-end: calc(100% / 6) !important;}
+        .desktop-wide-end-1-5 {inset-inline-end: 20% !important;}
+        .desktop-wide-end-1-4 {inset-inline-end: 25% !important;}
+        .desktop-wide-end-1-3 {inset-inline-end: calc(100% / 3) !important;}
+        .desktop-wide-end-2-5 {inset-inline-end: 40% !important;}
+        .desktop-wide-end-1-2 {inset-inline-end: 50% !important;}
+        .desktop-wide-end-3-5 {inset-inline-end: 60% !important;}
+        .desktop-wide-end-2-3 {inset-inline-end: calc(100% / 1.5) !important;}
+        .desktop-wide-end-3-4 {inset-inline-end: 75% !important;}
+        .desktop-wide-end-4-5 {inset-inline-end: 80% !important;}
+        .desktop-wide-end-5-6 {inset-inline-end: calc(100% / 1.2) !important;}
+        .desktop-wide-end-full {inset-inline-end: 100% !important;}
         .desktop-wide-text-xs  {font-size: 0.750rem; line-height: 1.50 !important;}
         .desktop-wide-text-sm  {font-size: 0.875rem; line-height: 1.50 !important;}
         .desktop-wide-text-md  {font-size: 1.000rem; line-height: 1.50 !important;}
