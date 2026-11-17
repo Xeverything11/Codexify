@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Layout - Codexify</title>
+        <link rel="stylesheet" href="codexify.css" />
+    </head>
+    <body>
+        <a href="#main" class="skip-link">Skip to main content</a>
+        <header class="navbar position-fixed top-0 start-0 end-0 glass-50 dark-glass-950">
+            <nav class="container">
+                <a class="navbar-brand" href="index.html">Codexify</a>
+                <div class="flex-fill">
+                    <dialog class="offcanvas offcanvas-phone" id="codexifyMenu">
+                        <div class="offcanvas-header">
+                            <h1 class="offcanvas-title">Codexify</h1>
+                            <button class="btn btn-quiet btn-icon" data-c-dismiss="offcanvas" aria-label="Close"><i class="icon icon-close"></i></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="nav navbar-nav flex-col align-items-start tablet-flex-row tablet-align-items-center">
+                                <li class="nav-item"><a class="nav-link active" href="quickstart.html" aria-current="page">Documentation</a></li>
+                                <li class="nav-item"><a class="nav-link" href="examples.html">Examples</a></li>
+                            </ul>
+                        </div>
+                    </dialog>
+                </div>
+                <div class="flex-1 tablet-d-none"></div>
+                <ul class="nav m-0">
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/Xeverything11/Codexify/releases">0.10.0</a></li>
+                </ul>
+                <button class="btn btn-icon btn-quiet tablet-d-none" data-c-toggle="offcanvas" data-c-target="#codexifyMenu" aria-label="Open menu"><i class="icon icon-menu"></i></button>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="row">
+                <aside class="col-fill tablet-col-4 desktop-col-3 tablet-position-sticky top-15">
+                    <div class="accordion">
+                        <details class="accordion-item">
+                            <summary class="accordion-header">Getting started</summary>
+                            <div class="accordion-body">
+                                <div class="list-group">
+                                    <a class="list-group-item" href="quickstart.html">Quickstart</a>
+                                    <a class="list-group-item" href="migration.html">Migration</a>
+                                </div>
+                            </div>
+                        </details>
+                        <details class="accordion-item" open>
+                            <summary class="accordion-header">Content</summary>
+                            <div class="accordion-body">
+                                <div class="list-group">
+                                    <a class="list-group-item" href="reboot.html">Reboot</a>
+                                    <a class="list-group-item" href="typography.html">Typography</a>
+                                    <a class="list-group-item active" href="layout.html" aria-current="true">Layout</a>
+                                    <a class="list-group-item" href="colors.html">Colors</a>
+                                    <a class="list-group-item" href="tables.html">Tables</a>
+                                </div>
+                            </div>
+                        </details>
+                        <details class="accordion-item">
+                            <summary class="accordion-header">Forms</summary>
+                            <div class="accordion-body">
+                                <div class="list-group">
+                                    <a class="list-group-item" href="formcontrol.html">Form control</a>
+                                    <a class="list-group-item" href="checkbox.html">Checkbox</a>
+                                    <a class="list-group-item" href="radio.html">Radio</a>
+                                    <a class="list-group-item" href="range.html">Range</a>
+                                    <a class="list-group-item" href="switch.html">Switch</a>
+                                </div>
+                            </div>
+                        </details>
+                        <details class="accordion-item">
+                            <summary class="accordion-header">Components</summary>
+                            <div class="accordion-body">
+                                <div class="list-group">
+                                    <a class="list-group-item" href="accordion.html">Accordion</a>
+                                    <a class="list-group-item" href="alert.html">Alert</a>
+                                    <a class="list-group-item" href="badges.html">Badges</a>
+                                    <a class="list-group-item" href="buttons.html">Buttons</a>
+                                    <a class="list-group-item" href="cards.html">Cards</a>
+                                    <a class="list-group-item" href="dialog.html">Dialog</a>
+                                    <a class="list-group-item" href="listgroup.html">List group</a>
+                                    <a class="list-group-item" href="nav.html">Nav</a>
+                                    <a class="list-group-item" href="navbar.html">Navbar</a>
+                                    <a class="list-group-item" href="offcanvas.html">Offcanvas</a>
+                                    <a class="list-group-item" href="popover.html">Popover</a>
+                                    <a class="list-group-item" href="tooltips.html">Tooltips</a>
+                                </div>
+                            </div>
+                        </details>                    <details class="accordion-item">
+                            <summary class="accordion-header">Utilities</summary>
+                            <div class="accordion-body">
+                                <div class="accordion accordion-flush mt--4 mx--4">
+                                    <details class="accordion-item">
+                                        <summary class="accordion-header font-semibold">Background</summary>
+                                        <div class="accordion-body">
+                                            <div class="list-group">
+                                                <a class="list-group-item" href="utilities/backgroundcolor.html">Background color</a>
+                                                <a class="list-group-item" href="utilities/glassmorphism.html">Glassmorphism</a>
+                                            </div>
+                                        </div>
+                                    </details>
+                                    <details class="accordion-item">
+                                        <summary class="accordion-header font-semibold">Border</summary>
+                                        <div class="accordion-body">
+                                            <div class="list-group">
+                                                <a class="list-group-item" href="utilities/border.html">Border</a>
+                                                <a class="list-group-item" href="utilities/borderradius.html">Border radius</a>
+                                            </div>
+                                        </div>
+                                    </details>
+                                    <details class="accordion-item">
+                                        <summary class="accordion-header font-semibold">Flex & grid</summary>
+                                        <div class="accordion-body">
+                                            <div class="list-group">
+                                                <a class="list-group-item" href="utilities/aligncontent.html">Align content</a>
+                                                <a class="list-group-item" href="utilities/alignitems.html">Align items</a>
+                                                <a class="list-group-item" href="utilities/flex.html">Flex</a>
+                                                <a class="list-group-item" href="utilities/flexwrap.html">Flex wrap</a>
+                                                <a class="list-group-item" href="utilities/grid.html">Grid</a>
+                                                <a class="list-group-item" href="utilities/justifycontent.html">Justify content</a>
+                                                <a class="list-group-item" href="utilities/justifyitems.html">Justify items</a>
+                                            </div>
+                                        </div>
+                                    </details>
+                                    <details class="accordion-item">
+                                        <summary class="accordion-header font-semibold">Layout</summary>
+                                        <div class="accordion-body">
+                                            <div class="list-group">
+                                                <a class="list-group-item" href="utilities/display.html">Display</a>
+                                                <a class="list-group-item" href="utilities/float.html">Float</a>
+                                                <a class="list-group-item" href="utilities/inset.html">Inset</a>
+                                                <a class="list-group-item" href="utilities/overflow.html">Overflow</a>
+                                                <a class="list-group-item" href="utilities/position.html">Position</a>
+                                                <a class="list-group-item" href="utilities/zindex.html">Z-index</a>
+                                            </div>
+                                        </div>
+                                    </details>
+                                    <details class="accordion-item">
+                                        <summary class="accordion-header font-semibold">Sizing</summary>
+                                        <div class="accordion-body">
+                                            <div class="list-group">
+                                                <a class="list-group-item" href="utilities/height.html">Height</a>
+                                                <a class="list-group-item" href="utilities/width.html">Width</a>
+                                            </div>
+                                        </div>
+                                    </details>
+                                    <details class="accordion-item">
+                                        <summary class="accordion-header font-semibold">Spacing</summary>
+                                        <div class="accordion-body">
+                                            <div class="list-group">
+                                                <a class="list-group-item" href="utilities/gap.html">Gap</a>
+                                                <a class="list-group-item" href="utilities/margin.html">Margin</a>
+                                                <a class="list-group-item" href="utilities/padding.html">Padding</a>
+                                            </div>
+                                        </div>
+                                    </details>
+                                    <details class="accordion-item">
+                                        <summary class="accordion-header font-semibold">Type</summary>
+                                        <div class="accordion-body">
+                                            <div class="list-group">
+                                                <a class="list-group-item" href="utilities/fontfamily.html">Font family</a>
+                                                <a class="list-group-item" href="utilities/fontstyle.html">Font style</a>
+                                                <a class="list-group-item" href="utilities/fontweight.html">Font weight</a>
+                                                <a class="list-group-item" href="utilities/textalign.html">Text align</a>
+                                                <a class="list-group-item" href="utilities/textcolor.html">Text color</a>
+                                                <a class="list-group-item" href="utilities/textsize.html">Text size</a>
+                                            </div>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </aside>
+                <main class="col-fill tablet-col-8 desktop-col-9" id="main">
+                    <h1 id="tables">Layout</h1>
+                    <p class="text-lg">Codexify defines the layout using containers and breakpoints.</p>
+                    <h2 id="breakpoints">Breakpoints</h2>
+                    <p>Codexify provides 4 breakpoints: phones, tablets, desktops and wide desktops.</p>
+                    <table class="table table-c3-text-end table-c4-text-end">
+                        <thead>
+                            <tr>
+                                <th>Breakpoint</th>
+                                <th>Class</th>
+                                <th>Min width</th>
+                                <th>Max width</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Phones</td>
+                                <td><em>Not applicable</em></td>
+                                <td>320px</td>
+                                <td>640px</td>
+                            </tr>
+                            <tr>
+                                <td>Tablets</td>
+                                <td><code class="language-css">.tablet-*</code></td>
+                                <td>640px</td>
+                                <td>1120px</td>
+                            </tr>
+                            <tr>
+                                <td>Desktops</td>
+                                <td><code class="language-css">.desktop-*</code></td>
+                                <td>1120px</td>
+                                <td>1680px</td>
+                            </tr>
+                            <tr>
+                                <td>Wide desktops</td>
+                                <td><code class="language-css">.desktop-wide-*</code></td>
+                                <td>1680px</td>
+                                <td>&infin;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Right now, responsive utility classes are limited to display, grid-related ones, flexbox-related ones, inset, display, text align and font size. More will be added soon.</p>
+                    <h2 id="containers">Containers</h2>
+                    <p>Containers are the most basic layout element in Codexify and works using the grid system by using <code class="language-css">.row</code>. Containers have padding of 2rem to the left and right, which shrinks to 1rem on phones.</p>
+                    <p>In addition to basic <code class="language-css">.container</code>, which is full width until 1120px, there are <code class="language-css">.container-wide</code>, which is full width until 1680px, and <code class="language-css">.container-fluid</code>, which is always full width.</p>
+                    <h2 id="gridsystem">The grid system</h2>
+                    <p>Codexify features a grid system using the <code class="language-css">.row</code> class. By default, it has 12 columns with gutter of 1rem between each other.</p>
+                    <div class="row">
+                        <div class="col-3 bg-neutral-subtle border py-4 text-center">col-3</div>
+                        <div class="col-3 bg-neutral-subtle border py-4 text-center">col-3</div>
+                        <div class="col-3 bg-neutral-subtle border py-4 text-center">col-3</div>
+                        <div class="col-3 bg-neutral-subtle border py-4 text-center">col-3</div>
+                    </div>
+                    <pre><code class="language-html">&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-3 ..."&gt;col-3&lt;/div&gt;
+        &lt;div class="col-3 ..."&gt;col-3&lt;/div&gt;
+        &lt;div class="col-3 ..."&gt;col-3&lt;/div&gt;
+        &lt;div class="col-3 ..."&gt;col-3&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    <p>You can adjust the size of columns by using <code class="language-css">.col-*</code>.</p>
+                    <div class="row">
+                        <div class="col-1 bg-neutral-subtle border py-4 text-center">1</div>
+                        <div class="col-2 bg-neutral-subtle border py-4 text-center">col-2</div>
+                        <div class="col-3 bg-neutral-subtle border py-4 text-center">col-3</div>
+                        <div class="col-4 bg-neutral-subtle border py-4 text-center">col-4</div>
+                        <div class="col-5 bg-neutral-subtle border py-4 text-center">col-5</div>
+                        <div class="col-6 bg-neutral-subtle border py-4 text-center">col-6</div>
+                        <div class="col-7 bg-neutral-subtle border py-4 text-center">col-7</div>
+                        <div class="col-8 bg-neutral-subtle border py-4 text-center">col-8</div>
+                        <div class="col-9 bg-neutral-subtle border py-4 text-center">col-9</div>
+                        <div class="col-10 bg-neutral-subtle border py-4 text-center">col-10</div>
+                        <div class="col-11 bg-neutral-subtle border py-4 text-center">col-11</div>
+                        <div class="col-12 bg-neutral-subtle border py-4 text-center">col-12</div>
+                        <div class="col-fill bg-neutral-subtle border py-4 text-center">col-fill (covers the row)</div>
+                    </div>
+                    <pre><code class="language-html">&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-1 ..."&gt;col-1&lt;/div&gt;
+        &lt;div class="col-2 ..."&gt;col-2&lt;/div&gt;
+        &lt;div class="col-3 ..."&gt;col-3&lt;/div&gt;
+        &lt;div class="col-4 ..."&gt;col-4&lt;/div&gt;
+        &lt;div class="col-5 ..."&gt;col-5&lt;/div&gt;
+        &lt;div class="col-6 ..."&gt;col-6&lt;/div&gt;
+        &lt;div class="col-7 ..."&gt;col-7&lt;/div&gt;
+        &lt;div class="col-8 ..."&gt;col-8&lt;/div&gt;
+        &lt;div class="col-9 ..."&gt;col-9&lt;/div&gt;
+        &lt;div class="col-10 ..."&gt;col-10&lt;/div&gt;
+        &lt;div class="col-11 ..."&gt;col-11&lt;/div&gt;
+        &lt;div class="col-12 ..."&gt;col-12&lt;/div&gt;
+        &lt;div class="col-fill ..."&gt;col-fill (covers the row)&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    <h3 id="nesting">Nesting</h3>
+                    <p><code class="language-css">.row</code> elements can be nested inside each cell in another <code class="language-css">.row</code> element. Simply add that class to the existing cell.</p>
+                    <div class="row">
+                        <div class="col-4 bg-neutral-subtle border py-4 text-center">Level 1: col-4</div>
+                        <div class="col-8 bg-neutral-subtle border py-4 text-center row">
+                            <div class="col-6 bg-neutral border py-4 text-center">Level 2: col-6</div>
+                            <div class="col-6 bg-neutral border py-4 text-center">Level 2: col-6</div>
+                        </div>
+                    </div>
+                    <pre><code class="language-html">&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-4 ..."&gt;Level 1: col-4&lt;/div&gt;
+        &lt;div class="col-8 row ..."&gt;
+            &lt;div class="col-6 ..."&gt;Level 2: col-6&lt;/div&gt;
+            &lt;div class="col-6 ..."&gt;Level 2: col-6&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    <p>You can make the nested rows a subgrid using the <code class="language-css">.grid-cols-subgrid</code>, so the nested row allocates the same number of rows as the cell. For example, a nested row in a cell spanning 8 columns has 8 columns.</p>
+                    <div class="row">
+                        <div class="col-4 bg-neutral-subtle border py-4 text-center">Level 1: col-4</div>
+                        <div class="col-8 bg-neutral-subtle border py-4 text-center row grid-cols-subgrid">
+                            <div class="col-4 bg-neutral border py-4 text-center">Level 2: col-4</div>
+                            <div class="col-4 bg-neutral border py-4 text-center">Level 2: col-4</div>
+                        </div>
+                    </div>
+                    <pre><code class="language-html">&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-4 ..."&gt;Level 1: col-4&lt;/div&gt;
+        &lt;div class="col-8 row ..."&gt;
+                &lt;div class="col-4 ..."&gt;Level 2: col-4&lt;/div&gt;
+                &lt;div class="col-4 ..."&gt;Level 2: col-4&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    <h3 id="positioning">Positioning</h3>
+                    <p>You can position the columns by using <code class="language-css">.col-start-*</code> and <code class="language-css">.col-end-*</code> classes. This ranges from 1 to number of columns in a row plus 1.</p>
+                    <div class="row">
+                        <div class="col-start-3 col-end-7 bg-neutral-subtle border py-4 text-center">Cell spanning from 3 to 7</div>
+                        <div class="col-start-6 col-end-11 bg-neutral-subtle border py-4 text-center">Cell spanning from 6 to 11</div>
+                        <div class="col-start-1 col-end-5 bg-neutral-subtle border py-4 text-center">Cell spanning from 1 to 5</div>
+                        <div class="col-start-7 col-end-13 bg-neutral-subtle border py-4 text-center">Cell spanning from 7 to 13</div>
+                    </div>
+                    <pre><code class="language-html">&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-start-3 col-end-7 ..."&gt;Cell spanning from 3 to 7&lt;/div&gt;
+        &lt;div class="col-start-6 col-end-11 ..."&gt;Cell spanning from 6 to 11&lt;/div&gt;
+        &lt;div class="col-start-1 col-end-5 ..."&gt;Cell spanning from 1 to 5&lt;/div&gt;
+        &lt;div class="col-start-7 col-end-13 ..."&gt;Cell spanning from 7 to 13&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    <h3 id="gutters">Gutters</h3>
+                    <p>Rows have a gutter of 1rem between every cell by default, but you can adjust the gutter by using <code class="language-css">.gap-*</code> (<code class="language-css">.gap-x-*</code> for horizontal and <code class="language-css">.gap-y-*</code> for vertical).</p>
+                    <div class="row gap-2">
+                        <div class="col-9 bg-neutral-subtle border py-4 text-center">col-9 (row gutter set to 0.5rem / gap-2)</div>
+                        <div class="col-3 bg-neutral-subtle border py-4 text-center">col-3</div>
+                    </div>
+                    <pre><code class="language-html">&lt;div class="container"&gt;
+    &lt;div class="row gap-2"&gt;
+        &lt;div class="col-9 ..."&gt;col-9&lt;/div&gt;
+        &lt;div class="col-3 ..."&gt;col-3&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    <h3 id="responsive">Responsive</h3>
+                    <p>The grid system is responsive, meaning you can adjust the layout at different breakpoints.</p>
+                    <div class="row">
+                        <div class="col-6 tablet-col-4 desktop-col-2 bg-neutral-subtle border py-4 text-center">col-6<br>tablet-col-4<br>desktop-col-2</div>
+                        <div class="col-6 tablet-col-4 desktop-col-2 bg-neutral-subtle border py-4 text-center">col-6<br>tablet-col-4<br>desktop-col-2</div>
+                        <div class="col-6 tablet-col-4 desktop-col-2 bg-neutral-subtle border py-4 text-center">col-6<br>tablet-col-4<br>desktop-col-2</div>
+                        <div class="col-6 tablet-col-4 desktop-col-2 bg-neutral-subtle border py-4 text-center">col-6<br>tablet-col-4<br>desktop-col-2</div>
+                        <div class="col-6 tablet-col-4 desktop-col-2 bg-neutral-subtle border py-4 text-center">col-6<br>tablet-col-4<br>desktop-col-2</div>
+                        <div class="col-6 tablet-col-4 desktop-col-2 bg-neutral-subtle border py-4 text-center">col-6<br>tablet-col-4<br>desktop-col-2</div>
+                    </div>
+                    <pre><code class="language-html">&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-6 tablet-col-4 desktop-col-2 bg-neutral-subtle border py-4 text-center"&gt;col-6&lt;br&gt;tablet-col-4&lt;br&gt;desktop-col-2&lt;/div&gt;
+        &lt;div class="col-6 tablet-col-4 desktop-col-2 bg-neutral-subtle border py-4 text-center"&gt;col-6&lt;br&gt;tablet-col-4&lt;br&gt;desktop-col-2&lt;/div&gt;
+        &lt;div class="col-6 tablet-col-4 desktop-col-2 bg-neutral-subtle border py-4 text-center"&gt;col-6&lt;br&gt;tablet-col-4&lt;br&gt;desktop-col-2&lt;/div&gt;
+        &lt;div class="col-6 tablet-col-4 desktop-col-2 bg-neutral-subtle border py-4 text-center"&gt;col-6&lt;br&gt;tablet-col-4&lt;br&gt;desktop-col-2&lt;/div&gt;
+        &lt;div class="col-6 tablet-col-4 desktop-col-2 bg-neutral-subtle border py-4 text-center"&gt;col-6&lt;br&gt;tablet-col-4&lt;br&gt;desktop-col-2&lt;/div&gt;
+        &lt;div class="col-6 tablet-col-4 desktop-col-2 bg-neutral-subtle border py-4 text-center"&gt;col-6&lt;br&gt;tablet-col-4&lt;br&gt;desktop-col-2&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </main>
+            </div>
+        </div>
+        <footer class="footer border-t">
+            <div class="container">
+                <image src="images/CC_BY-SA_icon.svg" alt="CC-BY-SA 4.0" width="88" height="31" class="float-end ms-4 mb-4" />
+                <p>&copy; 2026 Codexify. Code licensed under MIT. Documentation licensed under CC-BY-SA 4.0.</p>
+                <p>Icons &copy; 2026 Wikimedia Foundation; licensed under CC BY 4.0.</p>
+                <p>Contributors: Xeverything11</p>
+                <p>Last updated: 2026-11-15</p>
+            </div>
+        </footer>
+        <script type="module" src="js/codexify.js"></script>
+    </body>
+</html>

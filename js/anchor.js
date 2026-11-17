@@ -5,9 +5,12 @@ export const updateAnchorPosition = (trigger, element, defaultPlacement, classPr
     const viewportPadding = 8;
     const gap = 8;
     const requestedPlacement = trigger.dataset.cPlacement;
-    const placement = ["top", "bottom", "left", "right"].includes(requestedPlacement)
-        ? requestedPlacement
-        : defaultPlacement;
+    const requestedPlacementIsValid = ["top", "bottom", "left", "right"].includes(requestedPlacement);
+    const requestedDirection = requestedPlacementIsValid ? requestedPlacement : defaultPlacement;
+    const isRtl = getComputedStyle(trigger).direction === "rtl";
+    const placement = isRtl
+        ? { left: "right", right: "left" }[requestedDirection] ?? requestedDirection
+        : requestedDirection;
     const anchorOrigin = {
         top: "bottom",
         bottom: "top",

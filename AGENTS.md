@@ -132,6 +132,12 @@ Use `.form-control` on native `<input>`, `<textarea>`, and `<select>` elements. 
 - Put the input and its associated `<label>` in a `.form-field`; match the label’s `for` to the input’s `id`.
 - Preserve checkbox behavior and native `checked` and `disabled` attributes. Do not replace the input with a custom non-semantic toggle.
 
+### Range controls
+
+- Use `.form-range` on a native `<input type="range">`. Preserve native range attributes such as `min`, `max`, `step`, `value`, and `disabled`.
+- Give the range an accessible name with an associated `.form-label` in a `.form-field`, or another suitable accessible name.
+- `js/range.js`, imported by `js/codexify.js`, updates the filled track. Do not add a duplicate page-specific script.
+
 ## Accordions
 
 Build accordions from a `.accordion` container with native `<details class="accordion-item">` elements. Each item contains a `<summary class="accordion-header">` and a `<div class="accordion-body">` for its content. Use the native `open` attribute when an item should start expanded.
@@ -186,6 +192,26 @@ Use `.nav` on a semantic `<nav>` or list container, with `.nav-link` on native a
 - For a horizontally overflowing nav, place it directly inside `.nav-overflow`. The wrapper is relatively positioned and clips overflow; `.nav-overflow > .nav` owns horizontal scrolling and hides its scrollbar without disabling scrolling.
 - `js/nav.js`, imported by `js/codexify.js`, injects accessible start/end scroll buttons when the nav overflows and hides each button at its corresponding scroll edge. Do not add duplicate overflow controls.
 - Update `nav.html` when changing nav styles or adding nav patterns so its examples match the shared stylesheet and script.
+
+## Navbars
+
+Use `<header class="navbar">` with a nested `<nav class="container">`. Put the brand in an anchor with `.navbar-brand`; place the navigation links in a `.nav.navbar-nav` list and use `.flex-fill` for the region that should take up remaining horizontal space. The navbar container provides the horizontal flex layout and 4rem height. It is not fixed or sticky by default.
+
+- Use native anchors for navigation and mark the current page with `.active` and `aria-current="page"`.
+- For a menu that collapses on phones, use `<dialog class="offcanvas offcanvas-phone">`, a menu button with `data-c-toggle="offcanvas"` and `data-c-target` pointing to the dialog ID, and a close button with `data-c-dismiss="offcanvas"`. Pair the dialog with `tablet-d-none` on the toggle and tablet-prefixed display/layout utilities to show the menu inline from 640px.
+- Use `.offcanvas-tablet-below` with `desktop-*` utilities to keep the menu collapsed below 1120px, or `.offcanvas-desktop-below` with `desktop-wide-*` utilities to keep it collapsed below 1680px. At and above each corresponding breakpoint, the dialog becomes inline and its menu toggle is hidden.
+- To keep the menu collapsed at every width, use a plain `<dialog class="offcanvas">` with a visible toggle and omit responsive utilities that reveal the menu or hide the toggle.
+- Give each dialog a unique ID and ensure each toggle's `data-c-target` matches it. Keep the native dialog and button elements; the shared offcanvas script handles opening, closing, Escape, and accessibility state. It is imported by `js/codexify.js`, so do not add a page-specific script.
+- Update `navbar.html` when changing navbar patterns so its examples match the shared stylesheet and behavior.
+
+## Layout
+
+- Use `.container` for content that is full-width up to 1120px, `.container-wide` up to 1680px, or `.container-fluid` for always-full-width content. Containers use 2rem of horizontal padding, reduced to 1rem on phones.
+- Build grid layouts with `.row` and its column classes. A row has 12 columns and a 1rem gap by default; `.col-{1..24}` sets a span, while `.col-fill` spans the row.
+- Rows can be nested in a column. Add `.grid-cols-subgrid` to a nested row when it should share the parent column's grid.
+- Position cells with `.col-start-{1..25}` and `.col-end-{1..25}`; the end index can extend through one more than the row's column count.
+- Use `.gap-*`, `.gap-x-*`, and `.gap-y-*` to adjust row gutters.
+- The layout breakpoints are phones (320px to 640px), tablets (640px to 1120px), desktops (1120px to 1680px), and wide desktops (1680px and up). Responsive variants use `tablet-`, `desktop-`, and `desktop-wide-` prefixes for the responsive utility families listed below.
 
 ## Utility classes
 
