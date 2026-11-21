@@ -1,6 +1,6 @@
 /*
  * Codexify
- * Version 0.10.1
+ * Version 0.10.2
  * Last updated 2026-11-21
  * Repository: https://github.com/Xeverything11/Codexify
  * MIT License
@@ -2424,7 +2424,7 @@
         z-index: 1;
         rotate: 45deg;
         translate: -50% -50%;
-        clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 0% 0%);
+        clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
         transition: border-color 150ms;
     }
 
