@@ -1,7 +1,7 @@
 /*
  * Codexify
- * Version 0.10.0
- * Last updated 2026-11-17
+ * Version 0.10.1
+ * Last updated 2026-11-21
  * Repository: https://github.com/Xeverything11/Codexify
  * MIT License
  * Copyright (c) 2026 Xeverything11
@@ -2633,7 +2633,7 @@
         inset-block-end: 0;
         block-size: 0.25rem;
         inline-size: 0.25rem;
-        clip-path: rect(0 100% 100% 0);
+        clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
         background: transparent;
         transition: box-shadow 150ms;
     }
